@@ -1,0 +1,144 @@
+\documentclass[utf8, 11pt]{feuille}
+
+\newcommand{\titredutd}{\textbf{CC3 --- Systèmes en interaction et statistiques quantiques}}
+
+\begin{document}
+
+\begin{center}
+    \Large {\bf Contrôle continu}
+    
+    Mercredi 15 décembre 2021 - durée: 2h30
+\end{center}
+
+Seules les calculatrices non communicantes et les notes manuscrites personnelles sont autorisées.
+
+Les exercices sont totalement indépendants (voir certaines parties pour le 1); . Les étoiles $^*$ indiquent les questions les plus délicates. On notera $k_B$ la constante de Boltzmann et $h$ la constante de Planck.
+
+
+%\input{anotation}
+
+
+
+% ______________________________________________________________________________
+
+\section{Gaz ultra relativiste ($\sim$ 50 points) }
+
+On considère un gaz parfait constitué de $N (\sim {\cal N}_A)$ particules ultra-relativistes, {\bf indiscernables}, confinées dans un volume $V$ de dimension 3 : l'énergie cinétique $\epsilon_i$ d'une particule $i$ est donnée par $\epsilon_i= p_ic$ où $c$ est la vitesse de la lumière et $p_i=|\Vec{p_i}|=\hbar |\Vec{k_i}|$ la norme de sa quantité de mouvement $\Vec{p_i}$ associée au vecteur d'onde $\Vec{k_i}$.  
+
+\medskip
+
+\question Calculer la fonction de partition de ce gaz en utilisant la statistique de Maxwell-Boltzmann. Montrer que $Z^{MB}(N,V,T)=\frac{(8 \pi V)^N}{N!} (\frac{1}{(\beta c h)^{3N}}$ où $\beta=\frac{1}{k_BT}$. On donne $\int_0^{\infty} x^2 \ e^{-x} \ dx =2.$
+
+\question En déduire l'énergie libre $F$, l'énergie moyenne $U$, le potentiel chimique $\mu$ de ce gaz ainsi que sa pression $P$ en fonction de $T, V$ et $N$. On introduira $\Lambda=\frac{hc}{k_BT}$ la longueur d'onde thermique de de Broglie.
+
+\ 
+
+On considère désormais que ce gaz est constitué de fermions ou de bosons libres, de spins $s$ à la température $T$ et au potentiel chimique $\mu$. On admet que la densité d'état dans l'espace réciproque (des vecteurs d'onde) est $\hat{\rho}(\Vec{k})d^3 \Vec{k}=(2s+1) \frac{V}{(2 \pi)^3} d^3 \Vec{k}$.
+
+\question Montrer que la densité d'état en énergie $\rho_E(\epsilon)$ est de la forme $A \epsilon^2$ où $A$ s'exprime en fonction de $V, h$ et $c$. 
+
+\question Rappeler l'expression des nombres moyens de particules $n_i^F(\epsilon)$ (fermions) et $n_i^B(\epsilon)$ (bosons) dans un état quantique $i$ d'énergie $\epsilon$ en fonction de $\beta, \epsilon$ et $\mu$.
+
+\question \'Ecrire les expressions formelles dans l'approximation continue (sous forme d'intégrales sur l'énergie)  du nombre moyen de particules $N$ et de l'énergie moyenne $U$ pour les fermions et les bosons.
+
+\question$^*$ (Bonus) Faire de même pour le grand potentiel $J$. Relier $J$ et $U$ grâce à une intégration par partie judicieuse et montrer que la pression $P$ vaut $P=\frac{1}{3}\frac{U}{V}$ que les particules soient des fermions ou des bosons. 
+
+\ 
+
+On fait l'hypothèse que les particules sont des fermions de spin $\frac{1}{2}$ et que le fluide qu'ils forment est dégénéré c'est-à-dire que la température peut être considérée comme nulle.
+
+\question Que devient $n_i^F(\epsilon)$ dans cette limite ? En déduire les relations entre $N$ et $U$ avec $V$, et $\mu=\epsilon_F$, appelé niveau de Fermi.
+
+\question Exprimer l'énergie moyenne par fermion $\frac{U}{N}$ en fonction de $\epsilon_F$ puis en fonction du nombre de fermions $n$ par unité de volume. Montrer que $\frac{U}{N}=\alpha \ n^{\frac{1}{3}}$ où $\alpha$ est une constante que l'on exprimera, indépendante de la nature du fermion.
+
+
+\ 
+
+Une naine blanche est une étoile de masse comparable à celle du soleil mais de densité beaucoup plus forte de sorte que ses électrons consitutent un gaz de Fermi dégénéré. La pression de ce gaz quantique s'oppose aux forces gravitationnelles tant que la masse n'est pas trop élevée. L'étoile est constituée de baryons (protons et neutrons) et a une masse volumique $\rho$ que l'on suppose constante. Il y a $z$ électrons par baryon (par exemple $z=\frac{1}{2}$ si l'étoile est au départ constituée d'hélium). On note $m=m_p=m_n=1,6 \times 10^{-27}$ kg la masse d'un baryon (on néglige la différene entre la masse d'un neutron et la masse d'un proton).
+
+\question Sachant que la masse de l'étoile provient essentiellement des baryons, relier $n$, le nombre d'électrons par unité de volume à $\rho$, $m$ et $z$.
+
+\question \`A partir du résultat de la question 8, en déduire l'énergie moyenne des électrons par baryon $\epsilon_{el}$ et montrer qu'elle s'exprime sous la forme $\epsilon_{el}=\gamma z^{\frac{4}{3}} \rho^{\frac{1}{3}}$. 
+
+\question Calculer numériquement $\gamma$ lorsque $\epsilon_{el}$ est donné en eV et $\rho$ en g.cm$^{-3}$.
+
+On rappelle que l'énergie gravitationnelle $E_G$ d'une étoile homogène sphérique de rayon $R$, de masse $M$ vaut $E_G=-\frac{3}{5}\frac{GM^2}{R}$ où $G$ est la constante gravitationnelle $G=6,67 \times 10^{-11}$  m$^3$.kg$^{-1}$.s$^{-2}$. 
+
+\question En déduire l'énergie moyenne gravitationnelle par baryon $\epsilon_{g}$ et montrer qu'elle s'exprime sous la forme $\epsilon_{g}=-\zeta M^{\frac{2}{3}} \rho^{\frac{1}{3}}$.
+
+\question Calculer numériquement $\zeta$ lorsque $\epsilon_{g}$ est donné en eV, $M$ en unité de masse du soleil ($M_{\astrosun}=2,0 \times 10^{30}$ kg) et  $\rho$ en g.cm$^{-3}$.
+
+\question Exprimer  en fonction de $\gamma$, $\zeta$ et $z$, le rapport $\frac{M}{M_{\astrosun}}$ à partir duquel l'énergie gravitationnelle l'emporte sur l'énergie électronique. Cette masse s'appelle masse de Chandrasekhar et donne une estimation de la masse à partir de laquelle  l'étoile s'effondre.
+
+\question Calculer numériquement $\frac{M}{M_{\astrosun}}$ pour $z \sim 0,46$ (étoile constituée à partir de $^{56}$Fe).
+
+\ 
+
+On considère désormais que les particules sont des bosons de spin nul à la température $T$.
+On note $f=\exp(\beta \mu)$ la fugacité du fluide. On introduit les fonctions 
+\begin{equation*}
+    g_p(f)=\frac{1}{\Gamma (p)} \int_0^{+\infty}\frac{x^{p-1} dx}{f^{-1}e^x-1}=\sum_{k=1}^{+\infty} \frac{f^k}{k^p}.
+\end{equation*}
+où $\Gamma (p)$ est la fonction gamma, qui vaut $(p-1)!$ pour $p$ entier.
+
+\question Exprimer $N$ pour ces bosons en fonction de $g_3(f)$, V et $\Lambda=\frac{hc}{k_BT}$. 
+
+\question Rappeler sur quel intervalle peut varier $\mu$ pour des bosons libres à 3D. Que dire du comportement de $g_3$ sur l'intervalle correspondant de $f$ ?  On donne $1+\frac{1}{2^3}+\frac{1}{3^3}+ \ldots =1,202\dots$
+
+\question En déduire que pour $N$ donné, en deça d'une température $T_B$ que l'on exprimera, on peut avoir une condensation d'une fraction macroscopique du fluide dans l'état fondamental d'énergie nulle. Exprimer cette fraction en fonction de $T$ et de $T_B$.
+
+
+\section{Niveau de Fermi d'un semi-conducteur ($\sim$ 35 points)}
+Nous partons de l'hypothèse que, dans un semi-conducteur, seules les deux bandes qui entourent le niveau de Fermi $\epsilon_f$ des électrons du matériau ont une influence sur ses propriétés thermodynamiques. On appelle $g_v(\epsilon)$ et $g_c(\epsilon)$ les expressions de la densité d'états dans les intervalles $\epsilon_v-\epsilon'_v$ (bande de valence) et 
+$\epsilon'_c-\epsilon_c$ (bande de conduction) (voir figure ci-dessous). \`A température nulle, on admet donc que $\epsilon_v < \epsilon_f < \epsilon_c$ et on note $N=\int_{\epsilon'_v}^{\epsilon_v} g_v(\epsilon) d\epsilon$, le nombre d'électrons dans la bande de valence quand elle est entièrement remplie.
+
+\ 
+
+On se place désormais à une température $T$ non nulle et on note $\mu$ le potentiel chimique.
+
+
+\question \'Ecrire les expressions des nombres $N_c$ et $N_v$ représentant respectivement les nombres d'électrons dans la bande de conduction et dans la bande de valence à la température $T$ et au potentiel chimique $\mu$. On introduira la distribution de Fermi-Dirac $n^F(\epsilon)$.
+
+\question Soit $P_v=N-N_v$: on interprète ce nombre comme le nombre de trous dans la bande de valence. Expliquer. Quelle relation lie $P_v$ et $N_c$ ? En déduire l'équation formelle (avec des intégrales portant sur $g_c$ et $g_v$) permettant de calculer $\mu$.
+
+\question \'Ecrire de même l'expression de $\Delta U$, variation d'énergie interne du semi-conducteur par rapport à son énergie au zéro absolu. 
+
+\question Simplifier les expressions de $N_c,P_v$ et $\Delta U$ en tenant compte des inégalités respectées expérimentalement $k_B T \ll \epsilon_c - \mu $, $k_B T \ll \epsilon'_c-\epsilon_c$  et $k_B T \ll \mu - \epsilon_v$, $k_B T \ll \epsilon_v-\epsilon'_v$. 
+Montrer que 
+\begin{eqnarray}
+N_c &=&  \int_{\epsilon_c}^{+\infty} d\epsilon \ g_c(\epsilon) \exp[-\beta(\epsilon-\mu)], \ \ P_v = \int^{\epsilon_v}_{-\infty} d\epsilon \ g_v(\epsilon) \exp[\beta(\epsilon-\mu)] \nonumber \\
+\Delta U &=& \int_{\epsilon_c}^{+\infty} d\epsilon \ \epsilon \ g_c(\epsilon) \exp[-\beta(\epsilon-\mu)]-\int^{\epsilon_v}_{-\infty} d\epsilon \ \epsilon \ g_v(\epsilon) \exp[\beta(\epsilon-\mu)]. \nonumber
+\end{eqnarray}
+
+
+Une bonne approximation des densités d'états $g_v(\epsilon)$ et $g_c(\epsilon)$ au voisinage de $\epsilon_v$ et $\epsilon_c$ est l'approximation parabolique (voir figure): $g_v(\epsilon)=\sqrt{2R_v} \sqrt{\epsilon_v-\epsilon}$ et $g_c(\epsilon)=\sqrt{2R_c} \sqrt{\epsilon-\epsilon_c}$ où $R_v$ et $R_c$ désignent les rayons de courbure de la densité d'états  en $\epsilon_v$ et  $\epsilon_c$ respectivement. 
+
+On donne les intégrales $\int_{0}^{+\infty} \sqrt{x} \ e^{-x} \ dx =\frac{\sqrt{\pi}}{2}$ et  $\int_{0}^{+\infty} \sqrt{x}^3 \ e^{-x} \ dx =\frac{3\sqrt{\pi}}{4}$.
+
+
+\question Calculer $N_c$ en fonction  $\mu$, $T$ et des données.
+
+\question  Calculer $P_v$ en fonction  $\mu$, $T$ et des données.
+
+\question$^*$ Calculer $\Delta U$.  Montrer qu'en négligeant $k_B T$ devant  devant $\epsilon_v$ et $\epsilon_c$, on obtient
+\begin{equation*}
+\Delta U=\epsilon_c \sqrt{\frac{\pi R_c}{2}} (k_BT)^{\frac{3}{2}} \exp[-\beta(\epsilon_c-\mu)] - \epsilon_v \sqrt{\frac{\pi R_v}{2}} (k_BT)^{\frac{3}{2}} \exp[\beta(\epsilon_v-\mu)].
+\end{equation*}
+
+
+\question Montrer à partir des expressions de $N_c$ et $P_v$ que $\mu=\frac{\epsilon_v+\epsilon_c}{2}+\frac{k_BT}{4} \ln (\frac{R_v}{R_c})$. En déduire le niveau de Fermi $\epsilon_F$.
+
+
+On se place dans l'hypothèse ou $R_v \simeq R_c \simeq R$ et on choisit le zéro de l'énergie à $\epsilon_F$. On introduit $\Delta \epsilon=\epsilon_c-\epsilon_v$.
+
+\question Simplifier l'expression de $\Delta U$ et montrer qu'elle s'exprime sous la forme $\Delta U=\frac{\Delta \epsilon}{2} \sqrt{2\pi R}  (k_BT)^{\frac{3}{2}} \exp[-\frac{\beta \Delta \epsilon}{2}]$.
+
+\question En déduire, en faisant les approximations légitimes,  la capacité calorifique $C$.
+
+\question Tracer $C$ en fonction de $T$. Comment se compare cette capacité calorifique avec celle d'électrons libres dans un métal ?
+\
+
+\centerline{\includegraphics[height=.32\textwidth]{bandes.png}}
+
+
+\end{document}

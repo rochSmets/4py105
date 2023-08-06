@@ -1,0 +1,139 @@
+\documentclass[utf8, 11pt]{feuille}
+
+\newcommand{\titredutd}{\textbf{CC5 --- 2020}}
+
+\begin{document}
+
+\begin{center}
+    \Large {\bf Seconde session}
+    
+    Mercredi 2 juin 2021 - durée: 2h30
+\end{center}
+
+Les calculatrices non programmables sont permises mais les documents sont strictement interdits.
+Les téléphones portables doivent être éteints et rangés. Les  problèmes sont totalement indépendants. Beaucoup de questions ne nécessitent que des réponses brèves (mais précises).  
+
+On rappelle les valeurs du nombre d'Avogadro ${\cal N_A}=6,02 \times 10^{23}$, de la constante de Boltzmann $k_B=1,38 \times 10^{-23}$ J.K$^{-1}$, de leur produit, la constante des gaz parfaits $R=8,315$ J.K$^{-1}$ et de la constante de Planck réduite $\hbar=\frac{h}{2\pi}=1,05 \times 10^{-34}$ J.s.  
+On notera si besoin $\beta=1/(k_B T)$ où $T$ est la température du système à  l'équilibre.
+
+
+
+\section{Mise en jambe: étude des différentes statistiques classique et quantiques}
+
+On considère un système constitué de deux particules disposées sur deux niveaux d'énergies respectives $\epsilon_1=-\epsilon$ et $\epsilon_2=\epsilon$, de dégénérescences 1, à  l'équilibre avec un thermostat à  la température $T$.
+\'Enumérer toutes les configurations microscopiques envisageables et en déduire successivement la fonction de partition et l'énergie moyenne $\bar{\epsilon}(T)$ du système dans les cas suivants:
+\begin{itemize}
+\item les deux particules sont discernables;
+\item les deux particules obéissent à  la statistique de Bose-Einstein;
+\item les deux particules obéissent à  la statistique de Fermi-Dirac;
+\item les deux particules sont des fermions de spin 1/2.
+\end{itemize}
+On pourra introduire la grandeur $\zeta=\exp(-\beta \epsilon)$ ou faire appel à  des fonctions trigonométriques (hyperboliques) bien connues pour expliciter les résultats. Sur un graphique représentant $\bar{\epsilon} (T)$, vous placerez, pour les 4 systèmes étudiés, les valeurs limites de l'énergie moyenne pour $T \rightarrow 0$ et $T \rightarrow +\infty$. Vous proposerez ensuite la forme qualitative des chacune de ces 4 courbes en vous interrogeant notamment sur leurs comportements en $T \rightarrow 0$ et $T \rightarrow +\infty$.
+
+
+
+\section{Capacité calorifique des gaz diatomiques}
+
+On se propose de déterminer l'expression de la capacité calorifique d'un gaz de molécules diatomiques  hétéro-nucléaires (avec deux atomes différents). On admet que l'Hamiltonien d'une telle molécule diatomique peut s'écrire sous la forme de trois termes principaux $h = h_{tr} + h_{rot} + h_{vib}$. On a respectivement $h_{tr} =\frac{\vec{P}^2}{2M}$ où $\vec{P}$ est la quantité de mouvement de la molécule et $M$ sa masse, $h_{rot} =\frac{\vec{l}^2}{2I}$ où $\vec{l}$ est le moment cinétique orbital caractérisant la rotation de la molécule et $I$ le moment d'inertie correspondant (par rapport à  un axe passant par le centre de gravité de la molécule et perpendiculaire à  l'axe rejoignant les deux atomes) et $h_{vib} =\frac{p_x^2}{2\mu}+\frac{k x^2}{2}$, hamiltonien d'un oscillateur harmonique à  une dimension ($x$ est l'écart à  la distance d'équilibre entre les deux molécules et $p_x$ l'impulsion correspondante; $\mu$ est ici la masse réduite des deux atomes).
+Les valeurs propres de cet Hamiltonien, dans l'approximation du découplage entre ces différentes formes d'énergie, sont telles que l'énergie de la molécule s'écrit $\epsilon =\epsilon_{tr}+\epsilon_{rot}+\epsilon_{vib}$.
+
+On considère un gaz très dilué de $N$ molécules diatomiques identiques à  la température $T$ dans le volume $V$. On suppose que la fonction de partition totale $Z=Z(N,V,T)$ peut s'écrire $Z= z^N/N!$ où $z=z(V,T)$ est la fonction de partition correspondant à  une seule molécule.
+
+\question{Donner trois exemples de gaz diatomiques hétéro-nucléaires.}
+
+\question{Préciser le sens physique de la factorisation $Z= z^N/N!$.}
+
+\question{Rappeler dans l'ensemble canonique la relation entre $Z$ et l'énergie moyenne $\bar{E}$ du système. En déduire que la capacité calorifique à  volume constant $C_V$ est donnée par $\frac{C_V}{k_B}=\beta^2 \left( \frac{\partial^2 \ln Z}{\partial \beta^2} \right)_V$.} 
+
+\question{Montrer que, dans les conditions de l'énoncé, $z$ peut s'écrire $z=z_{tr}z_{rot}z_{vib}$ en explicitant le sens de chaque terme. En déduire que l'énergie moyenne et  la capacité calorifique du gaz peuvent s'écrire sous la forme de sommes de trois termes,
+associés aux trois différentes formes de l'énergie.}
+
+\question{Combien de degrés de liberté quadratiques possède cette molécule ? En utilisant le théorème d'équipartition que l'on énoncera, que prédit-on dans la limite classique pour l'énergie moyenne et la capacité calorifique par molécule ?}
+
+
+\subsection{L'énergie cinétique de translation}
+Aux températures considérées, on peut effectuer un calcul classique pour estimer $z_{tr}$.
+
+\question{Donner sous forme intégrale l'expression de $z_{tr}$. On introduira $h$ la constante de Planck.}
+
+\question{On rappelle que $\int_{-\infty}^{+\infty} du \exp(-u^2)=\sqrt{\pi}$. Montrer que $z_{tr}=\frac{V}{\Lambda^3}$ où $\Lambda$ est une grandeur que l'on déterminera en fonction de $M$, $h$ et $k_BT$.}
+
+\question{En déduire l'énergie moyenne $e_{tr}$ par molécule et la capacité calorifique (à  volume constant) correspondante $c_{tr}$. Comment cette dernière dépend-t-elle de la température ?}
+
+
+\subsection{L'énergie de vibration}
+
+\question{Rappeler l'expression des différents niveaux d'énergie discrets d'un oscillateur harmonique quantique à  une dimension. On notera $\frac{\hbar \omega}{2}$ le niveau fondamental.}
+
+\question{Montrer que $z_{vib}=\frac{1}{2 \sinh(\frac{\hbar \omega}{2 k_B T})}$.}
+
+\question{En déduire l'énergie moyenne $e_{vib}$ par molécule et la capacité calorifique (à  volume constant) correspondante $c_{vib}$. Comment cette dernière dépend-t-elle de la température ? On pourra étudier les limites basses températures et hautes températures.}
+
+
+\subsection{L'énergie de rotation}
+Les niveaux d'énergie d'une molécule di-atomique en rotation considérée comme un rotateur rigide sont donnés
+par l'expression $\epsilon_{rot}=\frac{\hbar^2}{2I}J(J+1)$ où $0 \le J \le + \infty$ est le nombre quantique (entier) de rotation. Il y a $2J+1$ états dégénérés pour cette valeur de $J$. Il est utile d'introduire la température caractéristique $\theta_{rot}=\hbar^2/(2Ik_B)$ et le rapport $x =\frac{\theta_{rot}}{T}$ pour alléger les notations.
+
+\question{\'Ecrire l'expression de la fonction de partition $z_{rot}$ (sans la calculer).}
+
+\question{Dans la limite haute température, on peut développer $z_{rot}$ sous la forme $z_{rot}=\frac{1}{x} \left( 1+\frac{x}{3}+\frac{x^2}{15}+\ldots \right)$. En déduire l'énergie moyenne $e_{rot}$ par molécule et la capacité calorifique (à  volume constant) correspondante $c_{rot}$ dans cette limite. Montrer alors que $c_{rot}$ décroît avec la température.}
+
+\question{Dans la limite basse température, seuls les niveaux de basse énergie seront peuplés. Montrer en conservant le nombre de termes adéquats dans la fonction de partition que, dans cette limite, $c_{rot}=12 k_B x^2 \exp(-2x)$.}
+
+\question{En déduire l'allure probable de $\frac{c_{rot}}{k_B}$ en fonction de $\frac{T}{\theta}$.}
+
+\question{Déduire de toutes les questions précédentes l'expression de la capacité calorifique à  volume constant ${\cal C}_V$ dans la limite haute température.}
+
+
+
+\subsection{Application au HD}
+
+Le deutérure d'hydrogène est formé d'un proton H et d'un atome de deutérium D. On a dans ce cas $\theta_{rot}=64$ K et $\frac{\hbar \omega}{k_B}=5382$ K. Calculer ${\cal C}_V$ à  l'ambiante (300 K) et à  3000 K.
+
+%\section{Une condensation à  deux dimensions ?}
+%On considère un modèle de fluide  à  deux dimensions, surface $S$, température $T$ et potentiel chimique $\mu$ comme un \og gaz \fg \ de bosons  indépendants de spin nul, de masse $m$ et dont les niveaux d'énergie  sont donnés par
+%\begin{align*}
+%\epsilon (k)=\frac{\hbar^2 k^2}{2m},
+%\end{align*}
+%où $k$ est le vecteur d'onde.
+%
+%\question{Rappeler l'expression du nombre moyen d'occupation $n(\epsilon)$ d'un micro-état d'énergie $\epsilon$.}
+%
+%\question{Montrer que la densité en énergie des micro-états s'écrit sous la forme $\rho (\epsilon)=A$ où le calcul de $A$ fait appel à  la quantification du vecteur d'onde dans la boîte de surface $S=L_xL_y$. On utilisera des conditions aux limites périodiques pour exprimer les valeurs autorisées de $\vec{k}$.}
+%
+%\question{En déduire les expressions formelles du nombre moyen $\langle N \rangle$ de particules et de leur énergie moyenne $\langle E \rangle$ sous forme intégrale, en fonction de $T, S$ et $\mu$ et des données. On introduira $\alpha=N\frac{\Lambda^2}{S}$ où $\Lambda=\frac{h}{\sqrt{2\pi m k_B T}}$. }
+%
+%\question{On donne l'intégrale $\int_0^{+\infty} \frac{dx}{e^{x-y}-1}=-\ln \left(1-e^y \right)$. Calculer explicitement $\mu $ en fonction de $k_BT$ et de $\alpha$.}
+%
+%\question{En déduire que, dans le cas d'un fluide de bosons bidimensionnel, il n'y a pas de condensation de Bose-Einstein.}
+
+
+
+\section{Modèle à  deux niveaux d'un semi-conducteur intrinsèque}
+
+On se propose d'étudier la conductivité électrique d'un semi-conducteur intrinsèque, c'est-à -dire ne contenant pas d'impuretés. On considère donc un modèle dans lequel les bandes de valence et de conduction sont assimilées à  deux niveaux d'énergie $\epsilon_1$ et $\epsilon_2$, de même dégénérescence $g=g_1=g_2$. On posera $\Delta \epsilon=\epsilon_2-\epsilon_1 > 0$. Soit $N$ le nombre d'électrons se trouvant dans la bande de valence (c'est-à -dire dans ce modèle sur $\epsilon_1$) au zéro absolu:  à  cette température, la bande de conduction est vide. On suppose donc que $N=g$. Soient $T$ la température du système et $\mu$ son potentiel chimique.
+
+\question{A quelle statistique obéissent les électrons ? En déduire le nombre d'électrons $N_1$ et $N_2$ se trouvant respectivement sur les niveaux $\epsilon_1$ et $\epsilon_2$ à  l'équilibre thermique. Quelle relation lie $N_1$, $N_2$ et $N$ ? }
+
+\question{On pose $f=\exp(\beta \mu)$, $f_1=\exp(\beta \epsilon_1)$ et $f_2=\exp(\beta \epsilon_2)$.  Déduire de la relation précédente l'expression de $f$ en fonction de $f_1$ et $f_2$. Montrer que, quelle que soit la température, $\mu=\frac{\epsilon_1+\epsilon_2}{2}$.}
+
+\question{On note  $P_1$ et $P_2$, le nombre de trous ou places vides dans chacun des niveaux 1 et 2. Exprimer $N_1$ et $N_2$, ainsi que $P_1$ et $P_2$ en fonction de $g, \Delta \epsilon$ et $k_B T$. Quelles sont les limites de ces quantités aux basses et aux hautes températures ?}
+
+\question{Comparer ces résultats avec ceux que l'on obtient lorsqu'on applique la statistique classique de Maxwell-Boltzmann à  ce système.}
+
+\question{Donner les expressions de l'énergie moyenne $\bar{E}$ et de la capacité calorifique $C$ en fonction de la température.}
+
+\question{On admet que $C$ présente un maximum lorsque $2\frac{k_BT}{\Delta \epsilon}=0,42$. Sachant que $\Delta \epsilon=1$ eV, calculer la température correspondante. En déduire que dans les semi-conducteurs usuels, seule la partie croissante de la capacité calorifique avec la température peut être observée.}
+
+\question{Toujours dans le cas $\Delta \epsilon=1$ eV, simplifier les expressions obtenues de $N_2$ et $P_1$ lorsque la température est proche de l'ambiante (300 K).}
+
+\question{La conductivité électrique est donnée par la formule
+
+\begin{align*}
+\sigma=e\left(\frac{N_2}{V} \mu_-+\frac{P_1}{V} \mu_+\right),
+\end{align*}
+où $e$ est la charge élémentaire, $\mu_\pm$ les mobilités respectives des électrons et des trous dans ce cristal, quantités que l'on supposera indépendantes de la température. Pour le silicium, $n=\frac{N}{V}= 3,1.10^{19}$ cm$^{-3}$, $\Delta \epsilon=1,1$ eV, $\mu_+=400$ cm$^2$.(V.s)$^{-1}$ et $\mu_-=1600$ cm$^2$.(V.s)$^{-1}$. Calculer la conductivité électrique du silicium pur à  $T=300$ K et $T=1000$ K. Tracer la courbe théorique de la conductibilité en fonction de la température dans une représentation où le graphe de la fonction est linéaire. Expliquer comment la mesure de $\sigma$ permet de déterminer $\Delta \epsilon$. }
+
+
+
+\end{document}

@@ -1,0 +1,240 @@
+%\documentclass[reponses, utf8, 11pt]{feuille}
+\documentclass[utf8, 11pt]{feuille}
+
+\newcommand{\titredutd}{\textbf{TD2 --- Fluctuations \& distribution Gaussienne}}
+
+\begin{document}
+
+
+\input{anotation}
+
+
+% ______________________________________________________________________________
+\section{\soft~Décroissance radioactive [CC 2014]}
+
+On considère la désintégration d'une source radioactive. On observe que pendant une durée $T$ courte devant la demi-vie de la source, le nombre \emph{moyen} de désintégrations est $\langle k \rangle =\alpha T$. Le but de l'exercice est de déterminer la probabilité que pendant un temps~$T$ il y ait $k$ désintégrations. Pour modéliser la désintégration, on découpe la durée $T$ en $N\gg1$ intervalles de très courte durée $\Delta t=\frac{T}{N}$. Pendant chacun des $N$ intervalles $\Delta t$, il y a donc 0 ou 1 désintégration. On suppose que les événements sont indépendants d'un intervalle à l'autre. Soit $p\ll1$ la probabilité qu'une désintégration se produise pendant un intervalle $\Delta t$
+
+\medskip
+
+\question
+Quel est le nombre moyen de désintégrations dans un intervalle $\Delta t$ donné ?  Quel est le nombre moyen de désintégrations pendant la durée~$T$ ? En relisant l'introduction, en déduire une expression de $p$ en fonction de $\alpha$, $N$ et $T$.\label{decrad1}
+
+\medskip
+
+On veut maintenant calculer la distribution de probabilité du nombre de désintégrations. On commence par supposer $N$ fini, et, à la toute fin du calcul, on prendra la limite $N\to\infty$.
+
+\question
+Quelle est la probabilité d'avoir une désintégration pendant un intervalle $\Delta t$ donné (par exemple le 17\up{e}) et aucune pendant tous les autres intervalles ? En déduire la probabilité qu'il y ait exactement une désintégration pendant toute la durée $T$, sans qu'on précise à quel instant elle a eu lieu.\label{decrad2}
+
+\question
+Quelle est la probabilité d'avoir deux désintégrations pendant le temps~$T$, l'une à l'intervalle 17 et l'autre à l'intervalle 71 par exemple? En déduire la probabilité qu'il y ait exactement deux désintégrations pendant toute la durée $T$, sans qu'on précise à quels instants elles ont eu lieu. \label{decrad3}
+
+\question
+De même, déterminer la probabilité $P(k)$ d'avoir exactement $k$ désintégrations pendant la durée $T$ à des instants non spécifiés. Vérifier que cette distribution de probabilité est normalisée.
+
+\question
+Prendre la limite $N\to\infty$ (après avoir remplacé $p$ par son expression en fonction de $N$ bien sûr) pour obtenir $P(k)$ en fonction de $\alpha$ et de $T$ (on rappelle que $\displaystyle \lim_{N\to\infty}\Big[1+\frac a N\Big]^N={\rm e}^a$).
+
+Indice : en cas de doute, commencer par calculer la limite pour $k=1$ ou $k=2$.
+
+\question
+Comment s'appelle cette distribution de probabilité ? Vérifier qu'elle est bien normalisée. Calculer explicitement la valeur moyenne $\langle k\rangle$ et la variance ${\rm Var}(k)$.
+
+Indice : écrire \mbox{$k^2=k(k-1)+k$}.
+
+
+\elements{\\
+1 : $p\times 1 + (1-p)\times 0=p$, $\langle k \rangle =Np$ (car $N$ intervalles indépendants) et $p=\alpha \frac{T}{N}=\alpha \Delta t$ ;
+\\
+2 : $p(1-p)^{N-1}$, puis $Np(1-p)^{N-1}$ (car $\binom N 1 =N$ possibilités pour l'unique désintégration) ;
+\\
+3 : $p^2(1-p)^{N-2}$, puis $\binom N 2 \times p^2(1-p)^{N-2}$ (car $\binom N 2$ possibilités pour deux désintégrations parmi $N$ intervalles) ;
+\\
+4 : $P(k)=\binom N k p^k(1-p)^{N-k}$ (car $\binom N k$ possibilités pour $k$ désintégrations parmi $N$ intervalles) et $\sum_{k=0}^N P(k)=1$ par la formule du binôme de Newton;
+\\
+5 : $P(k)= \frac{N!}{k! (N-k)!} (\frac{\alpha T}{N})^k (1- \frac{\alpha T}{N})^{N-k}= \frac{N. (N-1)...(N-(k-1))}{k!} (\frac{\alpha T}{N})^k (1- \frac{\alpha T}{N})^{N-k} \simeq \frac{N^k}{k!} (\frac{\alpha T}{N})^k {\rm e}^{-\alpha T} = \frac1{k!}(\alpha T)^k {\rm e}^{-\alpha T}$
+\\
+6 : Loi de Poisson : $\sum_{k=0}^{\infty} P(k)= {\rm e}^{-\alpha T} \sum_{k=0}^{\infty} \frac{(\alpha T)^k}{k!} =1$ ; $\langle k\rangle= {\rm e}^{-\alpha T} \sum_{k=0}^{\infty} k \frac{(\alpha T)^k}{k!}= (\alpha T) {\rm e}^{-\alpha T} \sum_{k=1}^{\infty} \frac{(\alpha T)^{k-1}} {(k-1)!} = \alpha T$ et $\langle k(k-1) \rangle= {\rm e}^{-\alpha T} \sum_{k=0}^{\infty} k(k-1) \frac{(\alpha T)^k}{k!}= (\alpha T)^2 {\rm e}^{-\alpha T} \sum_{k=2}^{\infty} \frac{(\alpha T)^{k-2}} {(k-2)!} = (\alpha T)^2$ donc $ {\rm Var}(k)= \langle k^2\rangle -\langle k \rangle^2= \langle k(k-1)\rangle + \langle k\rangle -\langle k \rangle^2=\alpha T =\langle k \rangle$.
+}
+  
+
+  
+% ______________________________________________________________________________
+\section{\medium~Fluctuations dans un gaz parfait}
+
+Un gaz parfait est constitué de $N$ molécules statistiquement indépendantes et uniformément réparties en moyenne dans un récipient de volume $V$.  Soit $k$ le nombre (aléatoire) de molécules contenues dans un sous-volume $v$ du récipient.
+
+\medskip
+
+\question
+Quelle est la valeur moyenne $\langle k \rangle$ de $k$ ?
+
+\question
+Quel est l'écart-type $\sigma_k$ de $k$ ? \\
+Indice : on peut écrire la variable $k$ comme une somme de $N$ variables aléatoires indépendantes.
+  
+\donnees{$v=\frac{V}{2}$ et $N=100$, puis $N=10^{10}$ et $N={\cal N}_A$.}
+
+\question
+Faire l'application numérique
+
+\question
+Pour $N$ très grand et $\frac{v}{V}$ fixé, vers quelle loi tend la distribution de probabilité $P(k)$ de $k$ ?
+
+\question
+Quelle est la probabilité que toutes les molécules du gaz soient dans le volume $v$ ?
+
+On veut calculer la probabilité exacte $P(k)$ qu'il y ait $k$ molécules dans le volume $v$.
+
+\question
+De combien de manières différentes peut-on choisir les $k$ molécules parmi $N$ qui sont dans le volume $v$ ?
+
+\question
+Quelle est la probabilité de \emph{l'un} de ces choix ? (par exemple, pour $k=4$ et $N=100$, quelle est la probabilité que les particules numéros 8, 12, 35 et 42, par exemple, soient dans le volume $v$ ?)
+
+\question
+En déduire l'expression de $P(k)$. Quel est le nom de cette distribution de probabilité ?
+
+\question
+On rappelle la formule du binôme de Newton
+\begin{equation} 
+(x+y)^N=\sum_{n=0}^N \binom Nn x^n y^{N-n}.
+\label{sumbinom}
+\end{equation}
+Vérifier que la distribution de probabilité $P(k)$ est bien normalisée.
+
+\question
+Calculer les dérivées première et seconde de l'égalité (\ref{sumbinom}) par rapport à $x$, \emph{puis} remplacer $y$ par $1-x$ dans les expressions obtenues. Utiliser les formules ainsi obtenues pour retrouver la moyenne et la variance de $k$.
+
+\question
+On se place à la limite thermodynamique ($N \to \infty$, $V \to \infty$ tels que la densité $\frac{N}{V}$ est constante). En considérant le nombre de particules comme une variable continue, montrer en utilisant la formule de Stirling que la distribution de probabilité de $k$ se comporte comme une loi gaussienne au voisinage de $\langle k \rangle$ (on posera $k = \langle k \rangle + s$ avec $s \ll N$). Ce résultat est-il surprenant ?
+
+
+
+% ______________________________________________________________________________
+\section{\soft~Distribution de Maxwell-Boltzmann des vitesses}
+
+On rappelle que la densité de probabilité qu'une molécule de masse $m$
+d'un système à l'équilibre à la température $T$ ait une vitesse $\vec v$ à ${\rm d} {\vec v}$ près est donnée, selon
+Maxwell, par~:
+\begin{equation*}
+\text{P}(\vec v) = C \,{\rm e}^{-\beta \frac{m\vec v^2}{2}}\enspace,
+\end{equation*}
+où $\beta=\frac{1}{k_B T}$ et où $C$ est une constante.
+
+\medskip
+
+\question
+Déterminer $C$ (la distribution de probabilité doit être normalisée).
+
+\question
+En déduire la densité de probabilité $F(v_x)$ que la projection selon l'axe $Ox$ du vecteur vitesse d'une molécule soit égale à $v_x$ à ${\rm d}v_x$ près.\label{theocine2}
+
+\question
+Calculer la vitesse moyenne $\langle \vec v\rangle$ d'une molécule.
+
+\question
+Calculer la vitesse quadratique moyenne $v_q$ d'une molécule, définie par $v_q^2=\langle {\vec v^2}\rangle$.
+
+\question
+Montrer que l'énergie cinétique de translation moyenne d'une molécule est $\langle e \rangle = \frac32 k_B T$.
+
+\elements{
+\\
+1 : $ \int_{-\infty}^{+\infty} {\rm d}v_x \int_{-\infty}^{+\infty} {\rm d}v_y \int_{-\infty}^{+\infty} {\rm d}v_z P(\vec v)= C \Big[\int_{-\infty}^{+\infty} {\rm d}v_x {\rm e}^{-\beta \frac{mv_x^2}{2}} \Big]^3=C \Big[ \sqrt{\frac{2\pi}{\beta m}} \Big]^3= 1$ (normalisation de $P$) voir exercice \ref{exMaths} sur l'intégrale gaussienne, donc $C=\big[\frac{\beta m}{2\pi} \big]^{\frac{3}{2}}$.
+\\
+2 : Par symétrie :
+$F(v_x)= \sqrt{\frac{\beta m}{2\pi}} \,{\rm e}^{-\beta \frac{m v_x^2}{2}}$.
+\\
+3 : $\langle \vec v \rangle= \vec 0$ car $\langle v_x\rangle =\langle v_y\rangle =\langle v_z\rangle =0$ (isotropie de l'espace, $F$ est une fonction paire).
+\\
+4 : $v_q=\langle v^2\rangle= \langle v_x^2+v_y^2+v_z^2 \rangle=3 \langle v_x^2\rangle=3 \int_{-\infty}^{+\infty} {\rm d}v_x \, v_x^2F(v_x)=\frac{3}{\beta m}$.
+\\
+5 : $\langle e \rangle=\frac{1}{2} m \langle v^2 \rangle = \frac{3}{2\beta}=\frac{3}{2}k_B T$.
+}
+
+
+
+% ______________________________________________________________________________
+\section{\medium~Manipulations mathématiques}
+
+\bigskip
+
+{\sffamily\bfseries{L'intégrale Gaussienne}}
+
+Soit l'intégrale gaussienne $ \displaystyle I_n(\alpha) = \int_{0}^{\infty} x^{n} {\rm e}^{-\alpha x^2} {\rm d}x\enspace, \textrm{ où } \alpha>0 $.
+
+\question
+Montrer que $I_1(\alpha)=\frac{1}{2\alpha}$.
+
+\question
+Exprimer $I_n(\alpha)$ en fonction de $I_{n-2}(\alpha)$.
+
+\question
+On admet en sus que $I_0(\alpha)=\frac{1}{2}\sqrt{\frac{\pi}{\alpha}}$. En déduire que $I_2(\alpha)=\frac{1}{4\alpha} \sqrt{\frac{\pi}{\alpha}}$ et que $I_3(\alpha)= \frac{1}{2\alpha^2}$.
+
+\bigskip
+
+{\sffamily\bfseries{La fonction  Gamma et la factorielle}}
+
+On définit la fonction Gamma,  
+$
+\displaystyle \Gamma(x)  = \int^\infty_0 {\rm e}^{-t} t^{x-1} {\rm d}t 
+$, pour $x>0$.
+
+\question
+Calculer $\Gamma(1)$ et $\Gamma (1/2)$.
+
+\question
+Montrer que $ \Gamma (x+1) = x \Gamma(x)$. En déduire $\Gamma(N+1)$ en fonction de $N!$, où $N$ est un entier positif.
+
+\bigskip
+
+{\sffamily\bfseries{Les factorielles des grands nombres et la formule de Stirling}}
+
+On montre que la factorielle $n!$ d'un nombre $n$ entier peut s'approcher par le développement suivant : 
+$$
+\label{eqStirling}
+n! = \sqrt{2 \pi n} \; n^n \; e^{-n} \; \Big[ 1 + \frac{1}{12\, n} + \frac{1}{288\, n^2}+ O(\frac{1}{n^3}) \Big]
+$$
+où $O(\frac{1}{n^3})$ représente les termes d'ordre supérieur ou égal à trois en $\frac{1}{n}$.
+
+\question
+Rappeler la définition de $n!$ où $n$ est un nombre entier positif.
+
+\question
+Calculer à l'aide d'une calculatrice de poche (ou de tout autre moyen dont vous disposez) $2!$, $8!$, $16!$ et $64!$.
+
+\question
+Jusqu'à quelle valeur de $n$ peut-on calculer $n!$ sur une calculatrice de poche standard ?
+
+\question
+Calculer de nouveau $2!$, $8!$, $16!$ et $64!$ en utilisant l'approximation suivante (dite d'ordre zéro) pour la factorielle
+$$
+n! \sim \sqrt{2 \pi n} \; n^n \; e^{-n} .
+$$
+
+\question
+Calculer numériquement l'erreur relative $r(n)$ (c'est-à-dire le quotient $r(n)=\frac{n!-\sqrt{2 \pi n} \; n^n \; e^{-n}}{n!}$) pour $n=2, 8, 16$ et 64.
+
+\question
+Montrer que les résultats numériques sont compatibles avec $\displaystyle{r(n) \sim \frac{1}{12\, n}}$.
+
+\question
+On utilise la première expression de $n!$ pour calculer $\ln{(n!)}$. En déduire une expression de $\ln{(n!)}$ sous la forme d'une somme. 
+
+\question
+Jusqu'à quelle valeur de $n$ peut-on calculer $\ln{(n!)}$ sur une calculatrice de poche standard ?
+
+\question
+Calculer numériquement l'erreur relative sur $\ln{(n!)}$ faite en utilisant l'approximation d'ordre zéro pour $n!$ pour les valeurs suivantes de $n$ : 2, 8, 16, 64 , 1024, $10^{10}$ et le nombre d'Avogadro ${\cal N}_A$.
+
+\question
+Dans la question précédente,  quelle est la contribution du terme $\ln{( \sqrt{2 \pi n})}$ ? Est-il raisonnable pour $n$ grand d'approcher $ \ln{(n!)}$ par $n\,\ln{(n)} - n$ ? On pourra estimer à partir de quelle valeur de $n$ cette approximation est bonne à 0,1\% près.
+
+\question
+L'approximation $ \ln{(n!)} \sim n\,\ln{(n)} - n$ est connue par les physiciens sous le nom de \textit{formule de Stirling}. En prenant l'exponentielle de cette formule, peut-on affirmer qu'il est raisonnable d'approcher $n!$ par $ n^n \; e^{-n}$ ?
+
+
+
+\end{document}

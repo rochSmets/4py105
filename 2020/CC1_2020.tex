@@ -1,0 +1,97 @@
+\documentclass[utf8, 11pt]{feuille}
+
+\newcommand{\titredutd}{\textbf{CC1 --- 2020}}
+
+\begin{document}
+
+\begin{center}
+    \Large {\bf Contrôle continu}
+    
+    Lundi 5 octobre 2020 - durée: 45min
+\end{center}
+
+Les calculatrices non programmables sont permises mais les documents sont strictement interdits.
+Les téléphones portables doivent être éteints et rangés. Les questions sont à choix multiples, mais  \textbf{vous n'aurez les points pour la bonne réponse  que si cette dernière est correctement justifiée} : un court paragraphe qui énonce une loi de la physique, une équation avec des symboles définis, des schémas clairs et explicites, qui met en oeuvre un raisonnement, un calcul analytique ou une application numérique, peut suffire.
+
+\medskip
+
+On rappelle les valeurs du nombre d'Avogadro ${\cal N_A}=6,02 \times 10^{23}$, de la constante de Boltzmann $k_B=1,38 \times 10^{-23}$ J.K$^{-1}$ et de leur produit, la constante des gaz parfaits $R=8,315$ J.K$^{-1}$. D'autres valeurs de constantes ou de paramètres physiques vous seront nécessaires: si elles ne sont pas données, ce que l'on s'attend à ce que vous les sachiez.
+
+
+% ______________________________________________________________________________
+\section{Questions à choix multiples}
+
+On rappelle les valeurs du nombre d'Avogadro ${\cal N_A}=6,02 \times 10^{23}$, de la constante de Boltzmann $k_B=1,38 \times 10^{-23}$ J.K$^{-1}$ et de leur produit, la constante des gaz parfaits $R=8,315$ J.K$^{-1}$. D'autres valeurs de constantes ou de paramètres physiques vous seront nécessaires~: si elles ne sont pas données, c'est que l'on s'attend à ce que vous les sachiez.
+
+\question
+Dans les conditions normales, l'entropie molaire de l'eau est de $S_0 = 70$~J.K$^{-1}$.mol$^{-1}$. Évaluer le nombre $N$ de molécules et le nombre $\Omega$ de micro-états dans $ m=1 \mu$g d'eau (H$_2$0):
+\begin{itemize}
+\item[a. ] N$\simeq 1,6 \times 10^{19}$ et  $\Omega \simeq e^{50\times 10^{23}}$
+\item[b. ] N$\simeq 3,3 \times 10^{16}$ et  $\Omega \simeq e^{50\times 10^{23}}$
+\item[c. ] N$\simeq 3,3 \times 10^{16}$ et  $\Omega \simeq e^{50 \times 10^{14}}$
+\item[d. ] N$\simeq 3,3 \times 10^{16}$ et  $\Omega \simeq e^{2,8\times 10^{17}}$
+\end{itemize}
+
+\question
+Dans un cristal parfait, les atomes occupent les sites d'un réseau périodique. Certains atomes peuvent sortir de leur position d'équilibre pour occuper des sites dits interstitiels (situés par exemple entre deux atomes) mais avec une pénalité en énergie $\delta \epsilon$. Un cristal contient $10^{24}$ atomes pouvant occuper des sites interstitiels, et $\delta \epsilon =0.1$~eV. On crée une population de sites interstitiels d'énergie totale $\Delta E=4000$ J. Ce système est isolé de l'extérieur. On observe l'état de l'un des atomes. Quelle est la probabilité $p$ de l'observer dans sa position interstitielle ?
+	
+\begin{itemize}
+\item[a.] $0.00025$
+\item[b.] $0.25$
+\item[c.] $0.5$ 
+\item[d.] $0.75$
+\end{itemize}
+
+\question
+Une bouteille d'un volume $V=1$~l contient une mole de gaz (${\cal N}_A$ molécules), bien isolée de l'extérieur. Ce gaz est supposé parfait, ce qui signifie que l'énergie est indépendante des positions des molécules du gaz. On regarde à un instant donné un petit volume $v$ de la bouteille. La probabilité qu'il n'y ait aucune molécule dans ce volume s'exprime comme
+\begin{itemize}
+\item[a.] $(1-\frac{v}{V})^{\cal N_A}$
+\item[b.] $1-(\frac{v}{V})^{\cal N_A}$
+\item[c.] $(\frac{v}{V})^{\cal N_A}$
+\item[d.] $10^{-{\cal N_A} \frac{v}{V}}$
+\end{itemize}	
+
+\question
+Lorsque ce petit volume $v$ est un cube de 10 nm de côté, quel est l'ordre de cette probabilité ?
+\begin{itemize}
+\item[a.] $\frac{1}{{\cal N_A}}$
+\item[b.] $\exp(-10^{-18}{\cal N_A})$
+\item[c.] $0,16\times 10^{-23}$
+\item[d.] $10^{-260}$
+\end{itemize}
+
+\question
+On considère un ensemble de $N$ particules discernables et sans interactions, chacune pouvant occuper soit un état d'énergie $-\epsilon$ et soit un des $q>1$ états d'énergie $+\epsilon$. On suppose que tous les états sont équiprobables. Quelle est l'énergie moyenne $E$ du système ?
+\begin{itemize}
+\item[a.] l'énergie moyenne du système est nulle
+\item[b.] l'énergie moyenne du système est positive et ne dépend pas de q
+\item[c.] l'énergie moyenne du système est positive et croît avec q jusqu'à saturer
+\item[d.] l'énergie moyenne du système est positive et croît indéfiniment avec q
+\end{itemize}
+
+\question
+On rappelle la formule de Sackur-Tetrode qui exprime l'entropie d'un gaz parfait (énergie $E$, volume $V$, $N$ atomes de masse $m$):
+$$
+S=N k_B\left[ \ln (\frac{V}{N})+\frac{3}{2} \ln( \frac{E}{N})+\frac{5}{2}+\frac{3}{2} \ln(\frac{4\pi m}{3 h^2})\right]
+$$
+Quelle relation est vérifiée entre le volume $V$ et la température $T$ de ce système (que l'on calculera au préalable) lors d'une transformation isentropique (c'est-à-dire sans variation d'entropie) ?
+\begin{itemize}
+\item[a.] $VT=$cste
+\item[b.] $\frac{V}{T}=$cste
+\item[c.] $VT^{\frac{3}{2}}=$cste
+\item[d.] $VT^{-\frac{3}{2}}=$cste
+\end{itemize}
+
+\question
+Bonus: vous avez répondu au hasard à toutes les questions précédentes. Quelle est la probabilité pour que vous ayez au moins trois réponses justes ?
+\begin{itemize}
+\item[a.] 1\%
+\item[b.] 6\%
+\item[c.] 17\%
+\item[d.] 31\%
+\end{itemize}
+
+
+\end{document}
+
+

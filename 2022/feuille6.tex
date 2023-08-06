@@ -1,0 +1,69 @@
+%\documentclass[reponses, utf8, 11pt]{feuille}
+\documentclass[utf8, 11pt]{feuille}
+
+\newcommand{\titredutd}{\textbf{TD6 --- Deux approches pour l'oscillateur harmonique}}
+
+\begin{document}
+
+
+\input{anotation}
+
+
+
+% ______________________________________________________________________________
+\section{\medium~Le modèle d'Einstein en micro-canonique}
+
+On considère un solide formé de $N$ ions ou atomes vibrant autour de leurs positions d'équilibre avec la même fréquence $\nu$. On suppose que ce solide est isolé thermiquement et que son énergie est $E$ avec une incertitude que l'on négligera. On rappelle que l'énergie de vibration d'un oscillateur harmonique de fréquence $\nu$ suivant un axe est:
+$$
+\epsilon_k=(k+\frac{1}{2}) h \nu
+$$
+où $k$ est un entier naturel. Soit $E \gg \frac{3N}{2} h \nu$, l'énergie associée aux vibrations du solide.
+
+\question
+Calculer le nombre de micro-états $\Omega(E,N)$ du système.
+
+\question
+En déduire l'expression de l'entropie $S(E,N)$.
+
+\question
+Déterminer la température $T$ du solide à l'équilibre. 
+
+\question
+Inverser la relation précédente et montrer que l'énergie $E$ s'exprime en fonction de $\beta=\frac{1}{k_BT}$ comme
+$$
+E=\frac{3}{2} N h \nu + \frac{3Nh \nu}{e^{\beta h \nu}-1}. \nonumber
+$$
+
+\question
+Comment varie l'énergie à haute température ? En déduire la capacité calorifique du solide dans cette limite. Quelle loi bien connue retrouve-t-on ?
+
+
+
+% ______________________________________________________________________________
+\section{\medium~Système d'oscillateurs harmoniques classiques}
+
+On considère un système constitué de $N \gg 1$ oscillateurs harmoniques {\it classiques}, de masse $m$, de pulsation propre $\omega$, localisés sur un axe à une dimension et {\it indépendants}.
+
+On rappelle que l'énergie mécanique d'un oscillateur harmonique est :
+$$
+\epsilon=\frac{m}{2}\omega^2 x^2+\frac{p_x^2}{2m} , \nonumber
+$$
+où $x$ est l'abscisse de l'écart à la position d'équilibre et $p_x$ la quantité de mouvement associée.
+
+\question
+Calculer le volume dans l'espace des phases des états d'énergie inférieure ou égale à $E$. Par des changements de variables appropriés, on fera apparaître le volume $V_{2N}$ de la boule de dimension $2N$ de rayon $R=1$, $V_{2N}=\frac{\pi^N}{\Gamma(N+1)}$.
+
+\question
+En déduire le nombre de micro-états $\Phi(E,N)$ d'énergie inférieure ou égale à $E$, puis l'entropie $S(E,N)$ du système. L'entropie est-elle bien extensive ?
+
+\question
+Calculer la température de ce système, puis sa capacité calorifique. Comparer aux résultats de l'exercice précédent.
+
+\question
+Comment généraliser ce résultat pour une collection d'OH 3D ?
+
+
+
+
+
+\end{document}

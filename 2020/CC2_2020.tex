@@ -1,0 +1,115 @@
+\documentclass[utf8, 11pt]{feuille}
+
+\newcommand{\titredutd}{\textbf{CC2 --- 2020}}
+
+\begin{document}
+
+\begin{center}
+    \Large {\bf Contrôle continu}
+    
+    Lundi 26 octobre 2020 - durée: 1h30
+\end{center}
+
+Les calculatrices non programmables sont permises mais les documents sont strictement interdits.
+Les téléphones portables doivent être éteints et rangés. Les trois exercices sont largement indépendants. Les questions taguées avec un pique sont un peu plus délicates.
+
+\medskip
+
+On rappelle les valeurs du nombre d'Avogadro ${\cal N_A}=6,02 \times 10^{23}$, de la constante de Boltzmann $k_B=1,38 \times 10^{-23}$ J.K$^{-1}$ et de leur produit, la constante des gaz parfaits $R=8,315$ J.K$^{-1}$. 
+
+
+
+% ______________________________________________________________________________
+\section{Piégeage d'électrons sur des sites}
+
+Un système isolé est constitué de $N$ électrons piégés sur les $N$ sites d'un solide cristallin. Chaque site peut accueillir au plus deux électrons et on a donc trois états possibles pour chacun des sites~:
+
+\begin{itemize}
+\item aucun électron n'est piégé: on prend cet état comme zéro d'énergie.
+\item un électron est piégé: l'énergie de cet état est alors $-\epsilon<0$.
+\item deux électrons sont piégés: l'énergie de cet état est $-2\epsilon+g$ où $g>0$. 
+\end{itemize}
+
+On note $n_0, n_1$ et $n_2$ le nombre de sites occupés respectivement par 0, 1 ou 2 électrons.
+
+\question
+Selon vous, pourquoi ne peut-on pas mettre plus de deux électrons par site et pourquoi $g>0$ ?
+
+\question
+Exprimer le nombre $N$ de sites du solide en fonction de $n_0, n_1$ et $n_2$. Faire de même pour le nombre $N$ d'électrons en fonction de $n_1$ et $n_2$. Montrer que $n_0=n_2$.
+
+\question
+Exprimer l'énergie $E$ en fonction de $\epsilon, g, n_1$ et $n_2$. Entre quelles limites peut-on choisir la valeur de $E$ ?
+
+\question
+Déterminer $n_0, n_1$ et $n_2$ en fonction de $E, N, \epsilon$ et $g$.
+
+\question
+Justifier que le nombre $\Omega(E,N)$ de micro-états d'énergie $E$ soit égal à  $\Omega(E,N)=\frac{N!}{n_0!n_1!n_2!}$.
+
+\question{En déduire l'entropie $S(E,N)$ du système dans la limite thermodynamique (où tous les nombres sont de l'ordre du nombre d'Avogadro) en fonction de $N,n_1$ et $n_2$. On utilisera la formule de Stirling que l'on rappellera au préalable.}
+
+\question
+Calculer la température micro-canonique $T$ du système et montrer qu'elle peut s'exprimer sous la forme $\frac{1}{T}=\frac{2k_B}{g}\ln(\frac{n_1}{n_2})$.
+
+\question
+En déduire l'expression de $E$ en fonction de $N, T, \epsilon$ et $g$. Quelle est la limite de $E$ lorsque $k_B T \gg g$ ? Comment interprétez vous le résultat lorsque $g=0$ ?
+
+\question
+Calculer $n_0, n_1$ et $n_2$ en fonction de $N$,  $T, \epsilon$ et $g$. Commenter les limites de ces nombres lorsque $k_B T \ll g$ et lorsque $k_B T \gg g$.
+
+
+
+% ______________________________________________________________________________
+\section{La croissance vertigineuse du nombre de micro-états}
+
+On considère un système isolé de $N$ particules d'énergie interne $E$. On admet que le nombre de micro-états $\Phi(E,N)$  d'énergie inférieure à $E$ est de la forme $\Phi(E,N)=A(N)E^{\alpha N}$ où $\alpha$ est un nombre proche de l'unité.
+
+\question
+Rappeler la nature de l'énergie interne d'un gaz parfait monoatomique comme l'argon. Justifier sommairement pourquoi, dans ce cas, $\alpha=\frac{3}{2}$.
+
+Pour la suite, on prend pour les applications numériques $\alpha=\frac{3}{2}, N={\cal N}_A$, le nombre d'Avogadro et $E= 6$ kJ.
+
+\question
+Calculer le ratio $\frac{\Phi(E+\delta E,N)}{\Phi(E,N)}$ pour $\delta E= 6 $ nJ puis  $\delta E= 0,375 $ eV.
+
+\question
+Expliquer pourquoi, pour toute valeur \og raisonnable \fg \ de $\delta E$, le nombre $\Omega_{\delta E}(E,N)$ d'états d'énergie compris entre $E$ et $E+\delta E$ près est égal à $\Phi(E+\delta E,N)$. Expliquer l'affirmation que \og dans les espaces de dimensions très élevées, tout le volume est dans la surface \fg.
+
+\question
+En déduire que, dans la limite thermodynamique, l'entropie $S_{\delta E}(E,N)=k_B \ln \Omega_{\delta E}(E,N)$ ne dépend pas de ${\delta E}$ et qu'on a
+$$
+S(E,N) \simeq k_B \ln \Omega_{\delta E}(E,N)\simeq k_B \ln \Phi(E+\delta E,N) \simeq k_B \ln \Phi(E,N). \nonumber \\
+$$
+
+
+
+% ______________________________________________________________________________
+\section{La distribution de Boltzmann dans l'ensemble micro-canonique}
+
+On rappelle que $N$ atomes de masse $m$ d'un gaz parfait monoatomique isolé d'énergie $E$ dans un volume $V$, le nombre de micro-états $\Phi(E,V,N)$  d'énergie inférieure à $E$ est de la forme
+$$
+\Phi(E, V, N)= \frac{V^N}{N!}\frac{(\frac{2\pi m E}{h^2})^{\frac{3N}{2}}}{(\frac{3N}{2})!}
+$$
+
+\question
+Calculer l'entropie $S(E,V,N)$ du gaz et vérifier qu'elle est extensive. Expliquer pourquoi l'extensivité nécessite de tenir compte de l'indiscernabilité des atomes.
+
+\question
+Calculer la température micro-canonique $T$ du système et exprimer $E$ en fonction de $N$ et de $T$. Quel résultat bien connu retrouve-t-on ?
+
+On isole par la pensée une particule. 
+
+\question
+Montrer que la probabilité que cette particule soit située en $\vec r$ à $d\vec r$ près avec la quantité de mouvement $\vec p$ à $d\vec p$ près s'exprime comme
+$$
+P(\vec r,\vec p)d\vec r d\vec p=\frac{d\vec r d\vec p}{N h^3} e^{\frac{1}{k_B}\left[S(E-\frac{p^2}{2m},V,N-1)-S(E,V,N) \right]}
+$$
+
+\question
+Développer $S(E-\frac{p^2}{2m},V,N-1)-S(E,V,N)$ au premier ordre et en déduire que la probabilité que la particule ait la quantité de mouvement $\vec p$ à $d\vec p$ est proportionnelle à $e^{-\frac{p^2}{2mk_BT}}$. Quel résultat bien connu retrouve-t-on ?
+
+
+\end{document}
+
+

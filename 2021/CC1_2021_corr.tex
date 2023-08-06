@@ -1,0 +1,185 @@
+ \documentclass[utf8, 11pt]{feuille}
+
+\newcommand{\titredutd}{\textbf{CC1 --- L'ensemble microcanonique}}
+
+\begin{document}
+
+\begin{center}
+    \Large {\bf Contrôle continu}
+    
+    Mercredi 13 octobre 2021 - durée: 1h30
+\end{center}
+
+Seules les calculatrices non communicantes et les notes manuscrites personnelles sont autorisées.
+
+Les deux exercices sont totalement indépendants, de poids semblables dans le barème.
+
+%\input{anotation}
+
+
+% ______________________________________________________________________________
+
+
+
+% ______________________________________________________________________________
+\section{Spins doctors}
+
+On considère un système $A_0$ formé d'un spin $\frac{1}{2}$ de moment magnétique $\Vec{\mu}$ et un système $A_1$ constitué de trois spins $\frac{1}{2}$  discernables chacun avec le même moment magnétique de norme $\mu$. L'ensemble est isolé mais est plongé dans un champ magnétique uniforme et constant $\vec B$. $A_0$ et $A_1$ sont en contact (thermique) au sens où ils peuvent s'échanger librement de l'énergie mais demeurent isolés du reste de l'Univers. On part d'une configuration initiale où le moment de $A_0$ est dans l'état $+$ (parallèle au champ) ainsi que  deux des moments
+de $A_1$ tandis qu'un moment de $A_1$ est dans l'état $-$ (antiparallèle au champ).
+
+\medskip
+
+\question Rappeler l'expression de l'énergie dans un champ magnétique $\vec B$ d'un moment magnétique $\Vec{\mu}$,  selon que ce dernier est parallèle ou antiparallèle au champ.
+
+\question Quelle est l'énergie initiale du système décrit dans l'introduction ? On posera $\epsilon=\mu B$.
+
+\question Combien y-a-t-il de micro-états accessibles pour $A_0 \cup A_1$ lorsque le moment de $A_0$ est dans son état \mbox{initial $+$} ? 
+
+\question Quand le moment de $A_0$ est dans l'état $-$, combien y-a-t-il de spins de $A_1$ dans l'état $+$ ? En déduire le nombre de micro-états accessibles pour $A_0 \cup A_1$ lorsque le moment de $A_0$ est dans son état $-$ .
+
+\question En déduire quel est le rapport $P_-/P_+$ entre la probabilité que le moment de $A_0$ soit dans son état $-$ et la probabilité qu'il soit dans son état $+$.
+
+\medskip
+
+On suppose désormais que le  système $A_0$ reste inchangé (dans son état $+$) mais que le système $A_1$ est constitué de $N$ spins $\frac{1}{2}$ discernables dont $n \ (< N)$ sont dans l'état $+$ dans la configuration initiale.
+
+\medskip
+
+\question Quelle est l'énergie initiale de ce nouveau système ?
+
+\question Combien y-a-t-il de micro-états accessibles pour $A_0 \cup A_1$ lorsque le moment de $A_0$ est dans son état $+$ ? 
+
+\question Quand le moment de $A_0$ est dans l'état $-$, combien y-a-t-il de moments de $A_1$ dans l'état $+$ ? En déduire le nombre de micro-états accessibles pour $A_0 \cup A_1$ lorsque le moment de $A_0$ est dans son état $-$.
+
+\question Calculer comme ci-dessus le rapport $P_-/P_+$ pour $0 \le n < N$. Comment varie-t-il avec $n$ ?
+
+\medskip
+
+Il est facile d'étendre les considérations précédentes au cas général suivant.  On considère un système $A_0$ quelconque (pas forcément des spins) en contact thermique avec un ensemble $A_1$ de $N$ spins $\frac{1}{2}$ discernables, plongés dans un champ $\vec B$. Notre seule hypothèse est que $A_0$ est \og petit \fg \ devant $A_1$ (il a beaucoup moins de degrés de liberté.) Dans la configuration initiale, $A_0$ est dans son état fondamental d'énergie $E_0$ et $n$ spins parmi $N$ de $A_1$ sont dans l'état $+$.
+
+\medskip
+
+\question Quelle est l'énergie initiale de ce système ?
+
+\question Quand $A_0$ est dans son état fondamental non dégénéré, combien y-a-t-il de micro-états accessibles pour $A_0 \cup A_1$ ?
+\question $A_0$ est désormais dans un état excité $r$, de dégénérescence $g_r$, d'énergie $E_r \ (>E_0)$. Calculer le nombre $\Delta n$ de spins de $A_1$ qui doivent basculer dans l'état $+$ pour assurer le conservation de l'énergie. On admettra que $E_r-E_0 \gg \epsilon$. En déduire quel est le nombre de micro-états accessibles pour $A_0 \cup A_1$ quand $A_0$ est dans \mbox{l'état $r$}.
+\question Calculer le rapport $P_r/P_0$ entre la probabilité que $A_0$ soit dans l'état excité $r$ et la probabilité qu'il soit dans l'état  fondamental. (dans l'hypothèse où $\Delta n \ll n$ et $\Delta n \ll N-n$, on admettra que l'on peut utiliser dans ce cas de façon brutale la formule de Stirling.)
+\question En déduire que la probabilité de trouver le système $A_0$ dans un état excité $r$ d'énergie $E_r$ est \mbox{$P_r=C g_r \exp(-\beta E_r)$} où $\beta $ est une constante que l'on exprimera en fonction de $\epsilon$, de $n$ et de $N$. Quel est le signe de $\beta $ ?
+\\
+
+\elements{
+\\
+1 $\epsilon=- \Vec{\mu}.\Vec{B}$,  $=- \mu B$ si parallèles et $=+  \mu B$ si anti-parallèles (1 pt).
+\\
+2 $E_0=1 \times (-\epsilon)$, $E_1=2 \times (-\epsilon)+ 1 \times \epsilon=-\epsilon$, $E_{1\cup 2}=E_0+E_1=-2\epsilon$ (1 pt).
+\\
+3 Choisir un spin - parmi les 3 spins de $A_1$ donc 3 micro-états (1 pt).
+\\
+4 Il faut basculer un spin de $A_1$ de - à + pour assurer la conservation de l'énergie (1 pt) .
+
+Les trois spins de $A_1$ sont donc +: un seul micro-état (1 pt).
+
+5 Il suffit de faire le ratio du nombre de micro-états accessibles dans chacun des cas en raison de l'équiprobabilité de ces micro-états (1 pt). 
+
+Donc $P_-/P_+=1/3$ (1 pt).
+
+6 $E_0=1 \times (-\epsilon)$, $E_1=n \times (-\epsilon)+ (N-n) \times \epsilon=(N-2n)\epsilon$ (1 pt)
+
+$E_{1\cup 2}=E_0+E_1=(N-2n-1)\epsilon$ (1 pt).
+\\
+7 Choisir $n$ spins + parmi les $N$ spins de $A_1$ donc $C_N^n$ micro-états (1 pt).
+\\
+8. Il faut basculer un spin de $A_1$ de - à +. Il y a donc $n+1$ spins de $A_1$ dans l'état + (1 pt) 
+
+et donc $C_N^{n+1}$ micro-états (1 pt).
+\\
+9 $P_-/P_+=C_N^{n+1}/C_N^n = (N-n)/(n+1)$ (1 pt). 
+
+Ce rapport diminue quand $n$ augmente (1 pt).
+\\
+10 $E_{1\cup 2} = E_0+E_1 = E_0+(N-2n)\epsilon$ (1 pt).
+\\
+11 Choisir $n$ spins + parmi les $N$ spins de $A_1$ donc $C_N^n$ micro-états (1 pt).
+\\
+12 Soit $n_r$ le nouveau nombre de spins + de $A_1$. On a $E_{1\cup 2} = E_0+(N-2n)\epsilon = E_r+(N-2n_r)\epsilon$ (1 pt) 
+
+d'où $\Delta n=n_r-n = (E_r-E_0)/(2 \epsilon)$ (1 pt),
+
+qui donne donc $g_r C_N^{n+\Delta n}$ micro-états (1 pt).
+\\
+13 $P_r/P_0= (g_r C_N^{n+\Delta n})/(g_0 C_N^{n})=g_r/g_0 \times n!/(n+\Delta n)! \times (N-n)!/(N-n-\Delta n)!$ (1 pt).
+
+On peut écrire $n!/(n+\Delta n)!\simeq \exp{[n \ln n - n]}/\exp{[(n+\Delta n) \ln (n+\Delta n) - (n+\Delta n)]} \simeq \exp{[- \Delta n \ln n]}$ (2 pts). 
+
+D'où $P_r/P_0=g_r/g_0 \times \exp{[- \Delta n (\ln n -\ln (N- n) )]}$ (1 pt).
+\\
+14 En substituant l'expression de $\Delta n$ en fonction de $E_r$,  \mbox{$P_r \propto g_r \exp[- E_r (\ln n - \ln (N- n) )/(2 \epsilon)]$} ( 1 pt), 
+
+donc $\beta=(\ln (n/(N-n))/(2 \epsilon)$ (1 pt) 
+
+qui est positive uniquement si $n > N/2$ (1 pt). } 
+
+
+\section{Gaz ultra relativiste}
+
+On considère un gaz parfait constitué de $N (\sim {\cal N}_A)$ particules ultra-relativistes, {\bf indiscernables}, confinées dans un volume $V$ de dimension 3 : l'énergie cinétique $\epsilon_i$ d'une particule $i$ est donnée par $\epsilon_i= p_ic$ où $c$ est la vitesse de la lumière et $p_i=|\Vec{p_i}|$ la norme de sa quantité de mouvement. Soit $E$ l'énergie totale du gaz et $S(E,V,N)$ son entropie. On introduit $k_B$ la constante de Boltzmann et $h$ la constante de Planck.
+
+\medskip
+
+\question Comment relier $S(E,V,N)$ à $\Pi(E,V,N)$, {\bf volume} dans l'espace des phases des (micro-)états accessibles du gaz d'énergie inférieure ou égale à $E$ ? On commentera l'origine de cette expression.
+
+\question Exprimer $\Pi$ sous forme intégrale. Montrer que $\Pi(E,V,N)=V^N (\frac{E}{c})^{3N} I(N)$ où $I(N)$ est une intégrale 3N-uple sans grandeurs physiques, dont on donnera l'expression.
+
+\question On admet que $I(N)=\frac{(8 \pi)^N}{(3N)!}$. Le vérifier pour $N=1$. Calculer explicitement $S(E,V,N)$. On utilisera la formule de Stirling. Vérifier que $S(E,V,N)$ est bien extensive.
+
+\question Calculer la température de ce gaz ainsi que sa pression à partir de l'expression de $S(E,V,N)$. Commenter.
+
+\question On introduit $\Lambda=\frac{hc}{k_BT}$ la longueur d'onde thermique de de Broglie. Calculer $\Lambda$ à température ambiante. Exprimer $\frac{S}{N k_B}$ en fonction de $\Lambda$ et de $\rho=\frac{N}{V}$.  
+\\
+
+\elements{ 
+\\
+1 On a $S(E,V,N)=k_B \ln \frac{\Pi(E,V,N)}{h^{3N}N!}$ (1 pt). 
+
+Trois commentaires possibles, deux attendus (2 pt): 
+
+- $N!$ pour l'indiscernabilité (toutes les permutations des $N$ particules ne comptent que pour 1 micro-état); 
+
+- $\Pi(E,V,N)$ et non pas $\Gamma(E,V,N)$, surface dans l'espace des phases des (micro-)états accessibles du gaz d'énergie égale à $E$ car en dimensions élevées, tout le volume est dans la surface (sic), 
+
+- $h^{3N}$  action élémentaire dans l'espace des phases insécable en vertu  de l'inégalité d'Heinsenberg et que l'on retrouve avec le principe de correspondance.
+\\
+2 $\Pi(E,V,N)=\int_{\sum_{i=1}^{i=N} p_ic<E} \Pi_{i=1}^{i=N} d\Vec{r_i}d\Vec{p_i}$ (1 pt). 
+
+On peut factoriser les intégrales sur les positions et les intégrales sur les quantités de mouvements et si on pose $\Vec{p_i}=(E/c) \Vec{u_i}$ (1 pt), 
+
+on obtient $\Pi(E,V,N)= \left( \int \Pi_{i=1}^{i=N} d\Vec{r_i} \right) \left(\int_{\sum_{i=1}^{i=N} u_i<1} \Pi_{i=1}^{i=N} (E/c)^3 d\Vec{u_i}) \right)$ (1 pt) , 
+
+$\Pi(E,V,N)=V^N (E/c)^{3N} \left(\int_{\sum_{i=1}^{i=N} u_i<1} \Pi_{i=1}^{i=N} d\Vec{u_i} \right)$ (1 pt). 
+
+Par identification on a $I(N)=\int_{\sum_{i=1}^{i=N} u_i<1} \Pi_{i=1}^{i=N} d\Vec{u_i}$ (1 pt).
+\\
+3 On a $I(1)=\int_{ u<1} d\Vec{u}=4 \pi \int_{ u<1} u^2 du = 4\pi/3 =(8\pi)^1/3!$ (1 pt). 
+
+On a donc $\Pi(E,V,N)=(8 \pi V)^N (E/c)^{3N}/(3N)!$ et $S(E,V,N)=k_B \ln [ \frac{(8 \pi V)^N}{N!}(\frac{E}{ch})^{3N}\frac{1}{(3N)!}]$ (1 pt). 
+
+En utilisant la formule de Stirling, on obtient $S(E,V,N)=Nk_B \left( \ln (\frac{8\pi V}{N}) + 3 \ln ( \frac{E}{3hcN})+4 \right)$ (2 pt). 
+
+$S(E,V,N)=Ns(E/N,V/N)$ est bien intensive (1 pt).
+\\
+4 $\frac{1}{T}=\left( \frac{\partial S}{\partial E} \right)_{V,N}=\frac{3Nk_B}{E}$ (1 pt)
+
+tandis que $\frac{P}{T}=\left( \frac{\partial S}{\partial V} \right)_{E,N}=\frac{Nk_B}{V}$ (1 pt). 
+
+On a donc $PV=Nk_BT$ comme pour un gaz parfait (1 pt).
+\\
+5 $\Lambda=\frac{hc}{k_BT}=\frac{6,64.10^{-34}\times 3. 10^8}{1,38.10^{-23}\times 300}= 48$ $\mu$m (1 pt). 
+
+En substituant $E=3Nk_BT$ dans l'expression de l'entropie (1 pt), 
+
+on obtient $\frac{S}{Nk_B}=4-\ln[\frac{\rho \Lambda^3}{8\pi}]$ (1 pt).
+}
+
+
+
+\end{document}

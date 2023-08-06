@@ -1,0 +1,56 @@
+%\documentclass[reponses, utf8, 11pt]{feuille}
+\documentclass[utf8, 11pt]{feuille}
+
+\newcommand{\titredutd}{\textbf{TD13 --- Gaz d'électrons}}
+
+\begin{document}
+
+
+\input{anotation}
+
+
+
+ % ______________________________________________________________________________
+\section{\medium~Paramagnétisme de Pauli}
+
+On considère un gaz d'électrons libres dans une enceinte de volume $V$ à la température $T$.
+
+\question
+Rappeler l'expression de la densité d'états en énergie $\rho_{3D}(\epsilon)$.
+
+\question
+Rappeler quel est le nombre moyen d'occupation $n(\epsilon)$ d'un état quantique d'énergie $\epsilon$ lorsque le potentiel chimique du gaz est égal à $\mu$.
+
+\question
+Rappeler l'expression du niveau de Fermi à température nulle.
+
+\medskip
+
+On plonge le gaz d'électrons dans un champ magnétique $\vec{B}=B_z\vec{e_z}$. Soit $\vec{m}$ le moment magnétique d'un électron.
+
+\question
+Montrer que la densité d'états en énergie des électrons up (moment aligné avec le champ) et down (dans le sens contraire) est
+$$
+\rho_\pm(\epsilon)=\frac{1}{2}\rho_{3D}(\epsilon \pm mB), \epsilon \geq \mp mB
+$$
+
+\question
+Calculer le nombre $N_\pm$ d'électrons up et down à température nulle et écrire la relation qui relie le niveau de Fermi $\epsilon_F$ à $N, V$ et $B$.
+
+\question
+La valeur de $m$ est égale au  magnéton de Bohr soit environ 10$^{-23}$ J.T$^{-1}$. Montrer que $mB \ll \epsilon_F(B=0)$ et que, au premier ordre, $\epsilon_F(T=0,B)$ est indépendant de $B$.
+
+\question
+En déduire que l'aimantation à température nulle se met sous la forme $M=\frac{3}{2} N m \frac{mB}{\epsilon_F}$. Comparer avec le résultat équivalent pour des particules discernables, expliquer en particulier l'origine de l'énorme réduction de l'aimantation.
+
+\question
+\'Ecrire $N_\pm$ et $M$ pour des températures non nulles. Discuter du comportement de $M$ lorsque $T\gg T_F$. Montrer que dans cette limite, le potentiel chimique est donné par
+
+$$
+\exp (\beta \mu)=\frac{4(\beta \epsilon_F)^{\frac{3}{2}}}{3\sqrt{\pi}\cosh(\beta m B)}. \nonumber
+$$
+et que l'aimantation vérifier l'équation $M= Nm\tanh(\beta m B)$ comme attendu.
+
+
+
+\end{document}

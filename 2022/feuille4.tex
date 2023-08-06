@@ -1,0 +1,90 @@
+%\documentclass[reponses, utf8, 11pt]{feuille}
+\documentclass[utf8, 11pt]{feuille}
+
+\newcommand{\titredutd}{\textbf{TD4 --- L'oscillateur harmonique quantique en micro-canonique}}
+
+\begin{document}
+
+
+\input{anotation}
+
+
+
+% ______________________________________________________________________________
+\section{\medium~Système d'oscillateurs harmoniques quantiques}
+
+Un système constitué de $N$ oscillateurs harmoniques {\it quantiques} de pulsation $\omega$ à une dimension, discernables et indépendants, est isolé, son énergie étant égale à $E$. Pour rappel, l'énergie de l'oscillateur $i=1,\dots,N$ est donnée par $e_i=(n_i+\frac{1}{2})\hbar \omega$, où $n_i$ est le nombre quantique d'excitation de l'oscillateur.
+
+\question
+Donner l'expression de l'énergie du système en fonction des nombres quantiques d'excitation $n_i$, où $i=1\dots N$.
+
+\medskip
+D'après ce qui précède fixer l'énergie $E$ revient à fixer la valeur de la somme des nombres quantiques $n_i$ à une valeur
+$M$ :
+$$
+\sum_{i=1}^N n_i=M
+$$
+Soit $\varOmega(N,E)$ le nombre de micro-états du système de $N$ oscillateurs dont l'énergie vaut $E$.
+ 
+\question
+Commencer par calculer $\varOmega(N,E)$ pour $N$ quelconque et pour $M=0,1$ puis 2.
+
+\question
+Calculer à présent $\varOmega(N,E)$ pour $N=2$ et $M=3$.
+	
+\question
+Calculer $\varOmega(N,E)$ dans le cas général.\\
+Indice : ce problème est équivalent à trouver le nombre de façons de répartir $M$ objets dans $N$ boîtes distinctes.
+
+\question
+Vérifier l'expression en calculant par une sommation directe la dégénérescence des niveaux d'énergie d'un oscillateur harmonique tridimensionnel ($N=3$), c'est-à-dire le nombre de possibilités d'avoir $n_x+n_y+n_z=M$.
+
+\question
+Dans la limite des hautes énergies ($N$ étant fixé et $M \gg N$), montrer que l'on a:
+$$
+\varOmega(N,E)\simeq {1\over (N-1)!}\left({E\over \hbar  \omega}\right)^{N-1}
+$$
+
+\question
+En déduire l'entropie micro-canonique dans la limite des hautes énergies, puis la température. Inverser cette relation pour obtenir $E(T)$.
+
+
+% ______________________________________________________________________________
+\section{\medium~L'OHQ dans tous ses (micro-)états}
+
+On considère dans un premier temps une collection de $N $ oscillateurs harmoniques quantiques 1{\sc d} identiques, faiblement couplés entre eux et isolés du reste de l'univers. Le nombre de quanta d'énergie qu'ils se partagent est égal à $M$. Dans toute la suite, on considérera  que $N \gg 1$ et $M \gg 1$.
+
+\question
+Calculer l'énergie totale $E(N,M)$ et le nombre de micro-états $\Omega(N,M)$ du système, puis $\ln \Omega(N,M)$.
+
+\question
+Soit un {\sc ohq} particulier. Calculer le nombre de micro-états $\Omega(N,M|m)$ du système pour lequel cet {\sc ohq} possède exactement $m$ quanta d'énergie. En déduire la probabilité $p(m)$ qu'un {\sc ohq} contienne exactement $m$ quanta d'énergie.
+
+\question
+On introduit $\overline m= \frac{M}{N}$. Quelle est l'interprétation de $\overline m$ ? Montrer que dans l'hypothèse où $M \gg m$, $p(m)$ peut être approché par
+$$
+p(m) \sim \frac{1}{1+\overline m} \, \left(\frac{\overline m}{1+\overline m}\right)^m
+$$
+Tracer $p(m)$. Montrer que même dans l'approximation précédente $\sum_{m=0}^{m=M}p(m)=1$.
+
+\medskip
+On considère désormais deux collections d'{\sc ohq}, appelées 1 et 2,  comportant $N_1$ et $N_2$ {\sc ohq} respectivement et $M_{1i}$ (resp. $M_{2i}$) quanta d'énergie. Initialement isolées, elles sont mises en contact thermique à l'instant initial pour former une collection unique de $N=N_1+N_2$ {\sc ohq} faiblement couplés avec $M=M_{1i}+M_{2i}$ quantas. Tous ces nombres sont $\gg 1$.
+
+\question
+Calculer le nombre de micro-états du système réuni juste avant le contact $\Omega_i$ puis juste après $\Omega_f$. Comparer $\Omega_i$  et $\Omega_f$.
+
+\question
+Grâce au contact et au faible couplage, le nombre de quanta de 1 est désormais libre de fluctuer par échange d'énergie avec 2. Exprimer littéralement la probabilité $P(M_1)$ pour que la collection 1 possède $M_1$ quantas exactement.  
+
+\question
+En vous aidant de la formule de Stirling pour écrire $\ln P(M_1)$, calculer la valeur $\overline {M_1}$ de $M_1$ qui rend $P(M_1)$ maximum. Interpréter le résultat obtenu.
+
+\question
+Calculer le nombre $\Omega_e$ de micro-états du système correspondant à  $\overline{M_1}$ quanta dans 1. Comparer $\Omega_e$  à $\Omega_i$  et $\Omega_f$ , puis $\ln \Omega_e$  à $\ln \Omega_i$  et $\ln \Omega_f$. Que constate-t-on avec bonheur ?
+
+\question
+Expliquer (avec des mots) ce qu'il advient quand on met en contact thermique deux systèmes.
+
+
+
+\end{document}

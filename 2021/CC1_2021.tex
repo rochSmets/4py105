@@ -1,0 +1,86 @@
+\documentclass[utf8, 11pt]{feuille}
+
+\newcommand{\titredutd}{\textbf{CC1 --- L'ensemble microcanonique}}
+
+\begin{document}
+
+\begin{center}
+    \Large {\bf Contrôle continu}
+    
+    Mercredi 13 octobre 2021 - durée: 1h30
+\end{center}
+
+Seules les calculatrices non communicantes et les notes manuscrites personnelles sont autorisées.
+
+Les deux exercices sont totalement indépendants, de poids semblables dans le barème.
+
+%\input{anotation}
+
+
+% ______________________________________________________________________________
+
+
+
+% ______________________________________________________________________________
+\section{Spins doctors}
+
+On considère un système $A_0$ formé d'un spin $\frac{1}{2}$ de moment magnétique $\Vec{\mu}$ et un système $A_1$ constitué de trois spins $\frac{1}{2}$ discernables, chacun avec le même moment magnétique de norme $\mu$. L'ensemble est isolé mais est plongé dans un champ magnétique uniforme et constant $\vec B$. $A_0$ et $A_1$ sont en contact (thermique) au sens où ils peuvent s'échanger librement de l'énergie mais demeurent isolés du reste de l'Univers. On part d'une configuration initiale où le moment de $A_0$ est dans l'état $+$ (parallèle au champ) ainsi que  deux des moments
+de $A_1$ tandis qu'un moment de $A_1$ est dans l'état $-$ (antiparallèle au champ).
+
+\medskip
+
+\question Rappeler l'expression de l'énergie dans un champ magnétique $\vec B$ d'un moment magnétique $\Vec{\mu}$,  selon que ce dernier est parallèle ou antiparallèle au champ.
+
+\question Quelle est l'énergie initiale du système décrit dans l'introduction ? On posera $\epsilon=\mu B$.
+
+\question Combien y-a-t-il de micro-états accessibles pour $A_0 \cup A_1$ lorsque le moment de $A_0$ est dans son état \mbox{initial $+$} ? 
+
+\question Quand le moment de $A_0$ est dans l'état $-$, combien y-a-t-il de spins de $A_1$ dans l'état $+$ ? En déduire le nombre de micro-états accessibles pour $A_0 \cup A_1$ lorsque le moment de $A_0$ est dans son état $-$ .
+
+\question En déduire quel est le rapport $P_-/P_+$ entre la probabilité que le moment de $A_0$ soit dans son état $-$ et la probabilité qu'il soit dans son état $+$.
+
+\medskip
+
+On suppose désormais que le  système $A_0$ reste inchangé (dans son état $+$) mais que le système $A_1$ est constitué de $N$ spins $\frac{1}{2}$ discernables dont $n \ (< N)$ sont dans l'état $+$ dans la configuration initiale.
+
+\medskip
+
+\question Quelle est l'énergie initiale de ce nouveau système ?
+
+\question Combien y-a-t-il de micro-états accessibles pour $A_0 \cup A_1$ lorsque le moment de $A_0$ est dans son état $+$ ? 
+
+\question Quand le moment de $A_0$ est dans l'état $-$, combien y-a-t-il de moments de $A_1$ dans l'état $+$ ? En déduire le nombre de micro-états accessibles pour $A_0 \cup A_1$ lorsque le moment de $A_0$ est dans son état $-$.
+
+\question Calculer comme ci-dessus le rapport $P_-/P_+$ pour $0 \le n < N$. Comment varie-t-il avec $n$ ?
+
+\medskip
+
+Il est facile d'étendre les considérations précédentes au cas général suivant.  On considère un système $A_0$ quelconque (pas forcément des spins) en contact thermique avec un ensemble $A_1$ de $N$ spins $\frac{1}{2}$ discernables, plongés dans un champ $\vec B$. Notre seule hypothèse est que $A_0$ est \og petit \fg \ devant $A_1$ (il a beaucoup moins de degrés de liberté.) Dans la configuration initiale, $A_0$ est dans son état fondamental d'énergie $E_0$ et $n$ spins parmi $N$ de $A_1$ sont dans l'état $+$.
+
+\medskip
+
+\question Quelle est l'énergie initiale de ce système ?
+
+\question Quand $A_0$ est dans son état fondamental non dégénéré, combien y-a-t-il de micro-états accessibles pour $A_0 \cup A_1$ ?
+\question $A_0$ est désormais dans un état excité $r$, de dégénérescence $g_r$, d'énergie $E_r \ (>E_0)$. Calculer le nombre $\Delta n$ de spins de $A_1$ qui doivent basculer dans l'état $+$ pour assurer le conservation de l'énergie. On admettra que $E_r-E_0 \gg \epsilon$. En déduire quel est le nombre de micro-états accessibles pour $A_0 \cup A_1$ quand $A_0$ est dans \mbox{l'état $r$}.
+\question Calculer le rapport $P_r/P_0$ entre la probabilité que $A_0$ soit dans l'état excité $r$  et la probabilité qu'il soit dans l'état fondamental. (dans l'hypothèse où $\Delta n \ll n$ et $\Delta n \ll N-n$, on admettra que l'on peut utiliser dans ce cas de façon brutale la formule de Stirling.)
+\question En déduire que la probabilité de trouver le système $A_0$ dans un état excité $r$ d'énergie $E_r$ est \mbox{$P_r=C g_r \exp(-\beta E_r)$} où $\beta $ est une constante que l'on exprimera en fonction de $\epsilon$, de $n$ et de $N$. Quel est le signe de $\beta $ ?
+
+
+\section{Gaz ultra relativiste}
+
+On considère un gaz parfait constitué de $N (\sim {\cal N}_A)$ particules ultra-relativistes, {\bf indiscernables}, confinées dans un volume $V$ de dimension 3 : l'énergie cinétique $\epsilon_i$ d'une particule $i$ est donnée par $\epsilon_i= p_ic$ où $c$ est la vitesse de la lumière et $p_i=|\Vec{p_i}|$ la norme de sa quantité de mouvement. Soit $E$ l'énergie totale du gaz et $S(E,V,N)$ son entropie. On introduit $k_B$ la constante de Boltzmann et $h$ la constante de Planck.
+
+\medskip
+
+\question Comment relier $S(E,V,N)$ à $\Pi(E,V,N)$, {\bf volume} dans l'espace des phases des (micro-)états accessibles du gaz d'énergie inférieure ou égale à $E$ ? On commentera l'origine de cette expression.
+
+\question Exprimer $\Pi$ sous forme intégrale. Montrer que $\Pi(E,V,N)=V^N (\frac{E}{c})^{3N} I(N)$ où $I(N)$ est une intégrale 3N-uple sans grandeurs physiques, dont on donnera l'expression.
+
+\question On admet que $I(N)=\frac{(8 \pi)^N}{(3N)!}$. Le vérifier pour $N=1$. Calculer explicitement $S(E,V,N)$. On utilisera la formule de Stirling. Vérifier que $S(E,V,N)$ est bien extensive.
+
+\question Calculer la température de ce gaz ainsi que sa pression à partir de l'expression de $S(E,V,N)$. Commenter.
+
+\question On introduit $\Lambda=\frac{hc}{k_BT}$ la longueur d'onde thermique de de Broglie. Calculer $\Lambda$ à température ambiante. Exprimer $\frac{S}{N k_B}$ en fonction de $\Lambda$ et de $\rho=\frac{N}{V}$.
+
+\end{document}

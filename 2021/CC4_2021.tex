@@ -1,0 +1,147 @@
+\documentclass[utf8, 11pt]{feuille}
+
+\newcommand{\titredutd}{\textbf{CC4 --- 2021}}
+
+\begin{document}
+
+\begin{center}
+    \Large {\bf Seconde session}
+    
+    Mercredi 11 mai 2022 - durée: 2h30
+\end{center}
+
+Seules les calculatrices non communicantes et les notes manuscrites personnelles sont autorisées.
+
+On rappelle les valeurs du nombre d'Avogadro ${\cal N_A}=6,02 \times 10^{23}$, de la constante de Boltzmann $k_B=1,38 \times 10^{-23}$ J.K$^{-1}$ et de leur produit, la constante des gaz parfaits $R=8,315$ J.K$^{-1}$ et de la constante de Planck réduite $\hbar = 1,05 \times 10^{-34}$ J.s. On notera  $\beta=\frac{1}{k_B T}$. 
+
+\section{Système à trois niveaux}
+
+On considère un système composé d'un grand nombre $N$ de molécules, dont les interactions sont négligeables. Chacune des molécules possède trois niveaux d'énergie \og interne \fg \, respectivement d'énergies -$\epsilon$, 0 et  +$\epsilon$. 
+
+
+\subsection{Etude dans l'ensemble canonique}
+
+ On suppose que le système est à l'équilibre avec un thermostat à la température $T$.
+ 
+\question
+Quelle est la probabilité de trouver la molécule avec l'énergie -$\epsilon$ ? 0 ? +$\epsilon$ ? On pourra introduire $z(\beta)$ la fonction de partition d'une molécule.
+
+\question
+Montrer que l'énergie  moyenne $\overline{\epsilon}$ d'une molécule est égale à $\overline{\epsilon}=- \epsilon \frac{2 \sinh (\beta \epsilon)}{1+2\cosh (\beta \epsilon)}$. Quelle est l'énergie interne correspondante du système  ? Justifier votre réponse.
+
+\question
+En déduire la contribution $C$ de ces degrés de liberté énergétiques à la capacité calorifique \textbf{molaire} à volume constant de ce gaz.
+
+\question
+Tracer sommairement $C/R$ en fonction du paramètre $x=\frac{\epsilon}{k_BT}$. Justifier pourquoi il y a forcément un maximum.
+
+\subsection{Etude dans l'ensemble micro-canonique}
+
+On suppose que le système est isolé et a une énergie donnée $E$.
+
+\question Sur quel domaine peut varier $E$ ? Donner sa valeur minimale et sa valeur maximale.
+
+\question Donner les deux relations qui existent entre $N$, $E$ et les populations des niveaux $N_{+}$, $N_{-}$ et $N_{0}$ (respectivement d'énergie $\epsilon$, -$\epsilon$ et 0).
+
+\question En déduire l'expression de $N_{+}$ et de $N_{-}$ en fonction de $N$, $N_{0}$ et de $M=\frac{E}{\epsilon}$. Montrer que $N_0 \le N_0^*=N-|M|$.
+
+\question Montrer que le nombre de micro-états de ce système s'exprime sous la forme
+
+$$
+\Omega(E,N)=\sum_{N_0=0}^{N_0=N_0^*} \frac{N!}{N_{+}!N_{-}!N_0!}
+$$
+où $N_{+}$ et $N_{-}$ sont fonctions de $N$, $N_{0}$ et de $M$.
+
+
+Pour calculer l'entropie du système, il suffit pour les systèmes macroscopiques de prendre le logarithme du terme maximum dans la somme qui exprime $\Omega(E,N)$.
+
+\question Simplifier $\ln (\frac{N!}{N_{+}!N_{-}!N_0!} )$ en utilisant la formule de Stirling.
+
+\question Dériver l'expression précédente par rapport à $N_0$ (n'oubliez pas que $N_{+}$ et $N_{-}$ en dépendent) et donner la relation entre $N_{+}, N_{-}$ et $N_0$ qui rend extrémale l'expression.
+
+\question Sans faire explicitement les calculs, expliquer la démarche que vous suiveriez pour déterminer l'entropie du système et sa température. 
+
+\section{Une approximation de la distribution de Fermi}
+
+On considère un modèle de fluide en dimension $d$, à la température $T$ et potentiel chimique $\mu$ comme un \og gaz \fg \ de fermions  indépendants de spin 1/2, de masse $m$ et dont les niveaux d'énergie  sont donnés par
+$\epsilon (k)=\frac{\hbar^2 \vec{k}^2}{2m}$,
+où $\vec k$ est le vecteur d'onde.
+
+\question Rappeler l'expression du nombre moyen d'occupation $n(\epsilon)$ d'un micro-état d'énergie $\epsilon$ d'une particule de ce fluide.
+
+\question Que devient l'expression précédente à température nulle ?
+
+\question Application numérique : on introduit la quantité $\Delta_p n=n(\mu-p k_BT)-n(\mu+p k_BT)$. Calculer $\Delta_p n$ pour $p=0, 1, 2, 3, 4, +\infty$. En déduire en fonction de $T$ une estimation de $\Delta \epsilon$, intervalle dans lequel $n(\epsilon)$ passe de 0,95 à 0,05. Donner la valeur de $\Delta \epsilon$ en électron-volt pour $T=100$ K.
+
+\question Donner les expressions formelles du nombre moyen $\langle N \rangle$ de particules et de leur énergie moyenne $\langle E \rangle$ sous forme intégrale, en fonction de $T$, $\mu$ et de la densité en énergie des micro-états $\rho (\epsilon)$ .
+
+\ 
+
+Pour simplifier les calculs, on fait une approximation linéaire de $n(\epsilon)$ que l'on définit par morceaux: $n(\epsilon)=1$ si $\epsilon \le \mu-2 k_BT$; $n(\epsilon)=0$ si $\epsilon \ge \mu+2 k_BT$ et une droite pour faire le raccord. On admet par ailleurs que  $\rho(\epsilon)$ est quasiment constant dans l'intervalle d'énergie $[\mu-2 k_BT, \mu+2 k_BT]$ autour de $\mu$.
+
+\question Représenter graphiquement $n(\epsilon)$ dans le cadre de cette approximation. Expliciter $n(\epsilon)$ pour $\mu-2 k_BT \le \epsilon \le \mu+2 k_BT$.
+
+\question Montrer graphiquement ou par le calcul que la relation entre $\langle N \rangle$ et $\mu$ ne dépend pas de la température $T$ compte tenu des approximations. En déduire que si $\langle N \rangle$ est fixé, le potentiel chimique $\mu$ est égal au niveau de fermi $\epsilon_F$, sa valeur à température nulle.
+
+\question On note $\langle E_F \rangle$ l'énergie interne à température nulle. Donner l'expression formelle de $\langle E_F \rangle$.
+
+\question Calculer $\Delta \langle E \rangle =  \langle E \rangle-\langle E_F \rangle .$ Sans surprise, on découpera l'intégrale  en 3 morceaux. Montrer que \mbox{$\Delta \langle E \rangle =\frac{2}{3} \rho(\epsilon_f) (k_BT)^2$}.
+
+\question En déduire la variation de la capacité calorifique du système avec la température. Comparer au résultat \mbox{exact $\frac{\pi^2}{3} \rho(\epsilon_f) k_B^2 T$}.
+
+%\question Expliciter les expressions de $\rho (\epsilon)$ à 2 et 3 dimensions. Le calcul fait appel à la quantification du vecteur d'onde dans la boîte de surface (respectivement volume) $A=L_xL_y$ (resp. $V=L_xL_yL_z$). On utilisera des conditions aux limites périodiques pour exprimer les valeurs autorisées de $\vec{k}$.
+
+\section{Développements sur le modèle d'Ising}
+Le modèle d'Ising est le cadre le plus simple pour étudier la transition de phase ferromagnétique-paramagnétique. Le système est formé de $N \gg 1$ atomes localisés aux n\oe uds d'un réseau cristallin de coordinence $q$ (le nombre de plus proches voisins) avec des conditions aux limites périodiques. Chaque atome $i$ porte un moment magnétique $\mu_i$ ne pouvant prendre que deux valeurs $\mu_i=\sigma_i \mu$ (spin $\frac{1}{2}$) avec $\sigma_i= \pm 1$. Le système est en contact avec un thermostat à la température $T$. L'hamiltonien du modèle d'Ising s'écrit
+$$
+H=-J\sum_{\langle i,j \rangle}\sigma_i \sigma_j  \quad \textrm{avec} \quad J>0
+$$
+où ${\langle i,j\rangle}$ indique que la somme est prise sur toutes les paires de sites plus proches voisins. $J$ est une énergie.
+
+\subsection{Développement basse température}
+\question Dans quel(s) micro-état(s) l'énergie du système est-elle minimale ? Calculer alors cette énergie (fondamental) $E_0$ en fonction de $N$, $q$ et $J$ et montrer que sa dégénérescence est égale à $g(E_0)=2$.
+
+\question Calculer l'énergie $E_1$ du premier état excité par rapport au fondamental ainsi que sa dégénérescence $g(E_1)$.
+
+\question Calculer l'énergie $E_2$ du deuxième état excité par rapport au fondamental ainsi que sa dégénérescence $g(E_2)$. Montrer que $E_2=E_0+4(q-1)J$.
+
+\question  \'Ecrire la fonction de partition $Z(\beta,N)$ comme fonction des quantités $\beta$, $E_0$, $g(E_0)$, $\Delta E_m=E_m-E_0$ et $g(E_m)$ (pour $m \ge 0$) supposées connues.
+
+\question Expliquer pourquoi il s'agit d'un développement à basse température.
+
+\question Comment calculer l'énergie moyenne du système en fonction de la température ? Calculer les deux premiers termes du développement de l'énergie moyenne de la forme $a+b\exp (-\beta c)+ \ldots$ On explicitera $a, b$ et $c$.
+
+%\question On se  place dans le cas d'un réseau carré à deux dimensions de coordinance $q=4$. Montrer que $\Delta E_3= 4qJ$. Calculer sa dégénérescence en envisageant toutes les façons d'obtenir cette énergie d'excitation. 
+
+\subsection{Développement à haute température}
+On reprend le problème depuis le début.
+
+\question \'Ecrire formellement la fonction de partition $Z(\beta,N)$ en fonction de $H$ en faisant les sommes appropriées.
+
+\question Montrer que la limite lorsque la température tends vers l'infini est  $Z(0,N)=2^N$. Interpréter ce résultat.
+
+\question Montrer que l'on a l'identité
+$$
+\exp( \beta J \sigma_i \sigma_j )= \cosh(\beta J) (1+ \nu\sigma_i \sigma_j)
+$$
+avec $\nu=\tanh{\beta J }$, quelles que soient les valeurs de  $\sigma_i$ et $\sigma_j$.
+
+\question En déduire que 
+$$
+Z(\beta,N)=2^N [\cosh (\beta J)]^{\frac{Nq}{2}} Q(\nu),
+\ \text{où}  \ 
+Q(\nu)=\frac{1}{2^N} \sum_{\{\sigma_k=\pm 1 \}_{k=1..N}}\Pi_{\langle i,j \rangle}(1+\nu \sigma_i \sigma_j).
+$$
+
+\question En déduire un développement de $Z(\beta,N)$ en puissance de $\nu$. En quoi s'agit-il bien d'un développement à haute température ?
+
+%\question Montrer que les termes en $\nu$ et $\nu^2$ sont nuls. 
+
+%\question On admet que le terme en $\nu^4$ vaut $N$. En déduire le développement de l'énergie libre à l'ordre $\nu^4$.
+
+
+
+
+
+
+\end{document}

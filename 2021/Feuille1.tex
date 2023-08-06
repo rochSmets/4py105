@@ -1,0 +1,79 @@
+%\documentclass[reponses, utf8, 11pt]{feuille}
+\documentclass[utf8, 11pt]{feuille}
+
+\newcommand{\titredutd}{\textbf{TD1 --- Dénombrements \& probabilités}}
+
+\begin{document}
+
+
+\input{anotation}
+
+
+% ______________________________________________________________________________
+\section{\soft~Dénombrements : Codes à quatre chiffres [CC 2013]}
+
+On tire un code de quatre chiffres (entre 0 et 9) au hasard (penser à un code de carte bleue). Calculer la probabilité $p$ des événements suivants :
+
+\medskip
+
+\question
+quatre chiffres sont identiques (comme 7777)
+
+\question
+quatre chiffres sont différents (comme 0385)
+
+\question
+deux chiffres sont identiques et deux sont différents (comme 2808).
+
+
+\elements{\\
+1 : $p=\frac{1}{10} \times \frac{1}{10} \times \frac{1}{10}=0,001$
+\\
+2 :  $p=\frac{9}{10} \times \frac{8}{10} \times \frac{7}{10}=0,504$
+\\
+3 : $p=6 \times \frac{1}{10} \times \frac{9}{10} \times \frac{8}{10}=0,432$, car il y a $\binom 4 2 =6$ combinaisons pour placer les deux mêmes chiffres.
+}
+
+
+
+% ______________________________________________________________________________
+\section{\medium~Dénombrements : Full ou Carré ? [CC 2016]}
+
+On considère un jeu de 52 cartes; il contient quatre familles de treize cartes (As, Roi, Dame, Valet, Dix, Neuf, Huit, Sept, Six, Cinq, Quatre,
+Trois, Deux).
+
+\medskip
+
+\question
+On tire cinq cartes au hasard. Combien y a-t-il de tirages possibles?
+
+\question
+On tire cinq cartes au hasard. Quelle est la probabilité d'avoir les quatre As? Quelle est la probabilité d'avoir quatre cartes identiques (un carré) quelconques ? A.N.
+
+\question
+On tire cinq cartes au hasard. Quelle est la probabilité d'avoir trois As et deux Rois ? Quelle est la probabilité d'avoir  trois cartes identiques quelconques et que les deux cartes restantes soient aussi identiques (Full) ? A.N.
+
+
+
+% ______________________________________________________________________________
+\section{\medium~Marche aléatoire à une dimension}
+
+Sur un réseau à une dimension, un marcheur ivre exécute une marche aléatoire de $N$ pas : à chaque pas de même longueur $l$, il va à droite avec une probabilité $p$ ou à gauche avec une probabilité $1-p$. On appelle $X$ sa position (relative à son point de départ) après $N$ pas.
+
+\medskip
+
+\question
+Que valent la moyenne $\langle X \rangle$ et la variance ${\rm Var}(X)$ de $X$ ?
+
+\question
+Pour $p=\frac{1}{2}$, à quelle distance typique $d$ de son point de départ se trouve le marcheur après $N$ pas ? 
+
+\question
+Si la durée de chaque pas est égale à $\Delta t$, comment varie la distance $d$ avec la durée $t$ de la marche aléatoire ? Comment appelle-t-on ce type de comportement ?
+
+\question
+Comment peut-on écrire la distribution de probabilité de $X$ pour $N$ grand ?
+
+
+
+\end{document}
