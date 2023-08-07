@@ -1,0 +1,15 @@
+\elements{
+\\
+1 : 
+$\varOmega=2^7=128$ ;
+\\
+2 : $M_I=-2\mu$, soit 4 micro-états tels que le sous-système I a 3 moments $-\mu$ et un moment $+\mu$ (par exemple $\downarrow \downarrow \uparrow \downarrow$), pour chacun de ces 4 micro-états, le sous-système II peut être dans $2^3$ micro-états, donc $Pr(M_I=-2\mu)=\frac{4\times 8}{128}=\frac{1}{4}$ (car les micro-états du système I$+$II sont équiprobables avec $p=1/128$).
+\\
+3 : Il y a 1 micro-état tel que $M_I=-4\mu$ ($\downarrow \downarrow \downarrow \downarrow$), 4 micro-états tels que $M_I=-2\mu$ ($\uparrow \downarrow \downarrow \downarrow$), ${4 \choose 2}=6$ micro-états tels que $M_I=0$ ($\uparrow \uparrow \downarrow \downarrow$), 4 micro-états tels que $M_I=+2\mu$ ($\uparrow \uparrow \uparrow \downarrow$) et 1 micro-état tel que $M_I=+4\mu$ ($\uparrow \uparrow \uparrow \uparrow$), pour chacun de ces micro-états de I, le sous-système II peut être dans $2^3$ micro-états, donc $\langle M_I \rangle=\frac{8}{128}(-4\mu\times 1 -2\mu \times 4 +0\times 6 + 2 \mu \times 4 +4 \mu \times 1)=0$ (résultat attendu par symétrie).
+\\
+4 : $M_I+M_{II}=\mu$, il y a donc 4 moments $+\mu$ et 3 moments $-\mu$ dans le système I$+$II, soit $\varOmega= {7 \choose 4}=35$.
+\\
+5 : $M_I=-2\mu$, soit 4 micro-états tels que le sous-système I a 3 moments $-\mu$ et un moment $+\mu$, un seul micro-état est alors accessible au sous-système II tel que $M_{II}=\mu-M_I=3\mu$ ($\uparrow \uparrow \uparrow$), donc $Pr(M_I=-2\mu)=\frac{4\times 1}{35}$ et $Pr(M_{II}=3\mu)=\frac{1\times 4}{35}$.
+\\
+6 : Les micro-états  accessibles du système I sont les mêmes qu'à la question 4, sauf le micro-état $\downarrow \downarrow \downarrow \downarrow$, car il n'y a que 3 moments $-\mu$ dans le système I$+$II. On a donc $Pr(M_I=-2\mu)=\frac{4\times 1}{35}$, $Pr(M_I=0)=\frac{6\times 3}{35}$, car ${4 \choose 2}=6$ micro-états tels que $M_I=0$ et 3 micro-états tels que $M_{II}=\mu$, $Pr(M_I=2\mu)=\frac{4\times 3}{35}$, car 4 micro-états tels que $M_I=2\mu$ et 3 micro-états tels que $M_{II}=-\mu$, $Pr(M_I=4\mu)=\frac{1\times 1}{35}$, car 1 micro-état tel que $M_I=4\mu$ et 1 micro-état tel que $M_{II}=-3\mu$ (on a bien la normalisation $Pr(M_I=-2\mu)+Pr(M_I=0)+Pr(M_I=2\mu)+Pr(M_I=4\mu)=1$). Ainsi  $\langle M_I \rangle=\frac{1}{35}( -2\mu \times 4 +0\times 18 + 2 \mu \times 12 +4 \mu \times 1)=\frac{20}{35}$.
+}

@@ -1,0 +1,13 @@
+\elements{\\
+1 : $p\times 1 + (1-p)\times 0=p$, $\langle k \rangle =Np$ (car $N$ intervalles indépendants) et $p=\alpha \frac{T}{N}=\alpha \Delta t$ ;
+\\
+2 : $p(1-p)^{N-1}$, puis $Np(1-p)^{N-1}$ (car $\binom N 1 =N$ possibilités pour l'unique désintégration) ;
+\\
+3 : $p^2(1-p)^{N-2}$, puis $\binom N 2 \times p^2(1-p)^{N-2}$ (car $\binom N 2$ possibilités pour deux désintégrations parmi $N$ intervalles) ;
+\\
+4 : $P(k)=\binom N k p^k(1-p)^{N-k}$ (car $\binom N k$ possibilités pour $k$ désintégrations parmi $N$ intervalles) et $\sum_{k=0}^N P(k)=1$ par la formule du binôme de Newton;
+\\
+5 : $P(k)= \frac{N!}{k! (N-k)!} (\frac{\alpha T}{N})^k (1- \frac{\alpha T}{N})^{N-k}= \frac{N. (N-1)...(N-(k-1))}{k!} (\frac{\alpha T}{N})^k (1- \frac{\alpha T}{N})^{N-k} \simeq \frac{N^k}{k!} (\frac{\alpha T}{N})^k {\rm e}^{-\alpha T} = \frac1{k!}(\alpha T)^k {\rm e}^{-\alpha T}$
+\\
+6 : Loi de Poisson : $\sum_{k=0}^{\infty} P(k)= {\rm e}^{-\alpha T} \sum_{k=0}^{\infty} \frac{(\alpha T)^k}{k!} =1$ ; $\langle k\rangle= {\rm e}^{-\alpha T} \sum_{k=0}^{\infty} k \frac{(\alpha T)^k}{k!}= (\alpha T) {\rm e}^{-\alpha T} \sum_{k=1}^{\infty} \frac{(\alpha T)^{k-1}} {(k-1)!} = \alpha T$ et $\langle k(k-1) \rangle= {\rm e}^{-\alpha T} \sum_{k=0}^{\infty} k(k-1) \frac{(\alpha T)^k}{k!}= (\alpha T)^2 {\rm e}^{-\alpha T} \sum_{k=2}^{\infty} \frac{(\alpha T)^{k-2}} {(k-2)!} = (\alpha T)^2$ donc $ {\rm Var}(k)= \langle k^2\rangle -\langle k \rangle^2= \langle k(k-1)\rangle + \langle k\rangle -\langle k \rangle^2=\alpha T =\langle k \rangle$.
+}

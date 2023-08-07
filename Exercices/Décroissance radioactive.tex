@@ -1,0 +1,29 @@
+On considère la désintégration d'une source radioactive. On observe que pendant une durée $T$ courte devant la demi-vie de la source, le nombre \emph{moyen} de désintégrations est $\langle k \rangle =\alpha T$. Le but de l'exercice est de déterminer la probabilité que pendant un temps~$T$ il y ait $k$ désintégrations. Pour modéliser la désintégration, on découpe la durée $T$ en $N\gg1$ intervalles de très courte durée $\Delta t=\frac{T}{N}$. Pendant chacun des $N$ intervalles $\Delta t$, il y a donc 0 ou 1 désintégration. On suppose que les événements sont indépendants d'un intervalle à l'autre. Soit $p\ll1$ la probabilité qu'une désintégration se produise pendant un intervalle $\Delta t$
+
+\medskip
+
+\question
+Quel est le nombre moyen de désintégrations dans un intervalle $\Delta t$ donné ?  Quel est le nombre moyen de désintégrations pendant la durée~$T$ ? En relisant l'introduction, en déduire une expression de $p$ en fonction de $\alpha$, $N$ et $T$.\label{decrad1}
+
+\medskip
+
+On veut maintenant calculer la distribution de probabilité du nombre de désintégrations. On commence par supposer $N$ fini, et, à la toute fin du calcul, on prendra la limite $N\to\infty$.
+
+\question
+Quelle est la probabilité d'avoir une désintégration pendant un intervalle $\Delta t$ donné (par exemple le 17\up{e}) et aucune pendant tous les autres intervalles ? En déduire la probabilité qu'il y ait exactement une désintégration pendant toute la durée $T$, sans qu'on précise à quel instant elle a eu lieu.\label{decrad2}
+
+\question
+Quelle est la probabilité d'avoir deux désintégrations pendant le temps~$T$, l'une à l'intervalle 17 et l'autre à l'intervalle 71 par exemple? En déduire la probabilité qu'il y ait exactement deux désintégrations pendant toute la durée $T$, sans qu'on précise à quels instants elles ont eu lieu. \label{decrad3}
+
+\question
+De même, déterminer la probabilité $P(k)$ d'avoir exactement $k$ désintégrations pendant la durée $T$ à des instants non spécifiés. Vérifier que cette distribution de probabilité est normalisée.
+
+\question
+Prendre la limite $N\to\infty$ (après avoir remplacé $p$ par son expression en fonction de $N$ bien sûr) pour obtenir $P(k)$ en fonction de $\alpha$ et de $T$ (on rappelle que $\displaystyle \lim_{N\to\infty}\Big[1+\frac a N\Big]^N={\rm e}^a$).
+
+Indice : en cas de doute, commencer par calculer la limite pour $k=1$ ou $k=2$.
+
+\question
+Comment s'appelle cette distribution de probabilité ? Vérifier qu'elle est bien normalisée. Calculer explicitement la valeur moyenne $\langle k\rangle$ et la variance ${\rm Var}(k)$.
+
+Indice : écrire \mbox{$k^2=k(k-1)+k$}.

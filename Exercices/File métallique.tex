@@ -1,0 +1,79 @@
+On considère un fil métallique droit de section constante $s$=1~mm$^2 $ dont le comportement mécanique est analogue à celui d'un ressort~: soumis à une force de traction extérieure $f_{\mathrm{ext}}$, il s'allonge et exerce une force de rappel $f$ sur l'opérateur. Sa longueur $l$ dépend également de sa température $T$ et une équation d'état relie les 3 grandeurs $l = f(T,f)$. Cette équation d'état peut être obtenue à partir de la connaissance de ses coefficients thermoélastiques~: son module d'Young $E$ et son coefficient de dilatation linéaire à force de traction constante $\lambda$  définis de la façon suivante~:
+\begin{equation}
+E = \dfrac{l}{s} \left( \dfrac{\partial f}{\partial l} \right)_T
+\end{equation}  
+
+\begin{equation}
+\lambda = \dfrac{1}{l} \left( \dfrac{\partial l}{\partial T} \right)_f
+\end{equation}
+
+\question
+Sachant que la longueur du fil à la température $T_0$ est $l_0$ lorsqu'il n'est soumis à aucune force de traction ($f$ = 0), montrer que l'équation d'état du fil s'écrit:
+\begin{equation}
+ln \left( \dfrac{l(T,f)}{l_0} \right) = \dfrac{f}{Es}+\lambda (T-T_0) 
+\end{equation} 
+\reponse{
+A partir de la définition des deux coefficients thermoélastique $E$ et $\lambda$, on obtient deux équations différentielles~:
+\begin{equation}
+\left( \dfrac{\partial l}{\partial T} \right)_f-\lambda l = 0
+\end{equation} 
+\begin{equation}
+\left( \dfrac{\partial l}{\partial f} \right)_T-\dfrac{l}{Es} = 0
+\end{equation}
+La résolution de la première équation donne: 
+\begin{equation}
+\ln l(T,f) = \lambda T+h(f)
+\end{equation}
+où $h(f)$ représente une fonction de $f$. On dérive cette dernière expression par rapport à $f$ à $T$ constant~:
+\begin{equation}
+\dfrac{1}{l} \left( \dfrac{\partial l}{\partial f} \right)_T = \dfrac{dh}{df}
+\end{equation}
+que l'on confronte ensuite à la seconde équation différentielle sur $l$~:
+\begin{equation}
+\dfrac{dh}{df}=\dfrac{1}{Es}
+\end{equation}
+que l'on intègre par rapport à $f$~:
+\begin{equation}
+h(f) = \dfrac{f}{Es}+C
+\end{equation}
+où $C$ représente une constante qu'on va déterminer à partir de la condition limite $l(T_0, f=0)=l_0$, soit $\ln l(T_0, 0) = \lambda T_0+h(0) = \lambda T_0+C = \ln l_0$.
+
+Finalement, on obtient bien~:
+\begin{equation}
+\ln l(t,f) = \lambda T + \dfrac{f}{Es} + (\ln l_0-\lambda T_0)
+\end{equation}
+soit l'équation d'état~: 
+\begin{equation}
+\ln \left[ \dfrac{l(t,f)}{l_0} \right] = \lambda (T-T_0)+ \dfrac{f}{Es}
+\end{equation}
+}
+
+\question
+En maintenant la condition $l = l_0$, quelle est la relation (algébrique) entre $f$ et $\Delta T$~=~20~K~?
+%Si la longueur est fixée à $l_0$, quelle sera la force agissant sur la tige si la température augmente de 20 K ?
+(Ceci explique la nécessité de mettre des joints de dilatation dans des systèmes tels que les lignes de chemin de fer, les ponts..)
+
+\donnees{$l_0$ = 5~cm, $E$ = 200~GPa, $\lambda=1,2\times10^{-5}$~K$^{-1}$.}
+\reponse{
+On a $ l(T_0, f=0) = l_0 = l(T_0+\Delta T,f)$ qui peut s'écrire, en utilisant l'équation d'état~: $\lambda \Delta T = -\dfrac{1}{ES} f$, soit $f = -\lambda ES \Delta T = -48$~N (force de tension interne).
+}
+
+\question
+Comment se simplifie l'équation d'état pour décrire des états d'équilibre caractérisés par la même température $T_0$ et des valeurs de $f$ faibles devant $Es$? 
+\reponse{
+D'après l'équation d'état à $T=T_0$, on a $l=l_0 \e ^{f/Es}$. On peut simplifier cette expression pour les petites valeurs de $f/Es$ à l'aide du développement limité en $x=0$, $e^x \sim 1+x$, grâce auquel on obtient $l \simeq l_0 \left( 1+\dfrac{f}{Es} \right)$.
+}
+
+\question
+On fait subir au fil deux transformations distinctes au cours desquelles il reste en contact avec l'atmosphère. Au cours de la première transformation, on augmente très lentement la force appliquée, de $f_{\mathrm{ext}}=0$ à $f_{\mathrm{ext}}=f_{1} \ll Es$. Au cours de la seconde au contraire, on lui applique $f_{\mathrm{ext}}=f_1$ brutalement. Calculer le travail reçu par le fil dans les 2 cas et comparer les valeurs obtenues.   
+\reponse{
+Il s'agit de calculer le travail d'une transformation quasi-statique $W_1$ et celui d'une transformation non quasi-statique $W_2$, entre l'état initial A($l_0, T_0, f=0$) et l'état final B($l_1$, $T_0$, $f_1$) où $l_1 = l_0 \e ^{f_1/Es} = l_0(1+f_1/Es)$~:
+\begin{equation}
+W_1 = \int_{l_i}^{l_f} f_{\mathrm{ext}} \D l = \int_{l_0}^{l_1} f(l)\D l = \int_{l_0}^{l_1} \frac{Es}{l_0}(l-l_0)\D l
+\end{equation}
+qui vaut $W_1 = \frac{Es}{2l_0}(l_1-l_0)^2=f_1^2 \frac{l_0}{2Es}$.
+\begin{equation}
+W_2 = \int_{l_i}^{l_f} f_{\mathrm{ext}}\D l = f_1 \int_{l_0}^{l_1}\D l = f_1 (l_1-l_0) 
+\end{equation}
+qui vaut $W_2 = \frac{Es}{l_0}(l_1-l_0)^2 = f_1^2\frac{l_0}{Es} = 2W_1 $.
+}

@@ -1,0 +1,33 @@
+On considère un système quantique dont l'Hamiltonien exhibe trois états propres non dégénérés d'énergies distinctes, respectivement 0, $\epsilon$ et $2\epsilon$, en équilibre avec un thermostat à la température $T$.
+
+\medskip
+
+\question
+Le système est composé d'une particule sans spin. Représenter graphiquement les différents micro-états possibles du système. Calculer la fonction de partition $Z_1(\beta)$ de cette particule et son énergie moyenne $\langle E_1 (\beta) \rangle$.
+
+\question
+Le système est composé de deux particules sans spin \textit{discernables}. Représenter graphiquement les différents micro-états possibles du système. Calculer la fonction de partition $Z_{2d}(\beta)$ de ces deux particules et montrer que  $Z_{2d}(\beta)=Z_1(\beta)^2$. En déduire l'énergie moyenne $\langle E_{2d}(\beta) \rangle$. Tracer avec Python $\langle E_{2d}(\beta) \rangle$ en fonction du paramètre $x=\frac{k_BT}{\epsilon}$. 
+
+\question
+Le système est composé de deux bosons \textit{indiscernables}. Représenter graphiquement les différents micro-états possibles du système. Calculer la fonction de partition $Z_{2B}(\beta)$ de ces deux particules. Vérifier que  $Z_{2B}(\beta)=\frac{1}{2} [Z_1(\beta)^2+Z_1(2\beta)]$. En déduire l'énergie moyenne $\langle E_{2B}(\beta) \rangle$. Tracer avec Python $\langle E_{2B}(\beta) \rangle$ en fonction de $x$. 
+
+\question
+Le système est composé de deux fermions \textit{indiscernables} de spin nul (en totale violation du théorème spin-statistique !). Représenter graphiquement les différents micro-états possibles du système. Calculer la fonction de partition $Z_{2F}(\beta)$ de ces deux particules. Vérifier que  $Z_{2F}(\beta)=\frac{1}{2} [Z_1(\beta)^2-Z_1(2\beta)]$. En déduire l'énergie moyenne $\langle E_{2F}(\beta) \rangle$. Tracer avec Python $\langle E_{2F}(\beta) \rangle$ en fonction de $x$. 
+
+\question
+Qu'advient-il si les fermions ont un spin $\frac{1}{2}$ ? Reprendre la question précédente. Expliquer pourquoi cela revient à considérer que tous les niveaux d'énergie sont dégénérés deux fois.
+
+\medskip
+
+On considère désormais qu'outre la température, on fixe le potentiel chimique $\mu$.
+
+\medskip
+
+\question
+Rappeler les expressions des taux d'occupation de chaque état propre en fonction de son énergie, de $T$ et de $\mu$ selon que les particules sont des bosons ou des fermions.
+
+\question
+Donner les expressions correspondantes (pour notre système avec trois états propres) de l'énergie moyenne $\langle E (\beta,\mu) \rangle$ et du nombre moyen de particules $\langle N(\beta,\mu) \rangle$.
+
+\question
+On veut un nombre moyen de bosons égal à deux. Calculer numériquement la fugacité $f=\exp(\beta \mu)$ pour quelques valeurs du paramètre $x$, puis l'énergie moyenne correspondante. Comparer avec les résultats de la question 3.  

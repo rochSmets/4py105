@@ -1,0 +1,74 @@
+{\sffamily\bfseries{L'intégrale Gaussienne}}
+
+Soit l'intégrale gaussienne $ \displaystyle I_n(\alpha) = \int_{0}^{\infty} x^{n} {\rm e}^{-\alpha x^2} {\rm d}x\enspace, \textrm{ où } \alpha>0 $.
+
+\question
+Montrer que $I_1(\alpha)=\frac{1}{2\alpha}$.
+
+\question
+Exprimer $I_n(\alpha)$ en fonction de $I_{n-2}(\alpha)$.
+
+\question
+On admet en sus que $I_0(\alpha)=\frac{1}{2}\sqrt{\frac{\pi}{\alpha}}$. En déduire que $I_2(\alpha)=\frac{1}{4\alpha} \sqrt{\frac{\pi}{\alpha}}$ et que $I_3(\alpha)= \frac{1}{2\alpha^2}$.
+
+\bigskip
+
+{\sffamily\bfseries{La fonction  Gamma et la factorielle}}
+
+On définit la fonction Gamma,  
+$
+\displaystyle \Gamma(x)  = \int^\infty_0 {\rm e}^{-t} t^{x-1} {\rm d}t 
+$, pour $x>0$.
+
+\question
+Calculer $\Gamma(1)$ et $\Gamma (1/2)$.
+
+\question
+Montrer que $ \Gamma (x+1) = x \Gamma(x)$. En déduire $\Gamma(N+1)$ en fonction de $N!$, où $N$ est un entier positif.
+
+\bigskip
+
+{\sffamily\bfseries{Les factorielles des grands nombres et la formule de Stirling}}
+
+On montre que la factorielle $n!$ d'un nombre $n$ entier peut s'approcher par le développement suivant : 
+$$
+\label{eqStirling}
+n! = \sqrt{2 \pi n} \; n^n \; e^{-n} \; \Big[ 1 + \frac{1}{12\, n} + \frac{1}{288\, n^2}+ O(\frac{1}{n^3}) \Big]
+$$
+où $O(\frac{1}{n^3})$ représente les termes d'ordre supérieur ou égal à trois en $\frac{1}{n}$.
+
+\question
+Rappeler la définition de $n!$ où $n$ est un nombre entier positif.
+
+\question
+Calculer à l'aide d'une calculatrice de poche (ou de tout autre moyen dont vous disposez) $2!$, $8!$, $16!$ et $64!$.
+
+\question
+Jusqu'à quelle valeur de $n$ peut-on calculer $n!$ sur une calculatrice de poche standard ?
+
+\question
+Calculer de nouveau $2!$, $8!$, $16!$ et $64!$ en utilisant l'approximation suivante (dite d'ordre zéro) pour la factorielle
+$$
+n! \sim \sqrt{2 \pi n} \; n^n \; e^{-n} .
+$$
+
+\question
+Calculer numériquement l'erreur relative $r(n)$ (c'est-à-dire le quotient $r(n)=\frac{n!-\sqrt{2 \pi n} \; n^n \; e^{-n}}{n!}$) pour $n=2, 8, 16$ et 64.
+
+\question
+Montrer que les résultats numériques sont compatibles avec $\displaystyle{r(n) \sim \frac{1}{12\, n}}$.
+
+\question
+On utilise la première expression de $n!$ pour calculer $\ln{(n!)}$. En déduire une expression de $\ln{(n!)}$ sous la forme d'une somme. 
+
+\question
+Jusqu'à quelle valeur de $n$ peut-on calculer $\ln{(n!)}$ sur une calculatrice de poche standard ?
+
+\question
+Calculer numériquement l'erreur relative sur $\ln{(n!)}$ faite en utilisant l'approximation d'ordre zéro pour $n!$ pour les valeurs suivantes de $n$ : 2, 8, 16, 64 , 1024, $10^{10}$ et le nombre d'Avogadro ${\cal N}_A$.
+
+\question
+Dans la question précédente,  quelle est la contribution du terme $\ln{( \sqrt{2 \pi n})}$ ? Est-il raisonnable pour $n$ grand d'approcher $ \ln{(n!)}$ par $n\,\ln{(n)} - n$ ? On pourra estimer à partir de quelle valeur de $n$ cette approximation est bonne à 0,1\% près.
+
+\question
+L'approximation $ \ln{(n!)} \sim n\,\ln{(n)} - n$ est connue par les physiciens sous le nom de \textit{formule de Stirling}. En prenant l'exponentielle de cette formule, peut-on affirmer qu'il est raisonnable d'approcher $n!$ par $ n^n \; e^{-n}$ ?

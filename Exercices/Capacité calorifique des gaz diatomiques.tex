@@ -1,0 +1,90 @@
+On se propose de déterminer l'expression de la capacité calorifique d'un gaz de molécules diatomiques  hétéro-nucléaires (avec deux atomes différents). On admet que l'Hamiltonien d'une telle molécule diatomique peut s'écrire sous la forme de trois termes principaux $h = h_{tr} + h_{rot} + h_{vib}$. On a respectivement
+
+\begin{itemize}
+
+\item 
+$h_{tr} =\frac{\vec{P}^2}{2M}$ où $\vec{P}$ est la quantité de mouvement de la molécule et $M$ sa masse
+
+\item
+$h_{rot} =\frac{\vec{l}^2}{2I}$ où $\vec{l}$ est le moment cinétique orbital caractérisant la rotation de la molécule et $I$ le moment d'inertie correspondant (par rapport à  un axe passant par le centre de gravité de la molécule et perpendiculaire à  l'axe rejoignant les deux atomes)
+
+\item
+$h_{vib} =\frac{p_x^2}{2\mu}+\frac{k x^2}{2}$, hamiltonien d'un oscillateur harmonique à  une dimension ($x$ est l'écart à  la distance d'équilibre entre les deux molécules et $p_x$ l'impulsion correspondante; $\mu$ est ici la masse réduite des deux atomes).
+
+\end{itemize}
+
+
+Les valeurs propres de cet Hamiltonien, dans l'approximation du découplage entre ces différentes formes d'énergie, sont telles que l'énergie de la molécule s'écrit $\epsilon =\epsilon_{tr}+\epsilon_{rot}+\epsilon_{vib}$.
+
+On considère un gaz très dilué de $N$ molécules diatomiques identiques à  la température $T$ dans le volume $V$. On suppose que la fonction de partition totale $Z=Z(N,V,T)$ peut s'écrire $Z= z^N/N!$ où $z=z(V,T)$ est la fonction de partition correspondant à  une seule molécule.
+
+\question{Donner trois exemples de gaz diatomiques hétéro-nucléaires.}
+
+\question{Préciser le sens physique de la factorisation $Z= z^N/N!$.}
+
+\question{Rappeler dans l'ensemble canonique la relation entre $Z$ et l'énergie moyenne $\langle E \rangle$ du système. En déduire que la capacité calorifique à  volume constant $C_V$ est donnée par $\frac{C_V}{k_B}=\beta^2 \left( \frac{\partial^2 \ln Z}{\partial \beta^2} \right)_V$.} 
+
+\question{Montrer que, dans les conditions de l'énoncé, $z$ peut s'écrire $z=z_{tr}z_{rot}z_{vib}$ en explicitant le sens de chaque terme. En déduire que l'énergie moyenne et  la capacité calorifique du gaz peuvent s'écrire sous la forme de sommes de trois termes,
+associés aux trois différentes formes de l'énergie.}
+
+\question{Combien de degrés de liberté quadratiques possède cette molécule ? En utilisant le théorème d'équipartition que l'on énoncera, que prédit-on dans la limite classique pour l'énergie moyenne et la capacité calorifique par molécule ?}
+
+
+{\sffamily\bfseries{L'énergie cinétique de translation}}
+
+Aux températures considérées, on peut effectuer un calcul classique pour estimer $z_{tr}$.
+
+\question{Donner sous forme intégrale l'expression de $z_{tr}$. On introduira $h$ la constante de Planck.}
+
+\question{On rappelle que $\int_{-\infty}^{+\infty} \D u \exp(-u^2)=\sqrt{\pi}$. Montrer que $z_{tr}=\frac{V}{\Lambda^3}$ où $\Lambda$ est une grandeur que l'on déterminera en fonction de $M$, $h$ et $k_BT$.}
+
+\question{En déduire l'énergie moyenne $e_{tr}$ par molécule et la capacité calorifique (à  volume constant) correspondante $c_{tr}$. Comment cette dernière dépend-t-elle de la température ?}
+
+
+{\sffamily\bfseries{L'énergie de vibration}}
+
+\question{Rappeler l'expression des différents niveaux d'énergie discrets d'un oscillateur harmonique quantique à  une dimension. L'énergie du niveau fondamental est $\frac{\hbar \omega}{2}$ et on introduit la température de vibration associée $\Theta_{\mathrm{vib}} = \frac{\hbar \omega}{2 k_B}$.}
+
+\question{Montrer que $z_{vib}=\frac{1}{2 \sinh(\frac{\hbar \omega}{2 k_B T})}$.}
+
+\question{En déduire l'énergie moyenne $e_{vib}$ par molécule et la capacité calorifique (à  volume constant) correspondante $c_{vib}$. Comment cette dernière dépend-t-elle de la température ? On pourra étudier les limites basses températures et hautes températures.}
+
+
+{\sffamily\bfseries{L'énergie de rotation}}
+
+Les niveaux d'énergie d'une molécule di-atomique en rotation considérée comme un rotateur rigide sont donnés
+par l'expression $\epsilon_{rot}=\frac{\hbar^2}{2I}J(J+1)$ où $0 \le J \le + \infty$ est le nombre quantique (entier) de rotation. Il y a $2J+1$ états dégénérés pour cette valeur de $J$. Il est utile d'introduire la température caractéristique $\theta_{\mathrm{rot}}=\hbar^2/(2Ik_B)$ et le rapport $x =\frac{\theta_{\mathrm{rot}}}{T}$ pour alléger les notations.
+
+\question{\'Ecrire l'expression de la fonction de partition $z_{rot}$ (sans la calculer).}
+
+\question{Dans la limite haute température, on peut développer $z_{rot}$ sous la forme $z_{rot}=\frac{1}{x} \left( 1+\frac{x}{3}+\frac{x^2}{15}+\ldots \right)$. En déduire l'énergie moyenne $e_{rot}$ par molécule et la capacité calorifique (à  volume constant) correspondante $c_{rot}$ dans cette limite. Montrer alors que $c_{rot}$ décroît avec la température.}
+
+\question{Dans la limite basse température, seuls les niveaux de basse énergie seront peuplés. Montrer en conservant le nombre de termes adéquats dans la fonction de partition que, dans cette limite, $c_{rot}=12 k_B x^2 \exp(-2x)$.}
+
+\question{En déduire l'allure probable de $\frac{c_{rot}}{k_B}$ en fonction de $\frac{T}{\theta}$.}
+
+\question{Déduire de toutes les questions précédentes l'expression de la capacité calorifique à  volume constant ${\cal C}_V$ dans la limite haute température.}
+
+
+
+\subsection{Application au HD}
+
+Le deutérure d'hydrogène est formé d'un proton H et d'un atome de deutérium D. On a dans ce cas $\theta_{\mathrm{rot}}=64$ K et $\frac{\hbar \omega}{k_B}=5382$ K. Calculer ${\cal C}_V$ à  l'ambiante (300 K) et à  3000 K.
+
+%\section{Une condensation à  deux dimensions ?}
+%On considère un modèle de fluide  à  deux dimensions, surface $S$, température $T$ et potentiel chimique $\mu$ comme un \og gaz \fg \ de bosons  indépendants de spin nul, de masse $m$ et dont les niveaux d'énergie  sont donnés par
+%\begin{align*}
+%\epsilon (k)=\frac{\hbar^2 k^2}{2m},
+%\end{align*}
+%où $k$ est le vecteur d'onde.
+%
+%\question{Rappeler l'expression du nombre moyen d'occupation $n(\epsilon)$ d'un micro-état d'énergie $\epsilon$.}
+%
+%\question{Montrer que la densité en énergie des micro-états s'écrit sous la forme $\rho (\epsilon)=A$ où le calcul de $A$ fait appel à  la quantification du vecteur d'onde dans la boîte de surface $S=L_xL_y$. On utilisera des conditions aux limites périodiques pour exprimer les valeurs autorisées de $\vec{k}$.}
+%
+%\question{En déduire les expressions formelles du nombre moyen $\langle N \rangle$ de particules et de leur énergie moyenne $\langle E \rangle$ sous forme intégrale, en fonction de $T, S$ et $\mu$ et des données. On introduira $\alpha=N\frac{\Lambda^2}{S}$ où $\Lambda=\frac{h}{\sqrt{2\pi m k_B T}}$. }
+%
+%\question{On donne l'intégrale $\int_0^{+\infty} \frac{dx}{e^{x-y}-1}=-\ln \left(1-e^y \right)$. Calculer explicitement $\mu $ en fonction de $k_BT$ et de $\alpha$.}
+%
+%\question{En déduire que, dans le cas d'un fluide de bosons bidimensionnel, il n'y a pas de condensation de Bose-Einstein.}
+
