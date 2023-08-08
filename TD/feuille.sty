@@ -1,6 +1,8 @@
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{feuille}
+
+%\ProvidesClass{feuille}
+\ProvidesPackage{feuille}
 
 % condition for the answers : \documentclass[reponses, utf8]{feuille}
 \DeclareOption{reponses}{\def\lesreponses{}}
@@ -12,7 +14,7 @@
 
 \ProcessOptions\relax
 
-\LoadClass[\pt@size, a4]{article}
+%\LoadClass[\pt@size, a4]{article}
 %\LoadClass{article}
 
 % load the right packages
@@ -27,6 +29,7 @@
 \RequirePackage{graphics}
 \RequirePackage{totcount}
 \RequirePackage{color}
+\RequirePackage{import}
 
 % define the 3 anotation icons
 \newcommand{\soft}{\faBatteryEmpty}
@@ -110,10 +113,9 @@
 \long\def\tiret#1{\par\noindent{\sffamily\bfseries{#1}}}
 
 
-\def\input@path{{../Exercices}{../Elements}}
+%\def\input@path{{../Exercices}{../Elements}}
 
 
-\long\def\softEx#1{\addMedium{#1}\input{#1}}
-\long\def\mediumEx#1{\addMedium{#1}\input{#1}}
-\long\def\hardEx#1{\addMedium{#1}\input{#1}}
-
+\long\def\softEx#1{\addSoft{#1}\import{Exercices/}{#1}}
+\long\def\mediumEx#1{\addMedium{#1}\import{Exercices/}{#1}}
+\long\def\hardEx#1{\addHard{#1}\import{Exercices/}{#1}}
