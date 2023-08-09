@@ -1,0 +1,94 @@
+\documentclass[landscape, utf8, 10pt]{fiche}
+
+
+\begin{document}
+\begin{multicols}{2}
+
+\nom{64}{100}
+
+\bigskip
+
+%--------------------------------------------------------------------------------------
+%\exo{numero de l'exo}{nom de l'exo}{nombre de point de l'exo}
+\exo{1}{Extensivité, paradoxe de Gibbs et entropie de mélange}{26}
+
+%\sol{num exo}{num question}{solution}{nombre de points}
+\sol{1}{1}{Une grandeur extensive est multipliée par $x$ si toutes les grandeurs extensives dont elle dépend sont multipliée par $x$}{1} \\
+\sol{1}{1}{$S(xE, xV, xN) = x S(E,V,N)$}{1} \\
+\sol{1}{2}{$\phi(E,V,N)=\left(\frac{V}{h^3}\right)^N \frac{1}{N!}\frac{(2\pi m E)^\frac{3N}{2}}{(\frac{3N}{2})!}$}{2} \\
+\sol{1}{2}{$S = k_B \ln \phi = N k_B \left[ \ln \left( \frac{V}{N} \right) + \frac{3}{2} \ln \left( \frac{4 \pi m}{3 h^2} \right) + \frac{3}{2} \ln \left( \frac{E}{N} \right) +\frac{5}{2} \right]$}{2} \\
+\sol{1}{3}{$\frac{1}{T} = \partial_E S|_{V, N}$}{1} \\
+\sol{1}{3}{$\frac{P}{T} = \partial_V S|_{E, N}$}{1} \\
+\sol{1}{3}{$\frac{1}{T} = \frac{3 N k_B}{2 E}$}{1} \\
+\sol{1}{3}{$\frac{P}{T} = \frac{N k_B}{V}$}{1} \\
+\sol{1}{4}{$S = N k_B \left[ \frac{5}{2} - \ln \left( \frac{P}{k_B T} \frac{h^3}{(2 \pi m k_B T)^{3/2}} \right) \right]$}{1} \\
+\sol{1}{5}{$S = N k_B \left[ \ln \left( V \right) + \frac{3}{2} \ln \left( \frac{4 \pi m}{3 h^2} \right) + \frac{3}{2} \ln \left( \frac{E}{N} \right) +\frac{3}{2} \right]$}{1} \\
+\sol{1}{6}{L'entropie est additive dans l'état init.+ un seul système dans l'état final}{1} \\
+\sol{1}{6}{$\Delta S_D = 2 N k_B \ln 2$}{1} \\
+\sol{1}{6}{Enlever la paroi ne change rien à l'état microscopique du système}{1} \\
+\sol{1}{6}{Sackur-Tetrode donne $\Delta S = 0$}{1} \\
+\sol{1}{7}{Equilibre mécanique : $P_1 = P_2$}{1} \\
+\sol{1}{7}{Equilibre thermique : $T_1 = T_2$}{1} \\
+\sol{1}{8}{$S = \sum_{i=1}^2N_i k_B \ln \left( \frac{N_i k_B T}{P} \right) + \frac{3}{2} (N_1+N_2) k_B \left[ ln \left( \frac{4 \pi m}{3 h^2} \right) + \ln \left( \frac{3}{2} k_B T \right) + 1 \right]$}{1} \\
+\sol{1}{9}{$T$ et $P$ sont inchangées}{1} \\
+\sol{1}{10}{$P_1 = \frac{N_1}{N} P$}{1} \\
+\sol{1}{10}{$S = \sum_{i=1}^2N_i k_B \ln \left( \frac{N_i k_B T}{P_i} \right) + \frac{3}{2} (N_1+N_2) k_B \left[ \ln \left( \frac{4 \pi m}{3 h^2} \right) + \ln \left( \frac{3}{2} k_B T \right)+1 $}{1} \\
+\sol{1}{11}{$\Delta S = - k_B N [ x \ln{x}+(1-x) \ln{(1-x)} ]$}{2} \\
+\sol{1}{12}{$\Delta S > 0$ pour $0 < x < 1$ : les particules sont partiellement discernables puisque elles sont de deux espèces différentes. L'état final est différent de l'état initial, $S$ plus grand sans paroi}{2} \\
+
+
+
+%--------------------------------------------------------------------------------------
+\exo{2}{\'Equation d'état d'un gaz parfait selon la statistique}{10}
+
+\sol{2}{1}{$\Lambda = \frac{h}{\sqrt{2 \pi m k_B T}}$}{1} \\
+\sol{2}{1}{Etalement d'une particule, ie de son paquet d'onde lorsqu'elle a la vitesse thermique}{1} \\
+\sol{2}{1}{A $T_0$, il y a en moyenne une particule par boite quantique. On commence par avoir des états dégénérés.}{1} \\
+\sol{2}{2}{3 : Bose-Einstein, 2 : Maxwell-Boltzmann car linéarité, 1 : Fermi-Dirac}{1} \\
+\sol{2}{3}{A $T = 0$, Pression de Fermi, répulsion de Pauli (les particules ne peuvent pas occuper le même état quantique)}{2} \\
+\sol{2}{3}{Objet compact (naine blanche, pulsar, trou noir...) ou électrons libres}{1} \\
+\sol{2}{4}{Condensat de Bose-Einstein. En dessous de cette température, un nombre macroscopique de particules se mettent dans l'état fondamental.}{2} \\
+\sol{2}{5}{A basse température, que les particules soient des bosons ou des fermions, le fluide devient dégénéré et des effets quantiques liés au comptage des états apparaissent }{1} \\
+
+
+
+%--------------------------------------------------------------------------------------
+\exo{3}{\'Etude de la sublimation}{19}
+
+\sol{3}{1}{$Z_g = \frac{1}{N_g!} z_g^{N_g}$}{1} \\
+\sol{3}{1}{$z_g = \frac{V}{\Lambda^3}$}{1} \\
+\sol{3}{1}{$F = - k_B T \ln Z_g = - N_g k_B T [ 1 - \ln \left( \frac{N_g \Lambda^3}{V} \right) ] $}{1} \\
+\sol{3}{1}{$U = N_g \frac{3}{2} k_B T; PV = N_g k_B T  $}{1} \\
+\sol{3}{2}{$\epsilon_0$ est l'énergie la plus basse du puits de potentiel}{1} \\
+\sol{3}{2}{$\omega$: fréquence propre du cristal, associé aux vibrations au fond du puits}{1} \\
+\sol{3}{3}{$Z_s = (z_s)^{N_s}$}{1} \\
+\sol{3}{3}{$z_s = \e ^{\beta \epsilon_0} \left[\frac{\e ^{-\beta \hbar \omega/2}}{1-\e ^{- \beta \hbar \omega}} \right]^3$}{2} \\
+\sol{3}{3}{$F_s = - k_B T \ln Z_s =- N_s \epsilon_0- 3 N_s k_B T \ln{\frac{\e ^{-\beta \hbar \omega/2}}{1-\e ^{- \beta \hbar \omega}}}$}{1} \\
+\sol{3}{4}{$Z = \sum_{N_g = 0}^N Z_g(T, V, N_g) Z_s(T, N-N_g)$}{2} \\
+\sol{3}{5}{$p(N_g^0) = \frac{1}{Z} Z_g(T,V,N_g^0) Z_s(T,N-N_g^0)$}{1} \\
+\sol{3}{6}{$N_g^E$ est telle que $\partial_{N_g} p(N_g) = 0$}{1} \\
+\sol{3}{6}{On obtient alors $Z_s \partial_{N_g} Z_g(T,V,N_g) = Z_g \partial_{N_g} Z_s(T,N-N_g)$}{1} \\
+\sol{3}{6}{Avec $\mu = -k_B T \frac{\partial_N Z}{Z}$, équilibre pour $\mu_g = \mu_s$}{1} \\
+\sol{3}{7}{$\mu_s$ étant fixé et indépendant de $V$, on peut écrire $N_g=\frac{V}{\Lambda^3}$ \exp(\beta \mu_s)}{1} \\
+\sol{3}{7}{$N_g \leq N$ impose donc $V \leq V_M=N \Lambda^3 \exp(-\beta \mu_s)$.}{1} \\
+\sol{3}{7}{Au dessus, l'équilibre impossible. Tous les atomes sont dans la vapeur.}{1} \\
+
+
+
+%--------------------------------------------------------------------------------------
+\exo{4}{Gaz ultra-relativiste de bosons à 2D}{9}
+
+\sol{4}{1}{$\D \epsilon = \hbar c \D k$}{1} \\
+\sol{4}{1}{$\frac{A}{(2\pi)^2} 2 \pi k \D k = \rho(\epsilon) \D \epsilon$}{1} \\
+\sol{4}{1}{$\rho(\epsilon) = \frac{2 \pi A}{h^2 c^2} \epsilon$}{1} \\
+\sol{4}{2}{$n_i^B(\epsilon) = \frac{1}{\e ^{\beta (\epsilon - \mu)} - 1}$}{1} \\
+\sol{4}{3}{$N = \int n_i^B(\epsilon) \rho (\epsilon) \D \epsilon = \int \frac{1}{\e ^{\beta (\epsilon - \mu)} - 1} \frac{2 \pi A}{h^2 c^2} \epsilon \D \epsilon$}{1} \\
+\sol{4}{3}{$U = \int \epsilon n_i^B(\epsilon) \rho (\epsilon) \D \epsilon = \int \frac{1}{\e ^{\beta (\epsilon - \mu)} - 1} \frac{2 \pi A}{h^2 c^2} \epsilon^2 \D \epsilon$}{1} \\
+\sol{4}{3}{$2 g_2(f) =\alpha \frac{m c^2}{k_B T}$}{1} \\
+\sol{4}{4}{L'intégrale $g_n(f)$ converge pour $n>1$. C'est donc le cas ici.}{1} \\
+\sol{4}{4}{Une condensation est donc possible quand il y a suffisamment de particules.}{1} \\
+
+
+
+\end{multicols}
+\end{document}

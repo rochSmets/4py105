@@ -1,0 +1,96 @@
+On s'intéresse aux propriétés de l'hélium 3 ($^3$He) à basse température. $^3$He (masse molaire $M=3$ g.mol$^{-1}$ a un noyau
+constitué de deux protons et d'un neutron et son spin, d'origine purement nucléaire, vaut $1/2$. Aux températures inférieures à 1 K, la solidification d'$^3$He est observée pour des pressions de l'ordre de 30 atm. Le but de ce problème est d'utiliser la physique statistique pour modéliser simplement les phases liquide et solide d'$^3$He à basse température et pour
+interpréter une caractéristique surprenante du diagramme de phases connue sous le nom d'effet Pomerantchuk.
+
+\tiret{La phase liquide, gaz de fermions indépendants}
+
+On modélise la phase liquide, volume $V$, température $T$ et potentiel chimique $\mu$ comme un \og gaz \fg \ de fermions indépendants de masse $m$ dont les niveaux
+d'énergie  sont donnés par
+\begin{align*}
+\epsilon (k)=\Delta+\frac{\hbar^2 k^2}{2m}
+\end{align*}
+où $\Delta$ est une énergie constante traduisant la cohésion du liquide, et $k$ le vecteur d'onde.
+
+\question
+Comment s'appelle la statistique à laquelle obéissent les atomes d'$^3$He ? Rappeler l'expression du nombre moyen d'occupation $n(\epsilon)$ d'un micro-état d'énergie $\epsilon$.
+
+\question
+Montrer que la densité en énergie des micro-états s'écrit sous la forme $\rho (\epsilon)=A \sqrt{\epsilon-\Delta}$ où le calcul de $A$ fait appel à la quantification du vecteur d'onde dans la boîte de volume $V=L_xL_yL_z$. On utilisera des conditions aux limites périodiques pour exprimer les valeurs autorisées de $\vec{k}$.
+
+\question
+En déduire les expressions formelles du nombre moyen $\langle N \rangle$ de particules et de leur énergie moyenne $\langle E \rangle$ sous forme intégrale, en fonction de $T, V$ et $\mu$ et des données.
+
+\question{Montrer qu'à température nulle $T=0$, tous les micro-états sont occupés jusqu'à un
+niveau appelé \og niveau de Fermi\fg \ et caractérisé par un nombre d'onde $k_F$. Montrer que $k_F=\sqrt[3]{3\pi^2\frac{\langle N \rangle}{V}}$.}
+
+\question
+Expliquer pourquoi la pression et l'énergie cinétique du système ne sont pas nulles à $T = 0$.
+
+\question
+On donne le volume molaire d'$^3$He liquide : $v^L = 36$ cm$^3$.mol$^{-1}$. Calculer $k_F$ puis la vitesse caractéristique des atomes.
+
+\question
+On définit la température de Fermi par $k_BT_F =\frac{\hbar^2 k_F^2}{2m}$. Calculer numériquement $T_F$.
+ 
+\question
+Lorsque la température est non nulle mais faible devant  $T_F$, on montre que l'énergie cinétique moyenne du système s'écrit, à l'ordre le plus bas en $T/T_F$ comme
+$$
+\langle E_c \rangle=\frac{3}{5}\langle N \rangle k_B T_F \left[1+\left(\frac{5\pi^2}{12}\right) \left(\frac{T}{T_F}\right)^2+\ldots\right]
+$$
+Justifier qualitativement la dépendance observée en $T/T_F$ (on regardera ce qui peut se passer autour du niveau de Fermi).
+
+\question
+Exprimer l'énergie moyenne $\langle E \rangle$ en fonction de $\Delta$ et $\langle E_c \rangle$. En déduire la dépendance
+de la capacité calorifique \textit{molaire} $C_V^L$ du liquide en fonction de $R$, $T$ et $T_F$.
+
+On admettra pour la suite  que l'entropie \textit{molaire} du liquide est donnée par $S^L =C_V^L$.
+
+\tiret{Modélisation de la phase solide}
+
+Dans le solide, les atomes d'$^3$He sont localisés sur leurs sites. On distingue alors deux
+contributions aux propriétés thermodynamiques du solide à basse température : (1) celle
+des $N$ spins $1/2$ localisés et supposés indépendants et (2) celle des vibrations du réseau
+cristallin dont les modes constituent un gaz parfait de bosons, appelés \og phonons\fg.
+
+\question
+Calculer la contribution des spins à l'entropie totale du solide. On pourra se placer dans l'ensemble canonique en remarquant que le champ magnétique extérieur est nul et que tous les micro-états de spins ont une énergie nulle à toute température. Cette contribution est-elle nulle à $T = 0$ ?
+
+\question
+Les phonons sont des bosons en nombre non fixé. Comment s'appelle la statistique à laquelle ils obéissent ? Donner l'expression du nombre moyen d'occupation d'un micro-état d'énergie $\epsilon$.
+
+On admet que l'entropie molaire des phonons s'exprime à basse température ($T \ll T_D$) comme
+$$
+S^p=\frac{4\pi^4}{5} R \left(\frac{T}{T_D}\right)^3
+$$
+$T_D$, la température de Debye, définie par $k_B T_D=\hbar c_s \sqrt[3]{6\pi^2 \frac{{\cal N}_A }{V}}$ ($c_s$ est la vitesse du son dans le solide).
+
+\question
+Donner l'expression littérale de l'entropie molaire totale du solide dans cette limite (en incluant la
+contribution des spins).
+
+\question
+Montrer que pour $T \simeq 0,1$ K, la contribution des phonons à l'entropie du solide est
+négligeable devant celle des spins. On calculera la température de Debye. On donne $c_s=300$ m.s$^{-1}$ et le volume molaire du solide $v^s = 24$ cm$^3$.mol$^{-1}$.
+
+\tiret{l'effet Pomerantchuk}
+
+
+\begin{center}\scalebox{1.1}{
+\includegraphics{../Fig/Pom}} \\
+\textit{Courbe de fusion dans le plan ($T, p$) pour l'hélium 3 à basse température.}
+\label{Pom}
+\end{center}
+
+La figure (\ref{Pom}) montre la courbe de coexistence solide-liquide à basse température dans le plan température-pression.
+
+\question
+Quel phénomène a priori paradoxal observe-t-on pour $T < 0,32$ K ? Ce phénomène, prévu théoriquement en 1950, est appelé \og effet Pomerantchuk\fg.
+
+\question
+Sommes nous dans un domaine de températures où on peut utiliser les résultats des parties précédentes ?
+
+On rappelle la relation de Clausius-Clapeyron le long de la courbe de fusion: $\frac{dp}{dT}\vert_{fusion}=\frac{S^L-S^s}{v^L-v^s}$ où $S^L$, $S^s$, $v^L$ et $v^s$ sont les entropies et volumes molaires des deux phases.
+
+\question
+Montrer que nos modélisations des phases liquide et solide d'$^3$He permettent d'expliquer l'effet
+Pomerantchuk. Montrer  que ce modèle prévoit un comportement habituel de la courbe de coexistence au-dessus d'une certaine température que l'on exprimera en fonction de $T_F$ . Estimer numériquement cette température et comparer à la figure (\ref{Pom}).

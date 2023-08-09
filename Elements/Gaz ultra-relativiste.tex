@@ -1,0 +1,42 @@
+\elements{ 
+\\
+1 On a $S(E,V,N)=k_B \ln \frac{\Pi(E,V,N)}{h^{3N}N!}$ (1 pt). 
+
+Trois commentaires possibles, deux attendus (2 pt): 
+
+- $N!$ pour l'indiscernabilité (toutes les permutations des $N$ particules ne comptent que pour 1 micro-état); 
+
+- $\Pi(E,V,N)$ et non pas $\Gamma(E,V,N)$, surface dans l'espace des phases des (micro-)états accessibles du gaz d'énergie égale à $E$ car en dimensions élevées, tout le volume est dans la surface (sic), 
+
+- $h^{3N}$  action élémentaire dans l'espace des phases insécable en vertu  de l'inégalité d'Heinsenberg et que l'on retrouve avec le principe de correspondance.
+\\
+2 $\Pi(E,V,N)=\int_{\sum_{i=1}^{i=N} p_ic<E} \Pi_{i=1}^{i=N} d\Vec{r_i}d\Vec{p_i}$ (1 pt). 
+
+On peut factoriser les intégrales sur les positions et les intégrales sur les quantités de mouvements et si on pose $\Vec{p_i}=(E/c) \Vec{u_i}$ (1 pt), 
+
+on obtient $\Pi(E,V,N)= \left( \int \Pi_{i=1}^{i=N} d\Vec{r_i} \right) \left(\int_{\sum_{i=1}^{i=N} u_i<1} \Pi_{i=1}^{i=N} (E/c)^3 d\Vec{u_i}) \right)$ (1 pt) , 
+
+$\Pi(E,V,N)=V^N (E/c)^{3N} \left(\int_{\sum_{i=1}^{i=N} u_i<1} \Pi_{i=1}^{i=N} d\Vec{u_i} \right)$ (1 pt). 
+
+Par identification on a $I(N)=\int_{\sum_{i=1}^{i=N} u_i<1} \Pi_{i=1}^{i=N} d\Vec{u_i}$ (1 pt).
+\\
+3 On a $I(1)=\int_{ u<1} d\Vec{u}=4 \pi \int_{ u<1} u^2 du = 4\pi/3 =(8\pi)^1/3!$ (1 pt). 
+
+On a donc $\Pi(E,V,N)=(8 \pi V)^N (E/c)^{3N}/(3N)!$ et $S(E,V,N)=k_B \ln [ \frac{(8 \pi V)^N}{N!}(\frac{E}{ch})^{3N}\frac{1}{(3N)!}]$ (1 pt). 
+
+En utilisant la formule de Stirling, on obtient $S(E,V,N)=Nk_B \left( \ln (\frac{8\pi V}{N}) + 3 \ln ( \frac{E}{3hcN})+4 \right)$ (2 pt). 
+
+$S(E,V,N)=Ns(E/N,V/N)$ est bien intensive (1 pt).
+\\
+4 $\frac{1}{T}=\left( \frac{\partial S}{\partial E} \right)_{V,N}=\frac{3Nk_B}{E}$ (1 pt)
+
+tandis que $\frac{P}{T}=\left( \frac{\partial S}{\partial V} \right)_{E,N}=\frac{Nk_B}{V}$ (1 pt). 
+
+On a donc $PV=Nk_BT$ comme pour un gaz parfait (1 pt).
+\\
+5 $\Lambda=\frac{hc}{k_BT}=\frac{6,64.10^{-34}\times 3. 10^8}{1,38.10^{-23}\times 300}= 48$ $\mu$m (1 pt). 
+
+En substituant $E=3Nk_BT$ dans l'expression de l'entropie (1 pt), 
+
+on obtient $\frac{S}{Nk_B}=4-\ln[\frac{\rho \Lambda^3}{8\pi}]$ (1 pt).
+}

@@ -1,0 +1,44 @@
+On considère un système composé d'un grand nombre $N$ de molécules, dont les interactions sont négligeables. Chacune des molécules possède trois niveaux d'énergie \og interne \fg \, respectivement d'énergies -$\epsilon$, 0 et  +$\epsilon$. 
+
+
+\tiret{Etude dans l'ensemble canonique}
+
+ On suppose que le système est à l'équilibre avec un thermostat à la température $T$.
+ 
+\question
+Quelle est la probabilité de trouver la molécule avec l'énergie -$\epsilon$ ? 0 ? +$\epsilon$ ? On pourra introduire $z(\beta)$ la fonction de partition d'une molécule.
+
+\question
+Montrer que l'énergie  moyenne $\overline{\epsilon}$ d'une molécule est égale à $\overline{\epsilon}=- \epsilon \frac{2 \sinh (\beta \epsilon)}{1+2\cosh (\beta \epsilon)}$. Quelle est l'énergie interne correspondante du système  ? Justifier votre réponse.
+
+\question
+En déduire la contribution $C$ de ces degrés de liberté énergétiques à la capacité calorifique \textbf{molaire} à volume constant de ce gaz.
+
+\question
+Tracer sommairement $C/R$ en fonction du paramètre $x=\frac{\epsilon}{k_BT}$. Justifier pourquoi il y a forcément un maximum.
+
+\tiret{Etude dans l'ensemble micro-canonique}
+
+On suppose que le système est isolé et a une énergie donnée $E$.
+
+\question Sur quel domaine peut varier $E$ ? Donner sa valeur minimale et sa valeur maximale.
+
+\question Donner les deux relations qui existent entre $N$, $E$ et les populations des niveaux $N_{+}$, $N_{-}$ et $N_{0}$ (respectivement d'énergie $\epsilon$, -$\epsilon$ et 0).
+
+\question En déduire l'expression de $N_{+}$ et de $N_{-}$ en fonction de $N$, $N_{0}$ et de $M=\frac{E}{\epsilon}$. Montrer que $N_0 \le N_0^*=N-|M|$.
+
+\question Montrer que le nombre de micro-états de ce système s'exprime sous la forme
+
+$$
+\Omega(E,N)=\sum_{N_0=0}^{N_0=N_0^*} \frac{N!}{N_{+}!N_{-}!N_0!}
+$$
+où $N_{+}$ et $N_{-}$ sont fonctions de $N$, $N_{0}$ et de $M$.
+
+
+Pour calculer l'entropie du système, il suffit pour les systèmes macroscopiques de prendre le logarithme du terme maximum dans la somme qui exprime $\Omega(E,N)$.
+
+\question Simplifier $\ln (\frac{N!}{N_{+}!N_{-}!N_0!} )$ en utilisant la formule de Stirling.
+
+\question Dériver l'expression précédente par rapport à $N_0$ (n'oubliez pas que $N_{+}$ et $N_{-}$ en dépendent) et donner la relation entre $N_{+}, N_{-}$ et $N_0$ qui rend extrémale l'expression.
+
+\question Sans faire explicitement les calculs, expliquer la démarche que vous suiveriez pour déterminer l'entropie du système et sa température. 

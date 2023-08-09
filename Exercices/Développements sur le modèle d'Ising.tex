@@ -1,0 +1,57 @@
+Le modèle d'Ising est le cadre le plus simple pour étudier la transition de phase ferromagnétique-paramagnétique. Le système est formé de $N \gg 1$ atomes localisés aux n\oe uds d'un réseau cristallin de coordinence $q$ (le nombre de plus proches voisins) avec des conditions aux limites périodiques. Chaque atome $i$ porte un moment magnétique $\mu_i$ ne pouvant prendre que deux valeurs $\mu_i=\sigma_i \mu$ (spin $\frac{1}{2}$) avec $\sigma_i= \pm 1$. Le système est en contact avec un thermostat à la température $T$. L'hamiltonien du modèle d'Ising s'écrit
+$$
+H=-J\sum_{\langle i,j \rangle}\sigma_i \sigma_j  \quad \textrm{avec} \quad J>0
+$$
+où ${\langle i,j\rangle}$ indique que la somme est prise sur toutes les paires de sites plus proches voisins. $J$ est une énergie.
+
+
+\tiret{Développement basse température}
+
+\question Dans quel(s) micro-état(s) l'énergie du système est-elle minimale ? Calculer alors cette énergie (fondamental) $E_0$ en fonction de $N$, $q$ et $J$ et montrer que sa dégénérescence est égale à $g(E_0)=2$.
+
+\question Calculer l'énergie $E_1$ du premier état excité par rapport au fondamental ainsi que sa dégénérescence $g(E_1)$.
+
+\question Calculer l'énergie $E_2$ du deuxième état excité par rapport au fondamental ainsi que sa dégénérescence $g(E_2)$. Montrer que $E_2=E_0+4(q-1)J$.
+
+\question  \'Ecrire la fonction de partition $Z(\beta,N)$ comme fonction des quantités $\beta$, $E_0$, $g(E_0)$, $\Delta E_m=E_m-E_0$ et $g(E_m)$ (pour $m \ge 0$) supposées connues.
+
+\question Expliquer pourquoi il s'agit d'un développement à basse température.
+
+\question Comment calculer l'énergie moyenne du système en fonction de la température ? Calculer les deux premiers termes du développement de l'énergie moyenne de la forme $a+b\exp (-\beta c)+ \ldots$ On explicitera $a, b$ et $c$.
+
+%\question On se  place dans le cas d'un réseau carré à deux dimensions de coordinance $q=4$. Montrer que $\Delta E_3= 4qJ$. Calculer sa dégénérescence en envisageant toutes les façons d'obtenir cette énergie d'excitation. 
+
+
+\tiret{Développement à haute température}
+
+On reprend le problème depuis le début.
+
+\question \'Ecrire formellement la fonction de partition $Z(\beta,N)$ en fonction de $H$ en faisant les sommes appropriées.
+
+\question Montrer que la limite lorsque la température tends vers l'infini est  $Z(0,N)=2^N$. Interpréter ce résultat.
+
+\question Montrer que l'on a l'identité
+$$
+\exp( \beta J \sigma_i \sigma_j )= \cosh(\beta J) (1+ \nu\sigma_i \sigma_j)
+$$
+avec $\nu=\tanh{\beta J }$, quelles que soient les valeurs de  $\sigma_i$ et $\sigma_j$.
+
+\question En déduire que 
+$$
+Z(\beta,N)=2^N [\cosh (\beta J)]^{\frac{Nq}{2}} Q(\nu),
+\ \text{où}  \ 
+Q(\nu)=\frac{1}{2^N} \sum_{\{\sigma_k=\pm 1 \}_{k=1..N}}\Pi_{\langle i,j \rangle}(1+\nu \sigma_i \sigma_j).
+$$
+
+\question En déduire un développement de $Z(\beta,N)$ en puissance de $\nu$. En quoi s'agit-il bien d'un développement à haute température ?
+
+%\question Montrer que les termes en $\nu$ et $\nu^2$ sont nuls. 
+
+%\question On admet que le terme en $\nu^4$ vaut $N$. En déduire le développement de l'énergie libre à l'ordre $\nu^4$.
+
+
+
+
+
+
+\end{document}

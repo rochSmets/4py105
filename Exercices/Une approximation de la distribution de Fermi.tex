@@ -1,0 +1,27 @@
+On considère un modèle de fluide en dimension $d$, à la température $T$ et potentiel chimique $\mu$ comme un \og gaz \fg \ de fermions  indépendants de spin 1/2, de masse $m$ et dont les niveaux d'énergie  sont donnés par
+$\epsilon (k)=\frac{\hbar^2 \vec{k}^2}{2m}$,
+où $\vec k$ est le vecteur d'onde.
+
+\question Rappeler l'expression du nombre moyen d'occupation $n(\epsilon)$ d'un micro-état d'énergie $\epsilon$ d'une particule de ce fluide.
+
+\question Que devient l'expression précédente à température nulle ?
+
+\question Application numérique : on introduit la quantité $\Delta_p n=n(\mu-p k_BT)-n(\mu+p k_BT)$. Calculer $\Delta_p n$ pour $p=0, 1, 2, 3, 4, +\infty$. En déduire en fonction de $T$ une estimation de $\Delta \epsilon$, intervalle dans lequel $n(\epsilon)$ passe de 0,95 à 0,05. Donner la valeur de $\Delta \epsilon$ en électron-volt pour $T=100$ K.
+
+\question Donner les expressions formelles du nombre moyen $\langle N \rangle$ de particules et de leur énergie moyenne $\langle E \rangle$ sous forme intégrale, en fonction de $T$, $\mu$ et de la densité en énergie des micro-états $\rho (\epsilon)$ .
+
+\ 
+
+Pour simplifier les calculs, on fait une approximation linéaire de $n(\epsilon)$ que l'on définit par morceaux: $n(\epsilon)=1$ si $\epsilon \le \mu-2 k_BT$; $n(\epsilon)=0$ si $\epsilon \ge \mu+2 k_BT$ et une droite pour faire le raccord. On admet par ailleurs que  $\rho(\epsilon)$ est quasiment constant dans l'intervalle d'énergie $[\mu-2 k_BT, \mu+2 k_BT]$ autour de $\mu$.
+
+\question Représenter graphiquement $n(\epsilon)$ dans le cadre de cette approximation. Expliciter $n(\epsilon)$ pour $\mu-2 k_BT \le \epsilon \le \mu+2 k_BT$.
+
+\question Montrer graphiquement ou par le calcul que la relation entre $\langle N \rangle$ et $\mu$ ne dépend pas de la température $T$ compte tenu des approximations. En déduire que si $\langle N \rangle$ est fixé, le potentiel chimique $\mu$ est égal au niveau de fermi $\epsilon_F$, sa valeur à température nulle.
+
+\question On note $\langle E_F \rangle$ l'énergie interne à température nulle. Donner l'expression formelle de $\langle E_F \rangle$.
+
+\question Calculer $\Delta \langle E \rangle =  \langle E \rangle-\langle E_F \rangle .$ Sans surprise, on découpera l'intégrale  en 3 morceaux. Montrer que \mbox{$\Delta \langle E \rangle =\frac{2}{3} \rho(\epsilon_f) (k_BT)^2$}.
+
+\question En déduire la variation de la capacité calorifique du système avec la température. Comparer au résultat \mbox{exact $\frac{\pi^2}{3} \rho(\epsilon_f) k_B^2 T$}.
+
+%\question Expliciter les expressions de $\rho (\epsilon)$ à 2 et 3 dimensions. Le calcul fait appel à la quantification du vecteur d'onde dans la boîte de surface (respectivement volume) $A=L_xL_y$ (resp. $V=L_xL_yL_z$). On utilisera des conditions aux limites périodiques pour exprimer les valeurs autorisées de $\vec{k}$.
