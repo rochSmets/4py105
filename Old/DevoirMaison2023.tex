@@ -1,0 +1,97 @@
+\documentclass[utf8, 11pt]{feuille}
+
+\newcommand{\titredutd}{\textbf{Devoir maison --- 2023}}
+
+\begin{document}
+
+\begin{center}
+Devoir à rendre le mercredi 18 octobre 2023 \\
+Chaque étudiant doit rendre son devoir (pas de binôme) manuscrit ou dactylographié
+\end{center}
+
+%__________________________________________________________________________________
+\section{L'entropie de l'argon}
+
+
+\question
+Rappeler les expressions de l'entropie molaire $S(E,V,{\cal N}_A)$ d'une mole de gaz parfait monoatomique (atomes de masse $m$) confinée dans un volume $V$ et d'énergie $E$ et du nombre de micro-états $\phi(E,V,{\cal N}_A)$ d'un tel gaz d'énergie $\leq E$. 
+
+\question En déduire la relation entre la température $T$ (micro-canonique) et l'énergie $E$ du gaz. Ré-exprimer $S$ en fonction des variables $\rho=\frac{{\cal N}_A}{V}$ et $T$. On introduira la longueur d'onde thermique $\Lambda_T$ de de Broglie définie par
+$$\Lambda_T=\frac{h}{\sqrt{2 \pi m k_B T}}$$.
+
+\question Calculer l'entropie d'une mole d'argon aux conditions normales de température (25$^\circ$C) et de pression (100 kPa).
+On considérera que sous ces conditions, l'argon peut être traité comme un gaz parfait.
+
+\question Quelle est en Joule l'énergie d'une mole de gaz parfait monoatomique à  25$^\circ$C ? Calculer l'augmentation (en pourcentage) de $\phi(E,V,{\cal N}_A)$ et la variation correspondante de $S(E,V,{\cal N}_A)$  lorsque on accroît l'énergie respectivement de 58 neV, 39 meV, 13.6 eV, 938 MeV (un bonus pour celles et ceux qui donnent un sens physique à ces valeurs). 
+
+\question Conclure. On pourra estimer de combien varie l'énergie gravitationnelle entre le gaz et vous lorsque, situé à la distance de 10 mètres, vous reculez de 10 cm.
+
+\question Tracer sommairement $S$ en fonction de $T$ à $\rho$ fixée. Pourquoi le résultat est-il nécessairement incorrect à basse température ? Quelle est l'origine du problème ? Donner la valeur de $\rho \Lambda_T^3 $ caractéristique de ce défaut et la valeur correspondante de la température pour l'argon sachant qu'on a refroidi une mole de ce gaz à partir des conditions normales de température et de pression.
+
+\section{Les deux font la paire}
+On considère un gaz sur réseau constitué de $N$ particules pouvant se fixer sur $N$ sites d'un réseau. Chaque site peut comporter au plus deux particules. On appelle $N_0$, $N_1$ et $N_2$ le nombre de sites contenant respectivement zéro, une ou deux particules. Chaque fois qu'il y a deux particules sur un même site, le système gagne une énergie d’interaction $\epsilon$. 
+
+\question Quelles relations y-a-t-il entre $N_0$, $N_1$ et $N_2$ ? Exprimer $N_0$ et $N_1$ en fonction de $N_2$.
+
+\question Pour $\epsilon > 0 $, quel est l’état fondamental du système et quelle est son énergie ? Quel est l’état d’énergie maximale du système et que vaut cette énergie ? Mêmes questions pour $\epsilon < 0 $. Lequel des deux cas $\epsilon > 0 $ ou $\epsilon < 0 $ correspond à une situation où les particules se repoussent ?
+
+\question On fixe $E$ et $N$. Calculer le nombre de micro-états $\Omega=\Omega(E,N)$ accessibles d'énergie $E$. En déduire l'entropie du système $S(E,N)$ puis la température micro-canonique $T$ du système.
+
+\question Exprimer $N_2$ puis $E$ en fonction de $T$ et de $N$.  
+
+\question On se place dans le cas où $\epsilon > 0 $. Tracer sommairement $E$ en fonction de $T$.
+
+\question Interpréter ce qui se passe à basse température puis à haute température.
+
+\question On suppose maintenant que les particules ont un spin 1/2. Une particule seule sur un site a donc deux orientations possibles (up ou down). En revanche, quand il y a deux particules sur le même site, le principe d’exclusion de Pauli implique qu'il n’y a qu'un seul choix: une des deux particules a le spin up et l'autre le spin down. Quelle sont les nouvelles expressions de $\Omega$ et de $N_2=N_2(T,N)$ ?
+
+%__________________________________________________________________________________
+\section{De l'hydrogène stellaire}
+
+
+\question On considère un gaz parfait classique à trois dimensions à la température $T$ constitué de $N$ particules de masse $m$ confinées dans un volume $V$. Rappeler l'expression de l'énergie libre par particule en fonction de la longueur d'onde de de Broglie $\Lambda_T$ (voir ci-dessus) et de la densité particulaire $n=\frac{N}{V}$.
+
+\question On suppose maintenant que chaque particule a, en plus de son énergie cinétique, une énergie interne $-\epsilon$ constante. Écrire la nouvelle expression de l'énergie libre par particule.
+
+\
+
+On considère l’hydrogène présent dans l’atmosphère stellaire du Soleil, proche de sa photosphère (quelques milliers de kilomètres). Ces atomes forment un gaz dilué monoatomique (H) de densité $n \propto 10^{20}$ noyaux par mètre cube. Dans cette région, la température varie beaucoup avec la distance à la surface du soleil entre quelques milliers et quelques millions de Kelvin. Le gaz de mono-hydrogène est susceptible de se ioniser en H$^+$ et e$^-$. Nous voulons évaluer en fonction de la température la proportion $x$ d’atomes d’hydrogène qui sont ionisés.
+
+
+On modélise le gaz de la manière suivante. Un atome d’hydrogène peut être dans son état fondamental: son énergie interne est alors de $-\epsilon$ avec $\epsilon = 13,6$ eV. Il peut aussi être ionisé: on a alors un proton et
+un électron complètement dissociés. On suppose que le proton et l’électron ont des énergies internes nulles, on néglige les états excités non-ionisés de l’atome H et on ignore entièrement les interactions entre particules.
+
+\subsection{Simple mais faux !}
+
+On commence par une approximation très grossière en négligeant l’énergie cinétique des atomes, ions et électrons et leur répartition spatiale ; il ne reste donc qu'un
+système à deux niveaux : chacun des $N$ atomes d’hydrogène dans le système peut-être soit sous forme atomique, avec son électron, formant ainsi un atome d’hydrogène d’énergie $-\epsilon$ soit ionisé, son énergie est alors nulle.
+
+\question Écrire la proportion $x$ de particules ionisées en fonction de la température $T$.
+
+ \question Tracer l’allure de $x$ en fonction de $T$. Donner une estimation numérique de la température vers laquelle la proportion d'hydrogène ionisé devient significative.
+
+\question Simplifier l’expression de $x$ quand $k_B T \ll \epsilon $ et quand $k_B T \gg \epsilon $
+
+\subsection{Une approche plus fine }
+
+On veut maintenant traiter le problème plus sérieusement. On pose $n$ la densité initiale d’hydrogène. Si $x$ est la proportion d’atomes d’hydrogène ionisés, le système est constitué d’un mélange de trois gaz parfaits :
+\begin{itemize}
+    \item un gaz parfait d’électrons, de densité $nx$,
+    \item un gaz parfait de protons, de densité $nx$,
+    \item un gaz parfait d’atomes H, de densité $n(1 - x)$ ayant une énergie interne $-\epsilon$.
+\end{itemize}
+
+
+\question Écrire l’énergie libre par unité de volume du système en fonction de $n$, $T$, $x$, $\epsilon$, $\Lambda_T$ (la longueur de de Broglie d’un atome ou d’un proton, on néglige la différence) et  $\Lambda_e$ (la longueur de de Broglie d’un électron).
+
+\question La valeur de $x$ n’est pas déterminée par l’expérimentateur, mais résulte de l’équilibre thermodynamique du système. Quelle condition sur $F$ permet de déterminer le point d’équilibre ?
+
+\question  En déduire que $x$ et $T$ sont reliés par $$\frac{1-x}{x^2}=n\Lambda_e^3 \exp(\frac{\epsilon}{k_BT})$$.
+
+\question Pour l’air à température ambiante, on rappelle que l’application numérique donne une longueur de de Broglie pour l'atome d'hydrogène de  $ \Lambda_T=1,9 \times 10^{-11}$ m. Combien vaut cette longueur de de Broglie à 9 000 K  ?
+
+\question  Combien vaut la longueur de de Broglie $\Lambda_e$ pour un électron à 9 000 K ? On rappelle que l’électron est 1 800 fois plus léger que le proton.
+
+\question Pour $T = 9 000$ K, on donne  $\exp(\frac{\epsilon}{k_BT})=4 \times 10^7$. Donner la valeur de x à cette température.
+
+\end{document}

@@ -89,3 +89,5 @@
 
 \newcommand{\D}{\, \mathrm{d}}
 \newcommand{\e}{\mathrm{e}}
+
+\long\def\tiret#1{\par\noindent{\sffamily\bfseries{#1}}}

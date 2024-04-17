@@ -30,6 +30,7 @@
 \RequirePackage{totcount}
 \RequirePackage{color}
 \RequirePackage{import}
+\RequirePackage[a4paper]{geometry}
 
 % define the 3 anotation icons
 \newcommand{\soft}{\faBatteryEmpty}
@@ -48,11 +49,12 @@
 % for a fancy header
 \pagestyle{fancy}
 
-\lhead{\textsc{lu4py105}}
+\lhead{\textsc{mu4py105}}
 \chead{\titredutd}
 \rhead{\includegraphics[scale=0.2]{../logo_su}}
 
 \renewcommand{\baselinestretch}{1.2}
+
 
 
 % personal definition of \mybox env creating a gray box
@@ -107,6 +109,9 @@
 \newcommand{\e}{\mathrm{e}}
 
 \long\def\tiret#1{\par\noindent{\sffamily\bfseries{#1}}}
+
+
+\long\def\important#1{{\sffamily\bfseries{#1}}}
 
 
 %\def\input@path{{../Exercices}{../Elements}}

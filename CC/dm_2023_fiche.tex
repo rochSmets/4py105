@@ -1,0 +1,76 @@
+\documentclass[landscape, utf8, 10pt]{article}
+
+\usepackage{fiche}
+\usepackage[landscape]{geometry}
+
+\begin{document}
+\begin{multicols}{2}
+
+\nom{26}{15}
+
+\bigskip
+
+%--------------------------------------------------------------------------------------
+\exo{1}{L'entropie de l'argon}{8}
+
+\sol{1}{1}{$S(E,V,{\cal N}_A)={\cal N}_A k_B \left( \frac{5}{2}+ \ln(\frac{V}{{\cal N}_A})+\frac{3}{2} \ln(\frac{4\pi m}{3 h^2}\frac{E}{{\cal N}_A})\right)$}{0.5}  \\
+\sol{1}{1}{$\phi(E,V,{\cal N}_A)=\frac{V^{{\cal N}_A}}{{\cal N}_A !} \left( \frac{2 \pi m E}{h^2}\right)^{\frac{3}{2}{\cal N}_A} \frac{1}{\left( \frac{3{\cal N}_A}{2}\right) ! }$}{0.5} \\
+\sol{1}{2}{$\frac{1}{T}=\frac{3 {\cal N}_A k_B}{2E}$}{0.5} \\
+\sol{1}{2}{$S(E,V,{\Cal N}_A)={\cal N}_A k_B \left( \frac{5}{2}-\ln (\rho \Lambda_T^3) \right)$}{0.5} \\
+\sol{1}{3}{$\rho=\beta P= \frac{10^5}{1,38 \times 10^{-23}.298}=24,3 \times 10^{24}\text{m}^{-3}$, \ $\Lambda_T=\frac{1,75}{\sqrt{M(\text{g}).T(\text{K})}}\text{nm}=$ 16 pm, $S=8.31.\left(\frac{5}{2}- \ln (24,3 \times 10^{24}.(16 \times 10^{-12})^3) \right) \simeq 155 $ J.K$^{-1}$}{1} \\
+\sol{1}{4}{$E$ = 3.71 kJ}{1} \\
+\sol{1}{4}{$\Phi(E+\delta E, V, {\cal N_A}) = \Phi(E, V, {\cal N_A}) \exp (\frac{3}{2} {\cal N_A} \frac{\delta E}{E})$}{0,5} \\
+\sol{1}{4}{$S(E+\delta E, V, {\cal N_A}) - S(E, V, {\cal N_A}) = \frac{3}{2} {\cal N_A} k_B \frac{\delta E}{E}=\frac{\delta E}{T}$}{0,5} \\
+\sol{1}{4}{$\delta E$ = 9.28 10$^{-27}$ J ($\mu_B B_T$), $\frac{\Delta \Phi}{\Phi}\simeq 2 \times 10^{-4}$ \%, $\Delta S \simeq 3 \times 10^{-29}$}{0,25} \\
+\sol{1}{4}{$\delta E$ = 6.24 10$^{-21}$ J ($\frac{3}{2}k_BT$), $\frac{\Delta \Phi}{\Phi} \simeq 350 \%$, $\Delta S\simeq 2 \times 10^{-23}$}{0,25} \\
+\sol{1}{4}{$\delta E$ = 2.18 10$^{-18}$ J ($E_1({\text H}$)), $\frac{\Delta \Phi}{\Phi}\simeq 1 \times 10^{230} \%$, $\Delta S\simeq 7 \times 10^{-21}$}{0,25} \\
+\sol{1}{4}{$\delta E$ = 1.50 10$^{-10}$ J (m_Pc$^2$), $\frac{\Delta \Phi}{\Phi} \simeq e^{3 \times 10^{10}} \%$, $\Delta S\simeq 5 \times 10^{-13}$}{0,25} \\
+\sol{1}{5}{$\delta E_G= G \frac{Mm}{R^2}d= 6,674 \times 10^{-11}.\frac{75.0.04}{10^2}.0,1 = \simeq 2 \times 10^{-13}$ J}{0,5} \\
+\sol{1}{5}{Difficile de garantir une énergie constante pour un gaz; grand conséquence sur $\Phi$ mais pas sur $S$, grandeur qui importe.}{0,5} \\
+\sol{1}{6}{$S=S_{1 {\text{K}}}+\frac{3}{2} \ln T$ qui devient nécessairement $<0$ quand $T \xrightarrow{} 0$. Or $S=k_B \ln \Omega >0$. Prise en compte incorrecte de l'indiscernabilité. }{0,5} \\
+\sol{1}{6}{$\rho \Lambda_T^3=e^{\frac{5}{2}} \simeq 12$; $\Lambda_T=\sqrt[3]{\frac{12}{24,3 \times 10^{24}}} \simeq $ 8 nm; $T \simeq 1 $ mK}{0,5} \\
+        
+
+
+
+%--------------------------------------------------------------------------------------
+\exo{2}{Les deux font la paire}{7}
+
+\sol{2}{1}{$N_0+N_1+N_2=N,\ \ N_0=N_2,\ \ N_1=N-2N_2$}{1} \\
+\sol{2}{2}{$E_{\min}^{\epsilon>0}=0,\ E_{\max}^{\epsilon>0}=\frac{N}{2}\epsilon,\ 
+E_{\min}^{\epsilon<0}=\frac{N}{2}\epsilon,\ E_{\max}^{\epsilon<0}=0,\ \epsilon>0\to\mathrm{repulsion}$}{1} \\
+% \sol{2}{3}{$\Omega=\frac{N!}{\frac{E}{\epsilon}!^2(N-\frac{E}{\epsilon})!}$}{0.3} \\
+\sol{2}{3}{$\Omega=\frac{N!}{[\frac{E}{\epsilon}!]^2(N-2\frac{E}{\epsilon})!}$}{0.3} \\
+% \sol{2}{3}{$\frac{S}{k_B}\approx N\ln N-2\frac{E}{\epsilon}\ln\frac{E}{\epsilon}-(N-2\frac{E}{\epsilon})\ln\frac{E}{\epsilon}$}{0.4} \\
+\sol{2}{3}{$\frac{S}{k_B}\approx N\ln N-2\frac{E}{\epsilon}\ln\frac{E}{\epsilon}-(N-2\frac{E}{\epsilon})\ln(N-2\frac{E}{\epsilon})$}{0.4} \\
+\sol{2}{3}{$\frac{1}{T}=\frac{2k_B}{\epsilon}\ln(\frac{N\epsilon}{E}-2)$}{0.3} \\
+\sol{2}{4}{$E=N_2\epsilon=N\epsilon/\left(\e ^{\epsilon/2k_BT}+2\right)$}{1} \\
+\sol{2}{5}{Nulle à l'origine, croissante, point d'inflexion, limite $\frac{N \epsilon}{3}$ à l'$\infty$}{1} \\
+\sol{2}{6}{$\mathrm{low T:} E\to 0,\ N_2\to 0$}{0.5} \\ 
+\sol{2}{6}{$\mathrm{high T:} E\to \frac{N\epsilon}{3},\ N_0=N_1=N_2=\frac{N}{3}$}{0.5} \\
+\sol{2}{7}{$\Omega_{\mathrm{spin}} = \Omega\cdot 2^{N_1}=\Omega\cdot2^{N-2E/\epsilon}$, $N_{2\mathrm{spin}} = \frac{1}{2} \frac{N}{\e ^{\epsilon/2k_BT}+1}$}{1} \\
+
+
+
+
+%--------------------------------------------------------------------------------------
+\exo{3}{De l'hydrogène stellaire}{11}
+
+\sol{3}{1}{$F/N= k_B T [\ln(\frac{N\Lambda^3}{V}) -1]$}{1} \\
+\sol{3}{2}{$k_B T (\ln(\frac{N\Lambda^3}{V}) -1) -\epsilon$}{1} \\
+\sol{3}{3}{$x = \frac{ e^{-\beta\epsilon } }{ 1 + e^{-\beta\epsilon } }$}{1}  \\
+\sol{3}{4}{$T=\frac{\epsilon}{k_B} \approx 1.6\, 10^5$ K}{1} \\
+\sol{3}{5}{$k_B T \ll \epsilon \; \mathrm{alors} \; x \sim e^{-\beta\epsilon} \to 0 \; \mathrm{et si} \; k_B T \gg \epsilon \; \mathrm{alors} \; x \sim 1/2$}{1} \\
+\sol{3}{6}{$F/V=n  k_B T[  2x \ln(nx) + (1-x) \ln(n(1-x)) +3x\ln \Lambda_e +3 \ln \Lambda_p -x -1] -n(1-x)\epsilon$}{1} \\
+\\
+\sol{3}{7}{$\frac{\partial F}{\partial x }|_{T,V,N} =0$}{1} \\
+\sol{3}{8}{$\frac{1-x}{x^2} = n \lambda_e^3 e^{\beta\epsilon}$}{1} \\
+\sol{3}{9}{$\lambda = 1.9\, 10^{-11} \sqrt{\frac{300}{9000} }\approx 0.34\, 10^{-11} m$}{1} \\
+\sol{3}{10}{$\lambda_e ~\approx 1.46\, 10^{-10} m$}{1} \\
+\sol{3}{11}{$x= \frac{\sqrt{1+4K} - 1}{2K} \, \mathrm{avec} \,  K= n \lambda_e^3 e^{\beta\epsilon }  \approx 0.01275 \to x \approx 0.987$}{1} \\
+
+
+
+
+\end{multicols}
+\end{document}

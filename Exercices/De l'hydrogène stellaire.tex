@@ -1,0 +1,44 @@
+\question On considère un gaz parfait classique à trois dimensions à la température $T$ constitué de $N$ particules de masse $m$ confinées dans un volume $V$. Rappeler l'expression de l'énergie libre par particule en fonction de la longueur d'onde de de Broglie $\Lambda_T$ (voir ci-dessus) et de la densité particulaire $n=\frac{N}{V}$.
+
+\question On suppose maintenant que chaque particule a, en plus de son énergie cinétique, une énergie interne $-\epsilon$ constante. Écrire la nouvelle expression de l'énergie libre par particule.
+
+\
+
+On considère l’hydrogène présent dans l’atmosphère stellaire du Soleil, proche de sa photosphère (quelques milliers de kilomètres). Ces atomes forment un gaz dilué monoatomique (H) de densité $n \propto 10^{20}$ noyaux par mètre cube. Dans cette région, la température varie beaucoup avec la distance à la surface du soleil entre quelques milliers et quelques millions de Kelvin. Le gaz de mono-hydrogène est susceptible de se ioniser en H$^+$ et e$^-$. Nous voulons évaluer en fonction de la température la proportion $x$ d’atomes d’hydrogène qui sont ionisés.
+
+
+On modélise le gaz de la manière suivante. Un atome d’hydrogène peut être dans son état fondamental: son énergie interne est alors de $-\epsilon$ avec $\epsilon = 13,6$ eV. Il peut aussi être ionisé: on a alors un proton et
+un électron complètement dissociés. On suppose que le proton et l’électron ont des énergies internes nulles, on néglige les états excités non-ionisés de l’atome H et on ignore entièrement les interactions entre particules.
+
+\tiret{Simple mais faux !}
+
+On commence par une approximation très grossière en négligeant l’énergie cinétique des atomes, ions et électrons et leur répartition spatiale ; il ne reste donc qu'un
+système à deux niveaux : chacun des $N$ atomes d’hydrogène dans le système peut-être soit sous forme atomique, avec son électron, formant ainsi un atome d’hydrogène d’énergie $-\epsilon$ soit ionisé, son énergie est alors nulle.
+
+\question Écrire la proportion $x$ de particules ionisées en fonction de la température $T$.
+
+ \question Tracer l’allure de $x$ en fonction de $T$. Donner une estimation numérique de la température vers laquelle la proportion d'hydrogène ionisé devient significative.
+
+\question Simplifier l’expression de $x$ quand $k_B T \ll \epsilon $ et quand $k_B T \gg \epsilon $
+
+\tiret{Une approche plus fine}
+
+On veut maintenant traiter le problème plus sérieusement. On pose $n$ la densité initiale d’hydrogène. Si $x$ est la proportion d’atomes d’hydrogène ionisés, le système est constitué d’un mélange de trois gaz parfaits :
+\begin{itemize}
+    \item un gaz parfait d’électrons, de densité $nx$,
+    \item un gaz parfait de protons, de densité $nx$,
+    \item un gaz parfait d’atomes H, de densité $n(1 - x)$ ayant une énergie interne $-\epsilon$.
+\end{itemize}
+
+
+\question Écrire l’énergie libre par unité de volume du système en fonction de $n$, $T$, $x$, $\epsilon$, $\Lambda_T$ (la longueur de de Broglie d’un atome ou d’un proton, on néglige la différence) et  $\Lambda_e$ (la longueur de de Broglie d’un électron).
+
+\question La valeur de $x$ n’est pas déterminée par l’expérimentateur, mais résulte de l’équilibre thermodynamique du système. Quelle condition sur $F$ permet de déterminer le point d’équilibre ?
+
+\question  En déduire que $x$ et $T$ sont reliés par $$\frac{1-x}{x^2}=n\Lambda_e^3 \exp(\frac{\epsilon}{k_BT})$$.
+
+\question Pour l’air à température ambiante, on rappelle que l’application numérique donne une longueur de de Broglie pour l'atome d'hydrogène de  $ \Lambda_T=1,9 \times 10^{-11}$ m. Combien vaut cette longueur de de Broglie à 9 000 K  ?
+
+\question  Combien vaut la longueur de de Broglie $\Lambda_e$ pour un électron à 9 000 K ? On rappelle que l’électron est 1 800 fois plus léger que le proton.
+
+\question Pour $T = 9 000$ K, on donne  $\exp(\frac{\epsilon}{k_BT})=4 \times 10^7$. Donner la valeur de $x$ à cette température.

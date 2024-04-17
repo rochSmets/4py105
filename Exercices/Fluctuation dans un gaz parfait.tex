@@ -20,27 +20,32 @@ Pour $N$ très grand et $\frac{v}{V}$ fixé, vers quelle loi tend la distributio
 \question
 Quelle est la probabilité que toutes les molécules du gaz soient dans le volume $v$ ?
 
+\medskip
+
 On veut calculer la probabilité exacte $P(k)$ qu'il y ait $k$ molécules dans le volume $v$.
 
 \question
 De combien de manières différentes peut-on choisir les $k$ molécules parmi $N$ qui sont dans le volume $v$ ?
 
 \question
-Quelle est la probabilité de \emph{l'un} de ces choix ? (par exemple, pour $k=4$ et $N=100$, quelle est la probabilité que les particules numéros 8, 12, 35 et 42, par exemple, soient dans le volume $v$ ?)
+Quelle est la probabilité de l'\important{un} de ces choix ? (par exemple, pour $k=4$ et $N=100$, quelle est la probabilité que les particules numéros 8, 12, 35 et 42, par exemple, soient dans le volume $v$ ?)
 
 \question
 En déduire l'expression de $P(k)$. Quel est le nom de cette distribution de probabilité ?
 
-\question
+\medskip
+
 On rappelle la formule du binôme de Newton
 \begin{equation} 
 (x+y)^N=\sum_{n=0}^N \binom Nn x^n y^{N-n}.
 \label{sumbinom}
 \end{equation}
+
+\question
 Vérifier que la distribution de probabilité $P(k)$ est bien normalisée.
 
 \question
-Calculer les dérivées première et seconde de l'égalité (\ref{sumbinom}) par rapport à $x$, \emph{puis} remplacer $y$ par $1-x$ dans les expressions obtenues. Utiliser les formules ainsi obtenues pour retrouver la moyenne et la variance de $k$.
+Calculer les dérivées première et seconde de l'égalité (\ref{sumbinom}) par rapport à $x$, \important{puis} remplacer $y$ par $1-x$ dans les expressions obtenues. Utiliser les formules ainsi obtenues pour retrouver la moyenne et la variance de $k$.
 
 \question
 On se place à la limite thermodynamique ($N \to \infty$, $V \to \infty$ tels que la densité $\frac{N}{V}$ est constante). En considérant le nombre de particules comme une variable continue, montrer en utilisant la formule de Stirling que la distribution de probabilité de $k$ se comporte comme une loi gaussienne au voisinage de $\langle k \rangle$ (on posera $k = \langle k \rangle + s$ avec $s \ll N$). Ce résultat est-il surprenant ?

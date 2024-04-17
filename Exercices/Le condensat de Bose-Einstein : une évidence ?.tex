@@ -1,0 +1,151 @@
+Les bosons n'étant pas soumis au principe d'exclusion de Pauli, rien ne les empêche de se retrouver tous (ou presque) dans leur état fondamental. A priori rien de quantique ici... oui mais cela suggérerais que cela s'observe pour un système à $\beta \varepsilon_0 \sim 1$ ou $\varepsilon_0$ est l'énergie de l'état fondamental. L'objet de cet exercice est de montrer que ce raisonnement tient pour un système obéissant à la statistique de Maxwell-Boltzmann, mais qu'il en va différemment pour la statistique de Bose-Einstein : le condensat de Bose-Einstein s'observe pour $\beta \varepsilon_0 \ll 1$.
+
+\medskip
+
+Pour l'illustrer, on s'intéresse d'abord à un système à 2 niveaux d'énergie $\varepsilon_0 = 0$ et $\varepsilon_1$.
+
+\bigskip
+\tiret{Système à 2 niveaux dans l'ensemble canonique}
+
+\question
+Ecrire la fonction de partition $Z_1$ à $N=1$ particule. En déduire la probabilité $p_1^0$ que la particule soit dans le fondamental.
+\reponse{
+$Z_1 = 1+\e ^{- \beta \varepsilon_1}$ \\
+$p_1^0 = \frac{1}{Z_1} \e ^{- \beta \varepsilon_0} = \frac{1}{Z_1}$
+}
+
+\question
+En déduire l'expression du nombre de particule dans le fondamental $\langle N_0 \rangle$. Pourquoi la forme de cette expression ne dépend pas de la statistique ?
+\reponse{
+$\langle N_0 \rangle = 1 \times p_1^0 + 0 \times p_1^1  = \frac{1}{Z_1}$ \\
+Il n'y a qu'une seule particule, donc la statistique ne peut pas jouer de rôle
+}
+
+\question
+On considère désormais pour ce système $N$ particules \important{indépendantes} et \important{indiscernables} obéissant à la statistique de Maxwell-Boltzmann. Calculer la fonction de partition associée $Z_N^{\mathrm{MB}}$ puis en déduire $p_N^0$ que les $N$ particules soient toutes dans le fondamental.
+\reponse{
+$Z_N^{\mathrm{MB}} = \frac{1}{N!} (Z_1)^N = \frac{1}{N!} (1+\e ^{- \beta \varepsilon_1})^N$ \\
+$p_N^0 = \frac{1}{N!} \frac{1}{Z_N^{\mathrm{MB}}} \e ^{- \beta \varepsilon_0} = \frac{1}{Z_1^N}$ car lors du dénombrement de cas, la permutation de 2 particules, bien qu'indiscernables, correspond bien à 2 cas différents qu'il faut donc dénombrer.
+}
+
+\question
+En déduire $p_N^k$, la probabilité pour que le système de $N$ particules ait une énergie $k \varepsilon_1$. Vous pourrez vérifier la condition de normalisation de cette probabilité.
+\reponse{
+$p_N^k = \frac{1}{Z_1^N} C_N^k \e ^{- k \beta \varepsilon_1}$ \\
+On a bien $\sum_{k=0}^N p_N^k = 1$ avec la formule du binôme de Newton
+}
+
+\question
+En introduisant le taux d'occupation pour chaque état d'énergie $k \varepsilon_1$ en déduire le nombre moyen de particules dans le fondamental $\langle N_0^{\mathrm{MB}} \rangle$.
+\reponse{
+$\langle N_0^{\mathrm{MB}} \rangle = \frac{1}{Z_1^N} \sum_{k=0}^N (N-k) p_N^k = \frac{1}{Z_1^N} \sum_{k=0}^N (N-k) C_N^k \e ^{- k \beta \varepsilon_1} =  \dots = \frac{N}{1 + \e ^{- \beta \varepsilon_1}}$
+}
+
+\question
+Refaire le calcul de $Z_N^{\mathrm{BE}}$ et $\langle N_0^{\mathrm{BE}} \rangle$ en utilisant cette fois la statistique de Bose-Einstein. La différence des résultats ne vous apparaît peut-être pas de manière flagrante, mais les courbes associées (voir le notebook) souligne l'importance de la statistique.
+\reponse{
+Avec la statistique de BE, il n'y a q'un seul état avec $k$ particules dans le fondamental et $N-k$ excitées $\forall k$ : $Z_N^{\mathrm{BE}} = 1 + \e ^{- \beta \varepsilon_1} + \dots + \e ^{- N \beta \varepsilon_1} = \frac{1-\e ^{- (N-1) \beta \varepsilon_1}}{1-\e ^{- \beta \varepsilon_1}}$. \\
+$\langle N_0^{\mathrm{BE}} \rangle = \frac{1}{Z_N^{\mathrm{BE}}} [N . 1 + (N-1) . \e ^{- \beta \varepsilon_1} + \dots + 0 . \e ^{- N \beta \varepsilon_1} ] = \frac{1}{\e ^{- \beta \varepsilon_1} - 1} + \frac{N+1}{1-\e ^{- (N+1) \beta \varepsilon_1}}$
+}
+
+Ces formes analytiques sont accessibles pour un système simplifié à 2 niveaux. Dans un cas plus réalistes avec un grand nombre de niveaux d'énergie, la somme discrète devrait se faire sur tout ces états, en dénombrant l'ensemble des configurations possibles, $N$ étant fixé. Cela étant compliqué dans l'ensemble canonique, on va le faire dans l'ensemble grand-canonique où l'on fixe $\mu$ plutôt que $N$.
+
+
+\bigskip
+\tiret{Système à $m \gg 1$ niveaux dans l'ensemble grand canonique}
+
+\question
+Rappeler la forme de $\langle n_i \rangle$ du nombre de particules dans l'état d'énergie $\varepsilon_i$ pour des particules obéissant à la statistique de Bose-Einstein en équilibre avec un thermostat à la température $T$ et un réservoir de particules dont le potentiel chimique est $\mu$. En déduire $\langle N_0 \rangle$, le nombre de particules dans l'état fondamental. Dans notre système, $\mu$ peut-il prendre n'importe quelle valeur ?
+\reponse{
+$\langle n_i \rangle = \frac{1}{\e ^{\beta (\varepsilon_i - \mu)} - 1}$ \\
+$\langle N_0 \rangle = \frac{1}{\e ^{- \beta \mu} - 1}$ \\
+$\mu < \varepsilon_i$ $\forall i$, ie $\mu < 0$ pour assurer la positivité du taux d'occupation pour le niveau fondamental
+}
+
+\question
+A partir de la relation précédente entre $\mu$ et $\langle N_0 \rangle$, expliciter la forme du nombre $N$ de particules en fonction de $\langle N_0 \rangle$.
+\reponse{
+$N = \sum_i \langle n_i \rangle = \sum_i \frac{1}{\e ^{\beta \varepsilon_i} \e ^{- \beta \mu} - 1} = \sum_i \frac{1}{\e ^{\beta \varepsilon_i} \left( \frac{1}{\langle N_0 \rangle} + 1 \right) - 1}$
+}
+
+\question
+Pour pouvoir expliciter le rapport $\frac{\langle N_0 \rangle}{N}$, il faut avoir accès à l'ensemble des niveaux d'énergie $\varepsilon_i$ afin de pouvoir calculer la somme qui les contient. Les condensats s'obervant à basse température, on considère un gaz monoatomique de bosons non-relativistes dans une boîte cubique de côté $L$. En introduisant le triplet $\vec{n}$ qui permet de définir les vecteurs d'onde accessibles $\vec{k}_n = \frac{\pi}{L} \vec{n}$, expliciter la forme du niveau d'énergie $\varepsilon_n$. Explicitez la forme de $\varepsilon_1$ associé à l'écart en énergie entre le fondamental et le premier état excité.
+\reponse{
+$\varepsilon_n = \frac{\hbar^2 \pi^2}{2 m L^2} \vec{n}^2$. \\
+$\varepsilon_1 = \frac{\hbar^2 \pi^2}{2 m L^2} (1,0,0)^2 = \frac{\hbar^2 \pi^2}{2 m L^2}$. \\
+$\varepsilon_n = \vec{n}^2 \varepsilon_1$ \\
+}
+
+\question
+Reformuler le résultat précédent pour exprimer $N$ en fonction de $\langle N_0 \rangle$ et $\beta \epsilon$.
+\reponse{
+$N = \sum_{n_x, n_y, n_z=0}^{\infty} \frac{1}{\e ^{\beta \epsilon (n_x^2 + n_y^2 + n_z^2)} \left( \frac{1}{\langle N_0 \rangle} + 1 \right) - 1}$
+}
+
+\question
+A titre de comparaison, comment s'écrie l'expression précédente de $N$ pour un gaz classique suivant la statistique de Maxwell-Boltzmann
+\reponse{
+Le taux d'occupation du niveau $i$ est alors $\langle n_i \rangle = \frac{1}{\e ^{\beta (\varepsilon_i - \mu)}}$. \\
+alors, $N = \sum_{n_x, n_y, n_z=0}^{\infty} \frac{\langle N_0 \rangle}{\e ^{\beta \epsilon (n_x^2 + n_y^2 + n_z^2)} }$
+}
+
+
+\bigskip
+\tiret{Solution (numérique) exacte par sommation}
+
+\question
+Comme pour le système à 2 niveaux, tracer $\langle N_0 \rangle/N$ en fonction de $\frac{1}{\beta \epsilon}$ pour les 2 statistiques. A quelle température le condensat de Bose-Einstein commence-t'il à s'observer ?
+\reponse{
+Pour la statistique de MB, si l'on approxime la somme discrète par une intégrale, on obtient alors $\frac{\langle N_0 \rangle}{N} \sim \left( \frac{4 \beta \epsilon}{\pi} \right)^{3/2}$ \\
+Voir le notebook... Le trait pointillé est l'approximation de la somme par une intégrale pour la statistique de MB. \\
+On a $\frac{\langle N_0 \rangle}{N} \sim \frac{1}{2}$ pour $k_B T \sim 8 \varepsilon_1$
+}
+
+
+\bigskip
+\tiret{Solution (analytique) approchée par intégration}
+
+\question
+Justifier que dans la limite continue, on puisse remplacer $\sum_{\vec{n}}$ par $\frac{1}{8} \int_0^{\infty} 4 \pi n^2 \D n$.
+\reponse{
+Volume d'une boule en 3 dimensions. Le facteur $\frac{1}{8}$ vient du fait que dans l'intégrale posée ainsi, le volume de la boule inclue les valeurs négatives des $n_i$.
+}
+
+\question
+Rappeler la forme de l'équation de dispersion $\varepsilon(n)$. En déduire la forme de l'intégrale de la question précédente pour la variable d'intégration $\varepsilon$.
+\reponse{
+$\varepsilon = \varepsilon_1 n^2$. \\
+$\D \varepsilon = 2 \varepsilon_1 n \D n$. \\
+$\sum_n \to \frac{\pi}{4 \epsilon^{3/2}} \int_0^{\infty} \sqrt{\epsilon} \D \epsilon$
+}
+
+\question
+Est-il raisonnable d'en déduire l'expression de $N$ par l'intégrale
+$$
+N = \frac{\pi}{4 \epsilon^{3/2}} \int_0^{\infty} \sqrt{\varepsilon} \D \varepsilon \frac{1}{\e ^{\beta (\varepsilon - \mu)} - 1}
+$$
+\reponse{
+Presque. En fait, le membre de droite correspond aux nombre de particules dans l'état excité, mais n'inclue donc pas le fondamental. En effet, dans la mesure où $\mu < 0$, le potentiel chimique est toujours significativement plus faible que n'importe laquelle des énergie d'états excités. Pour l'ensemble de ces états, on peut approximer $\e ^{- \beta \mu} \sim 1$ si $\langle N_0 \rangle$ est de l'ordre de $N$.
+}
+
+\question
+Montrer alors que le nombre moyen de particules dans un état excité (ie non dans l'état fondamental) s'écrit
+$$
+\langle N_{\mathrm{exc}} \rangle = \frac{\pi}{4 \epsilon^{3/2}} \int_0^{\infty} \sqrt{\varepsilon} \D \varepsilon \frac{1}{\e ^{\beta \varepsilon} - 1}
+$$
+Exprimer ce résultat en fonction de la fonction $\zeta$ de Riemann.
+\reponse{
+On peut donc faire l'approximation $\e ^{- \beta \mu} \sim 1$ pour n'importe lequel des états excités. La somme proposée donne donc bien $\langle N_{\mathrm{exc}} \rangle$. \\
+On a $\zeta(\frac{3}{2}) = \frac{1}{\Gamma(\frac{3}{2})} \int_0^{\infty} \frac{\sqrt{t}}{\e ^t - 1} \D t$. \\
+Alors $\langle N_{\mathrm{exc}} \rangle = \frac{\pi}{4 \epsilon^{3/2}} \frac{\sqrt{\pi}}{2} \zeta(\frac{3}{2}) \beta^{-3/2}$, ie $\langle N_{\mathrm{exc}} \rangle = \zeta(\frac{3}{2}) \left(  \frac{\pi k_B T}{4 \varepsilon} \right) ^{3/2}$
+}
+
+\question
+On va enfin chercher la limite en température $T_C$ (température critique) pour laquelle $\langle N_{\mathrm{exc}} \rangle$ devient grand, ie $\langle N_{\mathrm{exc}} \rangle > N$. Donner l'expression de $T_C$. En déduire une expression de $\frac{\langle N_{\mathrm{exc}} \rangle}{N}$ (et donc aussi celle de $\frac{\langle N_0 \rangle}{N}$) en fonction de $T$ pour $T < T_C$. Tracer les courbes de $\frac{\langle N_0 \rangle}{N}$ pour les 3 cas : numérique exact et analytique approché. Commenter.
+\reponse{
+$\langle N_{\mathrm{exc}} \rangle = \zeta(\frac{3}{2}) \left(  \frac{\pi k_B T}{4 \varepsilon} \right) ^{3/2} > N$, \\
+$T_C = \frac{4 \epsilon}{\pi k_B} \left( \frac{N}{\zeta(\frac{3}{2})} \right) ^{2/3} = \frac{1}{2} \zeta(\frac{3}{2}) \frac{\hbar^2}{k_B m} \left( \frac{N}{V} \right) ^{2/3}$ \\
+$\frac{\langle N_{\mathrm{exc}} \rangle}{N} = \left( \frac{T}{T_C}\right) ^{3/2}$ \\
+Avec $N = \langle N_0 \rangle + \langle N_{\mathrm{exc}} \rangle$, on a$\frac{\langle N_0 \rangle}{N} = 1-\left( \frac{T}{T_C}\right) ^{3/2}$ \\
+L'approximation analytique est satisfaisante.
+}

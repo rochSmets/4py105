@@ -1,0 +1,64 @@
+\documentclass[a4paper, landscape, utf8, 10pt]{article}
+
+\usepackage{fiche}
+\usepackage[landscape]{geometry}
+
+\begin{document}
+\begin{multicols}{2}
+
+\nom{52}{45}
+
+\bigskip
+
+%--------------------------------------------------------------------------------------
+\exo{1}{Adsorption}{21}
+
+\sol{1}{1}{$z = \frac{1}{h^3} \int \D \Vec{r} \int \D \Vec{p} \  \e ^{-\beta\frac{p^2}{2m}}= \frac{V}{h^3} \left(\int \D p_x \ \e ^{-\beta\frac{p_x^2}{2m}}\right)^3= \frac{V}{h^3}\left( \sqrt{\frac{2\pi m}{\beta}}\right)^3 = \frac{V}{\Lambda^3}$ avec $\Lambda^2 = \frac{h^2}{2 \pi m k_B T}$}{2} \\
+\sol{1}{2}{$Z = \frac{z^N}{N!}$ car particules indépendantes et indiscernables}{2} \\
+\sol{1}{3}{$\Xi = \sum_{N=0}^{\infty} Z(T,V,N) \e ^{\beta \mu N} = \sum_{N=0}^{\infty} \frac{1}{N!}\left( \frac{V}{\Lambda^3} \e ^{\beta \mu} \right)^N= \exp \left( \frac{V}{\Lambda^3} \e ^{\beta \mu} \right)$}{1} \\
+\sol{1}{4}{Grand potentiel $J(T,V,\mu) = - k_B T \ln \Xi = - k_B T \frac{V}{\Lambda^3} \e ^{\beta \mu}$}{1} \\
+\sol{1}{4}{$\overline{N} = - \frac{\partial J}{\partial \mu} = \frac{V}{\Lambda^3} \e ^{\beta \mu}$ et donc $\mu = k_B T \ln \left( \frac{\overline{N} }{V} \Lambda^3 \right) $}{1} \\
+\sol{1}{5}{$\mu = k_B T \ln \left( \frac{P }{k_B T} \Lambda^3 \right) = k_B T \ln \left( \frac{P h^3}{k_B T (2 \pi m k_B T)^{3/2]}} \right) $ car $\beta P=\rho$}{1} \\
+\sol{1}{5}{$P_0 = \frac{k_B T}{h^3} (2 \pi m k_B T)^{3/2} \propto T^{5/2}$}{1} \\
+\sol{1}{6}{$\xi(T,\mu) = 1 + \e ^{\beta(\epsilon+\mu)} + \e ^{\beta(\epsilon + \epsilon^{\prime} + 2 \mu)} + \ldots + \e ^{\beta(\epsilon + N \epsilon^{\prime} + (N+1) \mu)}+\ldots=1+b\e ^{\beta \mu} \left(1+b'\e ^{\beta \mu}+\ldots+[b'\e ^{\beta \mu}]^N+\ldots \right) = 1 + \frac{b \e^{\beta \mu}}{1-b^{\prime} \e ^{\beta \mu}}=\frac{1+(b-b') \e ^{\beta \mu}}{1-b^{\prime} \e ^{\beta \mu}}$}{2} \\
+\sol{1}{7}{$\Xi_a = (\xi)^M$ car $M$ sites indépendants.}{1} \\
+\sol{1}{8}{$\overline{N_a} = - \frac{\partial J_a}{\partial \mu} = M \frac{\partial \ln \xi }{\partial \beta \mu}= M \frac{b e ^{\beta \mu}}{1-b^{\prime} \e ^{\beta \mu}} \frac{1}{1 + (b-b') \e ^{\beta \mu}} $ d'où le $\theta$ proposé}{2} \\
+\sol{1}{9}{$k_B T \ll |\epsilon^{\prime}|$: cela rend difficile l'adsorption multicouches.}{1} \\
+\sol{1}{9}{$\theta = \frac{b \e ^{\beta \mu}}{1 + b \e ^{\beta \mu}}$ et avec $\frac{P}{P_0} = \e ^{\beta \mu}$, on obtient $\theta = \frac{P/P(T)}{1+P/P(T)}$}{1} \\
+\sol{1}{9}{$\theta(P=0) = 0$, croit vers $\theta(P \to \infty) = 1$. Isotherme de Langmuir}{1} \\
+\sol{1}{10}{$\theta = \frac{c P P^{\prime}}{(P^{\prime}-P)(P^{\prime} + (c-1) P)}$ par substitution}{2} \\
+\sol{1}{11}{$\beta_N P_N V_a = M \theta  $ (gaz parfait avec $P_N=1$ atm et $T_N=0^{\circ}$C.)}{1} \\
+\sol{1}{11}{$\frac{P}{(P^{\prime}-P)V_a}=\frac{\theta}{cV_a} \left( 1+ (c-1) \frac{P}{P^{\prime}(T)} \right)=\frac{\beta_N P_N }{M c} \left(  1+ (c-1) \frac{P}{P^{\prime}(T)}  \right)$}{1} \\
+
+
+%--------------------------------------------------------------------------------------
+\exo{2}{Naine blanche}{31}
+
+\sol{2}{1}{$\rho(p) \D p = \hat{\rho}(\vec{k}) 4 \pi k^2 \D k$, soit avec $p = \hbar k$ et $\hat{\rho}(\vec{k})=\frac{V}{4 \pi^3}$, $A = \frac{V}{\pi^2 \hbar^3}$}{2} \\
+\sol{2}{2}{Distribution de Fermi-Dirac: $n_i^F (\epsilon) = \frac{1}{\e ^{\beta(\epsilon_i - \mu)} +1}$, d'où en substituant $n_i^F (\vec{p}) = \frac{1}{\e ^{\beta(\sqrt{p^2 c^2 + m^2 c^4} - \mu)} +1}$}{1} \\
+\sol{2}{3}{$N = \int_0^{\infty}  n_i^F(p) \rho(p) \D p$ et $U = \int_0^{\infty}  n_i^F(p) \sqrt{p^2 c^2 + m^2 c^4} \rho(p) \D p$}{2} \\
+\sol{2}{4}{$n_i^F(\epsilon)$ est un Heaviside qui vaut 1 jusqu'à $\mu$, puis 0}{1} \\
+\sol{2}{4}{Dans l'espace des $\vec p$,  cela arrive en $p_F$ d'où l'intégrale proposée}{1} \\
+\sol{2}{4}{$N = \frac{V}{\pi^2 \hbar^3}\int_0^{p_F} \D p \ p^2 = \frac{V}{3 \pi^2 \hbar^3} p_F^3$ d'où la forme de $p_F(\rho)=\hbar \sqrt[3]{3 \pi^2\rho}$}{1} \\
+\sol{2}{5}{$U=\int_0^{p_F}  \sqrt{p^2 c^2 + m^2 c^4} \frac{V}{\pi^2 \hbar^3} p^2 \D p$ + changement $p = mc x $}{1} \\
+\sol{2}{6}{$p=mv \ll mc  \rightarrow x \ll 1$, d'où $x^2 \sqrt{1+x^2} \sim x^2 + \frac{x^4}{2}$ dans l'intégrale}{2} \\
+\sol{2}{6}{$U = V\frac{m^4c^5}{\pi^2 \hbar^3}(\frac{x_F^3}{3}+\frac{x_F^5}{10})=\frac{Vm^4c^5}{\pi^2 \hbar^3} \left[ \frac{1}{3}\left( \frac{\hbar}{mc} \right)^3 \left( 3 \pi^2 \frac{ N}{V} \right) + \frac{1}{10} \left( \frac{\hbar}{mc} \right)^5 \left( 3 \pi^2 \frac{N}{V} \right)^{5/3} \right]=N mc^2+\frac{3}{5}N \epsilon_F$ où $\epsilon_F=\frac{\hbar^2}{2m}\left( 3 \pi^2 \frac{N}{V} \right)^{2/3}$. Energie de masse+fermion class.}{2} \\
+\sol{2}{7}{$pc \gg mc^2$, d'où $x^2\sqrt{1+x^2} \sim x^3+\frac{x}{2}$ dans l'intégrale}{1} \\
+\sol{2}{7}{$U = V\frac{m^4c^5}{\pi^2 \hbar^3}(\frac{x_f^4}{4}+\frac{x_F^2}{4})$}{1} \\
+\sol{2}{8}{$N_c=\frac{M}{A m_p}=10^{56}$; $\rho=Z\frac{N_c}{V}=\frac{Z}{A}\frac{3}{4\pi}\frac{M}{m_p R^3}=1,15 \times 10^{36}$ m$^{-3}$}{3} \\
+\sol{2}{9}{$p_Fc=\hbar c \sqrt[3]{3 \pi^2\rho} \simeq 10^{-13}$ J $=0,64$ Mev. $\epsilon_F  \simeq 0,3$ Mev $(\sim mc^2)$}{2} \\
+\sol{2}{10}{$E=E_G+U=-\frac{3}{5}\frac{GM^2}{R}+V\frac{m^4c^5}{\pi^2 \hbar^3}(\frac{x_F^4}{4}+\frac{x_F^2}{4})$}{1} \\
+\sol{2}{10}{$x_F=\frac{p_F }{mc}=\frac{\hbar}{mc}\sqrt[3]{3 \pi^2 \left( \frac{Z}{A}\frac{3}{4\pi}\frac{M}{m_p R^3}\right)}=\frac{\hbar}{2mcR}\sqrt[3]{9 \pi \frac{M}{m_p}}$}{1} \\
+\sol{2}{10}{$E=-\frac{3G}{5}\frac{M^2}{R}+\frac{3}{16} \frac{\hbar c}{m_p} \left( \frac{9 \pi}{m_p} \right)^{\frac{1}{3}} \frac{M^{\frac{4}{3}}}{R}+\frac{m^2c^3}{12\pi \hbar} \left( \frac{9 \pi}{m_p} \right)^{\frac{2}{3}} R M^{\frac{2}{3}}$}{1} \\
+\sol{2}{10}{$\alpha=\frac{3G}{5}, \delta=\frac{3}{16} \frac{\hbar c}{m_p} \left( \frac{9 \pi}{m_p} \right)^{\frac{1}{3}}, \gamma=\frac{m^2c^3}{12\pi \hbar} \left( \frac{9 \pi}{m_p} \right)^{\frac{2}{3}}$}{1} \\
+\sol{2}{11}{$\frac{\partial E}{\partial R}=0=\alpha \frac{M^2}{R^2}-\delta \frac{M^{\frac{4}{3}}}{R^2}+\gamma M^{\frac{2}{3}}$; d'où $R_m^2=\frac{M^{\frac{2}{3}}}{\gamma}\left(\delta-\alpha M^{\frac{2}{3}} \right)$}{2} \\
+\sol{2}{11}{Possible uniquement si $M \le M_c=\left( \frac{\delta}{\alpha} \right)^{\frac{3}{2}}$}{1} \\
+\sol{2}{12}{$\alpha=4 \times 10^{-11}$ SI; $\delta=9,1 \times 10^{9}$ SI; $\gamma=3,7 \times 10^{16}$ SI }{1} \\
+\sol{2}{12}{$M_C=3,4 \times 10^{30}$ kg; $R_m=\sqrt{\frac{\alpha}{\gamma}}\sqrt[3]{M_cM} \sqrt{1-\left( \frac{M}{M_C}\right)^{\frac{2}{3}}} =3 400 $ km}{1} \\
+\sol{2}{13}{La pression de Fermi n'est pas suffisante pour contrebalancer la gravitation. L'effondrement se poursuite, l'étoile devient un trou noir.}{2} \\
+
+
+
+
+\end{multicols}
+\end{document}
